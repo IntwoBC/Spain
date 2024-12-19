@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="FORMAT_TODAY_0_4_">
+          <DataField>FORMAT_TODAY_0_4_</DataField>
+        </Field>
+        <Field Name="COMPANYNAME">
+          <DataField>COMPANYNAME</DataField>
+        </Field>
+        <Field Name="CurrReport_PAGENO">
+          <DataField>CurrReport_PAGENO</DataField>
+        </Field>
+        <Field Name="USERID">
+          <DataField>USERID</DataField>
+        </Field>
+        <Field Name="GETFILTERS">
+          <DataField>GETFILTERS</DataField>
+        </Field>
+        <Field Name="IncludePrepostedEntries">
+          <DataField>IncludePrepostedEntries</DataField>
+        </Field>
+        <Field Name="IncludeTax">
+          <DataField>IncludeTax</DataField>
+        </Field>
+        <Field Name="IncludePreviousYear">
+          <DataField>IncludePreviousYear</DataField>
+        </Field>
+        <Field Name="IncludeStat">
+          <DataField>IncludeStat</DataField>
+        </Field>
+        <Field Name="GAAPAdjmtReasonView">
+          <DataField>GAAPAdjmtReasonView</DataField>
+        </Field>
+        <Field Name="Corporate_G_L_Account__No__">
+          <DataField>Corporate_G_L_Account__No__</DataField>
+        </Field>
+        <Field Name="Corporate_G_L_Account_Name">
+          <DataField>Corporate_G_L_Account_Name</DataField>
+        </Field>
+        <Field Name="Corporate_G_L_Account__G_L_Account_No___Local__">
+          <DataField>Corporate_G_L_Account__G_L_Account_No___Local__</DataField>
+        </Field>
+        <Field Name="PrepostedStatutoryAmount">
+          <DataField>PrepostedStatutoryAmount</DataField>
+        </Field>
+        <Field Name="PrepostedStatutoryAmountFormat">
+          <DataField>PrepostedStatutoryAmountFormat</DataField>
+        </Field>
+        <Field Name="StatutoryAdjustments">
+          <DataField>StatutoryAdjustments</DataField>
+        </Field>
+        <Field Name="StatutoryAdjustmentsFormat">
+          <DataField>StatutoryAdjustmentsFormat</DataField>
+        </Field>
+        <Field Name="AuditorAdjustments">
+          <DataField>AuditorAdjustments</DataField>
+        </Field>
+        <Field Name="AuditorAdjustmentsFormat">
+          <DataField>AuditorAdjustmentsFormat</DataField>
+        </Field>
+        <Field Name="StatutoryTB">
+          <DataField>StatutoryTB</DataField>
+        </Field>
+        <Field Name="StatutoryTBFormat">
+          <DataField>StatutoryTBFormat</DataField>
+        </Field>
+        <Field Name="PrepostedTaxAmount">
+          <DataField>PrepostedTaxAmount</DataField>
+        </Field>
+        <Field Name="PrepostedTaxAmountFormat">
+          <DataField>PrepostedTaxAmountFormat</DataField>
+        </Field>
+        <Field Name="TaxAdjustments">
+          <DataField>TaxAdjustments</DataField>
+        </Field>
+        <Field Name="TaxAdjustmentsFormat">
+          <DataField>TaxAdjustmentsFormat</DataField>
+        </Field>
+        <Field Name="TaxTB">
+          <DataField>TaxTB</DataField>
+        </Field>
+        <Field Name="TaxTBFormat">
+          <DataField>TaxTBFormat</DataField>
+        </Field>
+        <Field Name="StatutoryAdjustmentsLY">
+          <DataField>StatutoryAdjustmentsLY</DataField>
+        </Field>
+        <Field Name="StatutoryAdjustmentsLYFormat">
+          <DataField>StatutoryAdjustmentsLYFormat</DataField>
+        </Field>
+        <Field Name="AuditorAdjustmentsLY">
+          <DataField>AuditorAdjustmentsLY</DataField>
+        </Field>
+        <Field Name="AuditorAdjustmentsLYFormat">
+          <DataField>AuditorAdjustmentsLYFormat</DataField>
+        </Field>
+        <Field Name="StatutoryTBLY">
+          <DataField>StatutoryTBLY</DataField>
+        </Field>
+        <Field Name="StatutoryTBLYFormat">
+          <DataField>StatutoryTBLYFormat</DataField>
+        </Field>
+        <Field Name="TaxAdjustmentsLY">
+          <DataField>TaxAdjustmentsLY</DataField>
+        </Field>
+        <Field Name="TaxAdjustmentsLYFormat">
+          <DataField>TaxAdjustmentsLYFormat</DataField>
+        </Field>
+        <Field Name="TaxTBLY">
+          <DataField>TaxTBLY</DataField>
+        </Field>
+        <Field Name="TaxTBLYFormat">
+          <DataField>TaxTBLYFormat</DataField>
+        </Field>
+        <Field Name="CorpAmountLY">
+          <DataField>CorpAmountLY</DataField>
+        </Field>
+        <Field Name="CorpAmountLYFormat">
+          <DataField>CorpAmountLYFormat</DataField>
+        </Field>
+        <Field Name="CorpAmount">
+          <DataField>CorpAmount</DataField>
+        </Field>
+        <Field Name="CorpAmountFormat">
+          <DataField>CorpAmountFormat</DataField>
+        </Field>
+        <Field Name="Corporate_G_L_AccountCaption">
+          <DataField>Corporate_G_L_AccountCaption</DataField>
+        </Field>
+        <Field Name="CurrReport_PAGENOCaption">
+          <DataField>CurrReport_PAGENOCaption</DataField>
+        </Field>
+        <Field Name="Corporate_G_L_Account__No__Caption">
+          <DataField>Corporate_G_L_Account__No__Caption</DataField>
+        </Field>
+        <Field Name="Corporate_G_L_Account_NameCaption">
+          <DataField>Corporate_G_L_Account_NameCaption</DataField>
+        </Field>
+        <Field Name="Corporate_G_L_Account__G_L_Account_No___Local__Caption">
+          <DataField>Corporate_G_L_Account__G_L_Account_No___Local__Caption</DataField>
+        </Field>
+        <Field Name="PrepostedStatutoryAmountCaption">
+          <DataField>PrepostedStatutoryAmountCaption</DataField>
+        </Field>
+        <Field Name="StatutoryAdjustmentsCaption">
+          <DataField>StatutoryAdjustmentsCaption</DataField>
+        </Field>
+        <Field Name="AuditorAdjustmentsCaption">
+          <DataField>AuditorAdjustmentsCaption</DataField>
+        </Field>
+        <Field Name="StatutoryTBCaption">
+          <DataField>StatutoryTBCaption</DataField>
+        </Field>
+        <Field Name="PrepostedTaxAmountCaption">
+          <DataField>PrepostedTaxAmountCaption</DataField>
+        </Field>
+        <Field Name="TaxAdjustmentsCaption">
+          <DataField>TaxAdjustmentsCaption</DataField>
+        </Field>
+        <Field Name="TaxTBCaption">
+          <DataField>TaxTBCaption</DataField>
+        </Field>
+        <Field Name="StatutoryAdjustmentsLYCaption">
+          <DataField>StatutoryAdjustmentsLYCaption</DataField>
+        </Field>
+        <Field Name="AuditorAdjustmentsLYCaption">
+          <DataField>AuditorAdjustmentsLYCaption</DataField>
+        </Field>
+        <Field Name="StatutoryTBLYCaption">
+          <DataField>StatutoryTBLYCaption</DataField>
+        </Field>
+        <Field Name="TaxAdjustmentsLYCaption">
+          <DataField>TaxAdjustmentsLYCaption</DataField>
+        </Field>
+        <Field Name="TaxTBLYCaption">
+          <DataField>TaxTBLYCaption</DataField>
+        </Field>
+        <Field Name="CorpAmountLYCaption">
+          <DataField>CorpAmountLYCaption</DataField>
+        </Field>
+        <Field Name="CorpAmountCaption">
+          <DataField>CorpAmountCaption</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

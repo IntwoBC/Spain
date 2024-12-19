@@ -1,0 +1,376 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="CurrReport_PAGENOCaptionLbl">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>CurrReport_PAGENOCaptionLbl</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>CurrReport_PAGENOCaptionLbl</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="GlobalViewPackCaption">
+          <DataField>GlobalViewPackCaption</DataField>
+        </Field>
+        <Field Name="StatutoryReportingCaption">
+          <DataField>StatutoryReportingCaption</DataField>
+        </Field>
+        <Field Name="CompanyName">
+          <DataField>CompanyName</DataField>
+        </Field>
+        <Field Name="ContentPageCaption">
+          <DataField>ContentPageCaption</DataField>
+        </Field>
+        <Field Name="ContentsLine1">
+          <DataField>ContentsLine1</DataField>
+        </Field>
+        <Field Name="ContentsLine2">
+          <DataField>ContentsLine2</DataField>
+        </Field>
+        <Field Name="ContentsLine3">
+          <DataField>ContentsLine3</DataField>
+        </Field>
+        <Field Name="ContentsLine4">
+          <DataField>ContentsLine4</DataField>
+        </Field>
+        <Field Name="ContentsLine5">
+          <DataField>ContentsLine5</DataField>
+        </Field>
+        <Field Name="GlobalViewCaption">
+          <DataField>GlobalViewCaption</DataField>
+        </Field>
+        <Field Name="EquityReconciliationEquityCodeCaption">
+          <DataField>EquityReconciliationEquityCodeCaption</DataField>
+        </Field>
+        <Field Name="EquityReconciliationYearCaption">
+          <DataField>EquityReconciliationYearCaption</DataField>
+        </Field>
+        <Field Name="AdjustmentsViewCaption">
+          <DataField>AdjustmentsViewCaption</DataField>
+        </Field>
+        <Field Name="FinancialStatementCaption">
+          <DataField>FinancialStatementCaption</DataField>
+        </Field>
+        <Field Name="PostingDateCaption">
+          <DataField>PostingDateCaption</DataField>
+        </Field>
+        <Field Name="DocumentNoCaption">
+          <DataField>DocumentNoCaption</DataField>
+        </Field>
+        <Field Name="CorporateGLAccountNoCaption">
+          <DataField>CorporateGLAccountNoCaption</DataField>
+        </Field>
+        <Field Name="CorporateGLAccountNameCaption">
+          <DataField>CorporateGLAccountNameCaption</DataField>
+        </Field>
+        <Field Name="GLAccountNoCaption">
+          <DataField>GLAccountNoCaption</DataField>
+        </Field>
+        <Field Name="GLAccountNameCaption">
+          <DataField>GLAccountNameCaption</DataField>
+        </Field>
+        <Field Name="CorpGAAPCaption">
+          <DataField>CorpGAAPCaption</DataField>
+        </Field>
+        <Field Name="PriorYearAdjustmentsCaption">
+          <DataField>PriorYearAdjustmentsCaption</DataField>
+        </Field>
+        <Field Name="CurrentYearAdjustmentsCaption">
+          <DataField>CurrentYearAdjustmentsCaption</DataField>
+        </Field>
+        <Field Name="CurrentYearReclassificationsCaption">
+          <DataField>CurrentYearReclassificationsCaption</DataField>
+        </Field>
+        <Field Name="StatutoryTBCaption">
+          <DataField>StatutoryTBCaption</DataField>
+        </Field>
+        <Field Name="FSCodeCaption">
+          <DataField>FSCodeCaption</DataField>
+        </Field>
+        <Field Name="FSCodeDescriptionCaption">
+          <DataField>FSCodeDescriptionCaption</DataField>
+        </Field>
+        <Field Name="AccountClassCaption">
+          <DataField>AccountClassCaption</DataField>
+        </Field>
+        <Field Name="CodeCaption">
+          <DataField>CodeCaption</DataField>
+        </Field>
+        <Field Name="DescriptionCaption">
+          <DataField>DescriptionCaption</DataField>
+        </Field>
+        <Field Name="EntryDescriptionCaption">
+          <DataField>EntryDescriptionCaption</DataField>
+        </Field>
+        <Field Name="YearCaption">
+          <DataField>YearCaption</DataField>
+        </Field>
+        <Field Name="StartBalanceEquityCaption">
+          <DataField>StartBalanceEquityCaption</DataField>
+        </Field>
+        <Field Name="NetChangePLCaption">
+          <DataField>NetChangePLCaption</DataField>
+        </Field>
+        <Field Name="NetChangeEquityCaption">
+          <DataField>NetChangeEquityCaption</DataField>
+        </Field>
+        <Field Name="EndBalanceEquityCaption">
+          <DataField>EndBalanceEquityCaption</DataField>
+        </Field>
+        <Field Name="GAAPAdjustmentReasonCaption">
+          <DataField>GAAPAdjustmentReasonCaption</DataField>
+        </Field>
+        <Field Name="AdjustmentRoleCaption">
+          <DataField>AdjustmentRoleCaption</DataField>
+        </Field>
+        <Field Name="AmountCaption">
+          <DataField>AmountCaption</DataField>
+        </Field>
+        <Field Name="EquityCorrectionCodeCaption">
+          <DataField>EquityCorrectionCodeCaption</DataField>
+        </Field>
+        <Field Name="DescriptionEngCaption">
+          <DataField>DescriptionEngCaption</DataField>
+        </Field>
+        <Field Name="StartBalanceCaption">
+          <DataField>StartBalanceCaption</DataField>
+        </Field>
+        <Field Name="EndBalanceCaption">
+          <DataField>EndBalanceCaption</DataField>
+        </Field>
+        <Field Name="DraftCaption">
+          <DataField>DraftCaption</DataField>
+        </Field>
+        <Field Name="Description_FinancialStatement">
+          <DataField>Description_FinancialStatement</DataField>
+        </Field>
+        <Field Name="Description_FinancialStatementEnglish">
+          <DataField>Description_FinancialStatementEnglish</DataField>
+        </Field>
+        <Field Name="Code_FinancialStatement">
+          <DataField>Code_FinancialStatement</DataField>
+        </Field>
+        <Field Name="EndBalance_FinancialStatement">
+          <DataField>EndBalance_FinancialStatement</DataField>
+        </Field>
+        <Field Name="EndBalance_FinancialStatementFormat">
+          <DataField>EndBalance_FinancialStatementFormat</DataField>
+        </Field>
+        <Field Name="StartBalance_FinancialStatement">
+          <DataField>StartBalance_FinancialStatement</DataField>
+        </Field>
+        <Field Name="StartBalance_FinancialStatementFormat">
+          <DataField>StartBalance_FinancialStatementFormat</DataField>
+        </Field>
+        <Field Name="LineType_FinancialStatement">
+          <DataField>LineType_FinancialStatement</DataField>
+        </Field>
+        <Field Name="Group_EquityReconciliation">
+          <DataField>Group_EquityReconciliation</DataField>
+        </Field>
+        <Field Name="Code_EquityReconciliation">
+          <DataField>Code_EquityReconciliation</DataField>
+        </Field>
+        <Field Name="Description_EquityReconciliation">
+          <DataField>Description_EquityReconciliation</DataField>
+        </Field>
+        <Field Name="EntryDescription_EquityReconciliation">
+          <DataField>EntryDescription_EquityReconciliation</DataField>
+        </Field>
+        <Field Name="Year_EquityReconciliation">
+          <DataField>Year_EquityReconciliation</DataField>
+        </Field>
+        <Field Name="StartBalance_EquityReconciliation">
+          <DataField>StartBalance_EquityReconciliation</DataField>
+        </Field>
+        <Field Name="StartBalance_EquityReconciliationFormat">
+          <DataField>StartBalance_EquityReconciliationFormat</DataField>
+        </Field>
+        <Field Name="DocNoStartBalance_EquityReconciliation">
+          <DataField>DocNoStartBalance_EquityReconciliation</DataField>
+        </Field>
+        <Field Name="NetChangePL_EquityReconciliation">
+          <DataField>NetChangePL_EquityReconciliation</DataField>
+        </Field>
+        <Field Name="NetChangePL_EquityReconciliationFormat">
+          <DataField>NetChangePL_EquityReconciliationFormat</DataField>
+        </Field>
+        <Field Name="NetChangeEquity_EquityReconciliation">
+          <DataField>NetChangeEquity_EquityReconciliation</DataField>
+        </Field>
+        <Field Name="NetChangeEquity_EquityReconciliationFormat">
+          <DataField>NetChangeEquity_EquityReconciliationFormat</DataField>
+        </Field>
+        <Field Name="DocNoNetChange_EquityReconciliation">
+          <DataField>DocNoNetChange_EquityReconciliation</DataField>
+        </Field>
+        <Field Name="EndBalance_EquityReconciliation">
+          <DataField>EndBalance_EquityReconciliation</DataField>
+        </Field>
+        <Field Name="EndBalance_EquityReconciliationFormat">
+          <DataField>EndBalance_EquityReconciliationFormat</DataField>
+        </Field>
+        <Field Name="Subtotal_EquityReconciliation">
+          <DataField>Subtotal_EquityReconciliation</DataField>
+        </Field>
+        <Field Name="PostingDate_AdjustmentsView">
+          <DataField>PostingDate_AdjustmentsView</DataField>
+        </Field>
+        <Field Name="DocumentNo_AdjustmentsView">
+          <DataField>DocumentNo_AdjustmentsView</DataField>
+        </Field>
+        <Field Name="CorporateGLAccountNo_AdjustmentsView">
+          <DataField>CorporateGLAccountNo_AdjustmentsView</DataField>
+        </Field>
+        <Field Name="CorporateGLAccountName_AdjustmentsView">
+          <DataField>CorporateGLAccountName_AdjustmentsView</DataField>
+        </Field>
+        <Field Name="GLAccountNo_AdjustmentsView">
+          <DataField>GLAccountNo_AdjustmentsView</DataField>
+        </Field>
+        <Field Name="GLAccountName_AdjustmentsView">
+          <DataField>GLAccountName_AdjustmentsView</DataField>
+        </Field>
+        <Field Name="GAAPAdjustmentReason_AdjustmentsView">
+          <DataField>GAAPAdjustmentReason_AdjustmentsView</DataField>
+        </Field>
+        <Field Name="AdjustmentRole_AdjustmentsView">
+          <DataField>AdjustmentRole_AdjustmentsView</DataField>
+        </Field>
+        <Field Name="Description_AdjustmentsView">
+          <DataField>Description_AdjustmentsView</DataField>
+        </Field>
+        <Field Name="Amount_AdjustmentsView">
+          <DataField>Amount_AdjustmentsView</DataField>
+        </Field>
+        <Field Name="Amount_AdjustmentsViewFormat">
+          <DataField>Amount_AdjustmentsViewFormat</DataField>
+        </Field>
+        <Field Name="EquityCorrectionCode_AdjustmentsView">
+          <DataField>EquityCorrectionCode_AdjustmentsView</DataField>
+        </Field>
+        <Field Name="No_GlobalView">
+          <DataField>No_GlobalView</DataField>
+        </Field>
+        <Field Name="Name_GlobalView">
+          <DataField>Name_GlobalView</DataField>
+        </Field>
+        <Field Name="LocalGLAccountNo_GlobalView">
+          <DataField>LocalGLAccountNo_GlobalView</DataField>
+        </Field>
+        <Field Name="LocalGLAccName_GlobalView">
+          <DataField>LocalGLAccName_GlobalView</DataField>
+        </Field>
+        <Field Name="CorpAmt_GlobalView">
+          <DataField>CorpAmt_GlobalView</DataField>
+        </Field>
+        <Field Name="CorpAmt_GlobalViewFormat">
+          <DataField>CorpAmt_GlobalViewFormat</DataField>
+        </Field>
+        <Field Name="PriorYearAdjmtAmt_GlobalView">
+          <DataField>PriorYearAdjmtAmt_GlobalView</DataField>
+        </Field>
+        <Field Name="PriorYearAdjmtAmt_GlobalViewFormat">
+          <DataField>PriorYearAdjmtAmt_GlobalViewFormat</DataField>
+        </Field>
+        <Field Name="CurrYearAdjmtAmt_GlobalView">
+          <DataField>CurrYearAdjmtAmt_GlobalView</DataField>
+        </Field>
+        <Field Name="CurrYearAdjmtAmt_GlobalViewFormat">
+          <DataField>CurrYearAdjmtAmt_GlobalViewFormat</DataField>
+        </Field>
+        <Field Name="CurrYearReclassAmt_GlobalView">
+          <DataField>CurrYearReclassAmt_GlobalView</DataField>
+        </Field>
+        <Field Name="CurrYearReclassAmt_GlobalViewFormat">
+          <DataField>CurrYearReclassAmt_GlobalViewFormat</DataField>
+        </Field>
+        <Field Name="StatTBAmt_GlobalView">
+          <DataField>StatTBAmt_GlobalView</DataField>
+        </Field>
+        <Field Name="StatTBAmt_GlobalViewFormat">
+          <DataField>StatTBAmt_GlobalViewFormat</DataField>
+        </Field>
+        <Field Name="FSCode_GlobalView">
+          <DataField>FSCode_GlobalView</DataField>
+        </Field>
+        <Field Name="FSDescription_GlobalView">
+          <DataField>FSDescription_GlobalView</DataField>
+        </Field>
+        <Field Name="AccountClass_GlobalView">
+          <DataField>AccountClass_GlobalView</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>
