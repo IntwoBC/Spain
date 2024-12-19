@@ -1,0 +1,1323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="es-ES" original="Please update this value">
+    <body>
+      <group id="body">
+        <trans-unit id="Page 3671297086 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Vendor Ledger Entries</source>
+          <target>Movs. proveedores</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Vendor LedgerTst - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3671297086 - Action 2256583518 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ent&amp;ry</source>
+          <target>&amp;Movimiento</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Vendor LedgerTst - Action Ent&amp;ry - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3671297086 - Action 3978580347 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Applied E&amp;ntries</source>
+          <target>&amp;Movs. liquidados</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Vendor LedgerTst - Action Applied E&amp;ntries - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3671297086 - Action 2173385693 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Dimensions</source>
+          <target>Dimensiones</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Vendor LedgerTst - Action Dimensions - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3671297086 - Action 411585651 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Detailed &amp;Ledger Entries</source>
+          <target>M&amp;ovimientos detallados</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Vendor LedgerTst - Action Detailed &amp;Ledger Entries - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3671297086 - Action 3106002577 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>F&amp;unctions</source>
+          <target>Acci&amp;ones</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Vendor LedgerTst - Action F&amp;unctions - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3671297086 - Action 1339777300 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Apply Entries</source>
+          <target>Liquidar movs.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Vendor LedgerTst - Action ActionApplyEntries - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3671297086 - Action 1031960767 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unapply Entries</source>
+          <target>Desliquidar movs.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Vendor LedgerTst - Action UnapplyEntries - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3671297086 - Action 3507967928 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Reverse Transaction</source>
+          <target>Revertir transacción</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Vendor LedgerTst - Action ReverseTransaction - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3671297086 - Action 2748447179 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Incoming Document</source>
+          <target>Documento entrante</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Vendor LedgerTst - Action IncomingDocument - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3671297086 - Action 2879753038 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View Incoming Document</source>
+          <target>Ver documento entrante</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Vendor LedgerTst - Action IncomingDocCard - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3671297086 - Action 1744698506 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Select Incoming Document</source>
+          <target>Seleccionar documento entrante</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Vendor LedgerTst - Action SelectIncomingDoc - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3671297086 - Action 1671420421 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Create Incoming Document from File</source>
+          <target>Crear documento entrante desde archivo</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Vendor LedgerTst - Action IncomingDocAttachFile - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3671297086 - Action 1405007275 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&amp;Navigate</source>
+          <target>&amp;Navegar</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Vendor LedgerTst - Action &amp;Navigate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3671297086 - Action 216441599 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Show Posted Document</source>
+          <target>Mostrar documento registrado</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Vendor LedgerTst - Action Show Posted Document - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2474481865 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>VAT Entries</source>
+          <target>Movs. IVA</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page VAT Entries Mod - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2474481865 - Action 1405007275 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&amp;Navigate</source>
+          <target>&amp;Navegar</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page VAT Entries Mod - Action &amp;Navigate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2474481865 - Action 2748447179 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Incoming Document</source>
+          <target>Documento entrante</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page VAT Entries Mod - Action IncomingDocument - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2474481865 - Action 2879753038 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View Incoming Document</source>
+          <target>Ver documento entrante</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page VAT Entries Mod - Action IncomingDocCard - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2474481865 - Action 1744698506 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Select Incoming Document</source>
+          <target>Seleccionar documento entrante</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page VAT Entries Mod - Action SelectIncomingDoc - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2474481865 - Action 1671420421 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Create Incoming Document from File</source>
+          <target>Crear documento entrante desde archivo</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page VAT Entries Mod - Action IncomingDocAttachFile - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3039977085 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Lines</source>
+          <target>Líneas</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Cr. Memo SubformM - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3039977085 - Action 1402615620 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&amp;Line</source>
+          <target>&amp;Línea</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Cr. Memo SubformM - Action &amp;Line - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3039977085 - Action 2173385693 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Dimensions</source>
+          <target>Dimensiones</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Cr. Memo SubformM - Action Dimensions - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3039977085 - Action 503024588 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Co&amp;mments</source>
+          <target>C&amp;omentarios</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Cr. Memo SubformM - Action Comments - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3039977085 - Action 3592998076 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item &amp;Tracking Entries</source>
+          <target>Movs. &amp;seguim. prod.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Cr. Memo SubformM - Action ItemTrackingEntries - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3039977085 - Action 2719354298 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Return Receipt &amp;Lines</source>
+          <target>&amp;Líneas recep. dev. productos</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Cr. Memo SubformM - Action ItemReturnReceiptLines - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3039977085 - Action 2510810126 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Deferral Schedule</source>
+          <target>Previsión fraccionamiento</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Cr. Memo SubformM - Action DeferralSchedule - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3572922831 - Control 3850226202 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Move Overdue Cash Flow Dates to Work Date</source>
+          <target>Mover fechas de flujo de efectivo vencido a fecha de trabajo</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension pageextension50129 - Control Overdue CF Dates to Work Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3572922831 - Control 3850226202 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if you want to change overdue dates to the current work date for the cash flow forecast. Choose the field if this forecast is shown in the forecast chart.</source>
+          <target>Especifica si desea cambiar las fechas de vencimiento de la previsión de flujo de efectivo a la fecha de trabajo actual. Seleccione el campo si se muestra esta previsión en el gráfico de previsiones.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension pageextension50129 - Control Overdue CF Dates to Work Date - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1535058607 - Action 1126443836 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Export Kyriba File</source>
+          <target>Exportar archivo Kyriba</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension pageextension50130 - Action Export Kyriba File - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1137478961 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Mini Pages Mapping</source>
+          <target>Asignación mini páginas</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Mini Pages Mapping - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1137478961 - Field 3342530607 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Main Page ID</source>
+          <target>Id. página principal</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Mini Pages Mapping - Field Main Page ID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1137478961 - Field 858641552 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Substitute Page ID</source>
+          <target>Id. página sustituta</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Mini Pages Mapping - Field Substitute Page ID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2520380967 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Notification Template</source>
+          <target>Plantilla de notificaciones</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Notification Template - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2520380967 - Field 3004954119 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Code</source>
+          <target>Código</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Notification Template - Field Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2520380967 - Field 2897200527 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Notification Body</source>
+          <target>Cuerpo de la notificación</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Notification Template - Field Notification Body - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2520380967 - Field 6427462 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Notification Header</source>
+          <target>Encabezado de la notificación</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Notification Template - Field Notification Header - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2520380967 - Field 454633964 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Notification Footer</source>
+          <target>Pie de página de la notificación</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Notification Template - Field Notification Footer - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2520380967 - Field 2550680918 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Notification Method</source>
+          <target>Método de notificación</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Notification Template - Field Notification Method - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2520380967 - Field 2550680918 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>E-mail,Note</source>
+          <target>Correo electrónico,Nota</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Notification Template - Field Notification Method - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Table 2520380967 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target>Descripción</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Notification Template - Field Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2520380967 - Field 1878130204 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Type</source>
+          <target>Tipo</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Notification Template - Field Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2520380967 - Field 1878130204 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>New Record,Approval,Overdue</source>
+          <target>Nuevo registro,Aprobación,Vencido</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Notification Template - Field Type - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Table 2520380967 - Field 1383905037 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Default</source>
+          <target>Predeterminado</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Notification Template - Field Default - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2520380967 - NamedType 798796406" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Do you want to replace the existing notification template message body?</source>
+          <target>¿Desea reemplazar el cuerpo de mensaje de la plantilla de notificaciones existente?</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Notification Template - NamedType ReplaceBodyQst</note>
+        </trans-unit>
+        <trans-unit id="Table 2520380967 - NamedType 3190419465" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Do you want to delete the notification template message body?</source>
+          <target>¿Desea eliminar el cuerpo de mensaje de la plantilla de notificaciones?</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Notification Template - NamedType DeleteBodyQst</note>
+        </trans-unit>
+        <trans-unit id="Table 2520380967 - NamedType 1749404481" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The notification template that you are about to delete is used in the notification setup by one or more users. \\Do you want to continue?</source>
+          <target>Uno o varios usuarios usan la configuración de notificaciones de la plantilla de notificaciones que va a eliminar. \\¿Desea continuar?</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Notification Template - NamedType DeleteTemplateQst</note>
+        </trans-unit>
+        <trans-unit id="Table 2520380967 - NamedType 3384634210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>You cannot delete the default template.</source>
+          <target>No puede eliminar la plantilla predeterminada.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Notification Template - NamedType DefaultErr</note>
+        </trans-unit>
+        <trans-unit id="Table 2520380967 - NamedType 3777830815" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Select a file to import</source>
+          <target>Seleccionar un archivo para importar</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Notification Template - NamedType ImportTxt</note>
+        </trans-unit>
+        <trans-unit id="Table 2520380967 - NamedType 3014721114" size-unit="char" translate="yes" xml:space="preserve">
+          <source>HTML Files(*.htm;*.html)|*.htm;*.html|XML Files(*.xml)|*.xml|Text Files(*.txt)|*.txt</source>
+          <target>Archivos HTML (*.htm;*.html)|*.htm;*.html|Archivos XML (*.xml)|*.xml|Archivos de texto(*.txt)|*.txt</target>
+          <note from="Developer" annotates="general" priority="2">, Comment='Do not translate the file extensions (e.g. .xml, .txt, .csv, etc)'</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Notification Template - NamedType FileFilterTxt</note>
+        </trans-unit>
+        <trans-unit id="Table 2520380967 - NamedType 4100096721" size-unit="char" translate="yes" xml:space="preserve">
+          <source>txt,xml,htm,html</source>
+          <target>txt,xml,htm,html</target>
+          <note from="Developer" annotates="general" priority="2">, Locked=true</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Notification Template - NamedType FileFilterExtensionTxt</note>
+        </trans-unit>
+        <trans-unit id="Table 2520380967 - NamedType 4152559454" size-unit="char" translate="yes" xml:space="preserve">
+          <source>%IteratorStart%</source>
+          <target>%IteratorStart%</target>
+          <note from="Developer" annotates="general" priority="2">, Locked=true</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Notification Template - NamedType IteratorStartTxt</note>
+        </trans-unit>
+        <trans-unit id="Table 2520380967 - NamedType 2454645279" size-unit="char" translate="yes" xml:space="preserve">
+          <source>%IteratorEnd%</source>
+          <target>%IteratorEnd%</target>
+          <note from="Developer" annotates="general" priority="2">, Locked=true</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Notification Template - NamedType IteratorEndTxt</note>
+        </trans-unit>
+        <trans-unit id="Table 2520380967 - NamedType 239441302" size-unit="char" translate="yes" xml:space="preserve">
+          <source>You cannot modify %1 when Notification Template is used.</source>
+          <target>No puede modificar %1 si se usa la plantilla de notificaciones.</target>
+          <note from="Developer" annotates="general" priority="2">, Comment='%1 = Table Field'</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Notification Template - NamedType ModifyUsedTemplateErr</note>
+        </trans-unit>
+        <trans-unit id="Table 2520380967 - NamedType 2491888174" size-unit="char" translate="yes" xml:space="preserve">
+          <source>If you change %1, the message body may be shown incorrectly. \\Check the new message body before you use the notification template.</source>
+          <target>Si cambia %1, el cuerpo del mensaje puede mostrarse de forma incorrecta. \\Compruebe el nuevo cuerpo del mensaje antes de usar la plantilla de notificaciones.</target>
+          <note from="Developer" annotates="general" priority="2">, Comment='%1 = Message Body '</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Notification Template - NamedType WrongBodyMsg</note>
+        </trans-unit>
+        <trans-unit id="Table 2520380967 - NamedType 4264658804" size-unit="char" translate="yes" xml:space="preserve">
+          <source>You must either specify both start and end iteration identifiers or neither.</source>
+          <target>You must either specify both start and end iteration identifiers or neither.</target>
+          <note from="Developer" annotates="general" priority="2">, Locked=true</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Notification Template - NamedType MissingIteratorIdentifierErr</note>
+        </trans-unit>
+        <trans-unit id="Table 2520380967 - NamedType 3662809613" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&lt;html&gt;&lt;head&gt;&lt;meta http-equiv="Content-Type" content="text/html; charset=windows-1252"&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;&lt;span style="font-size: 11.0pt; font-family: Calibri; font-weight: bold"&gt;%SoftwareName% %Title%&lt;/span&gt;&lt;/p&gt;</source>
+          <target>&lt;html&gt;&lt;head&gt;&lt;meta http-equiv="Content-Type" content="text/html; charset=windows-1252"&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;&lt;span style="font-size: 11.0pt; font-family: Calibri; font-weight: bold"&gt;%SoftwareName% %Title%&lt;/span&gt;&lt;/p&gt;</target>
+          <note from="Developer" annotates="general" priority="2">, Locked=true</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Notification Template - NamedType NewRecordNotificationHeaderTxt</note>
+        </trans-unit>
+        <trans-unit id="Table 2520380967 - NamedType 2112959408" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&lt;p&gt;&lt;span style="font-size: 11.0pt; font-family: Calibri"&gt;%DocumentType% %DocumentNo%&lt;/span&gt;&lt;span style="font-size: 11.0pt; font-family: Calibri"&gt; %Action%&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style="font-size: 11.0pt; font-family: Calibri"&gt;&lt;a href="%RTCUrl%"&gt;%RTCHyperlink%&lt;/a&gt; (&lt;a href="%WebUrl%"&gt;%WebHyperlink%&lt;/a&gt;) %CustomUrl%&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;</source>
+          <target>&lt;p&gt;&lt;span style="font-size: 11.0pt; font-family: Calibri"&gt;%DocumentType% %DocumentNo%&lt;/span&gt;&lt;span style="font-size: 11.0pt; font-family: Calibri"&gt; %Action%&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style="font-size: 11.0pt; font-family: Calibri"&gt;&lt;a href="%RTCUrl%"&gt;%RTCHyperlink%&lt;/a&gt; (&lt;a href="%WebUrl%"&gt;%WebHyperlink%&lt;/a&gt;) %CustomUrl%&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;</target>
+          <note from="Developer" annotates="general" priority="2">, Locked=true</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Notification Template - NamedType NewRecordNotificationBodyTxt</note>
+        </trans-unit>
+        <trans-unit id="Table 2520380967 - NamedType 1719499171" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&lt;span style="font-size: 11.0pt; font-family: Calibri"&gt;&lt;a href="%RTCChangeSettingsHyperLink%"&gt;Change Notification Settings&lt;/a&gt; &lt;a href="%WebChangeSettingsHyperLink%"&gt;(Web client)&lt;/a&gt;&lt;/span&gt;&lt;/body&gt;&lt;/html&gt;</source>
+          <target>&lt;span style="font-size: 11.0pt; font-family: Calibri"&gt;&lt;a href="%RTCChangeSettingsHyperLink%"&gt;Change Notification Settings&lt;/a&gt; &lt;a href="%WebChangeSettingsHyperLink%"&gt;(Web client)&lt;/a&gt;&lt;/span&gt;&lt;/body&gt;&lt;/html&gt;</target>
+          <note from="Developer" annotates="general" priority="2">, Locked=true</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Notification Template - NamedType NewRecordNotificationFooterTxt</note>
+        </trans-unit>
+        <trans-unit id="Table 2520380967 - NamedType 2336623399" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&lt;html&gt;&lt;head&gt;&lt;meta http-equiv="Content-Type" content="text/html; charset=windows-1252"&gt;&lt;span style="font-size: 12.0pt; font-family: Calibri; font-weight: bold"&gt;%Title%&lt;/span&gt;&lt;/head&gt;&lt;body&gt;</source>
+          <target>&lt;html&gt;&lt;head&gt;&lt;meta http-equiv="Content-Type" content="text/html; charset=windows-1252"&gt;&lt;span style="font-size: 12.0pt; font-family: Calibri; font-weight: bold"&gt;%Title%&lt;/span&gt;&lt;/head&gt;&lt;body&gt;</target>
+          <note from="Developer" annotates="general" priority="2">, Locked=true</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Notification Template - NamedType ApprovalNotificationHeaderTxt</note>
+        </trans-unit>
+        <trans-unit id="Table 2520380967 - NamedType 833242640" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&lt;p&gt;&lt;span style="font-size: 11.0pt; font-family: Calibri"&gt;%DocumentType% %DocumentNo%&lt;/span&gt;&lt;span style="font-size: 11.0pt; font-family: Calibri"&gt; %Action%&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style="font-size: 11.0pt; font-family: Calibri"&gt;&lt;a href="%RTCUrl%"&gt;%RTCHyperlink%&lt;/a&gt; (&lt;a href="%WebUrl%"&gt;%WebHyperlink%&lt;/a&gt;) %CustomUrl%&lt;/span&gt;&lt;/p&gt;&lt;table border="1" width="54%" id="table2" cellspacing="0" cellpadding="0" style="font-size: 11.0pt; font-family: Calibri"&gt;&lt;tr&gt;&lt;td width="139" colspan="2" valign="top" style="width:1.45in;padding:0in 5.4pt 0in 5.4pt"&gt;&lt;p class="TableTextBold"&gt;&lt;b&gt;%DocumentType% %DocumentNo% %Details%&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width="139" valign="top" style="width:1.45in;padding:0in 5.4pt 0in 5.4pt"&gt;&lt;p class="TableTextBold"&gt;&lt;b&gt;%AmountCaption%&lt;/b&gt;&lt;/td&gt;&lt;td width="494" valign="top" style="width:370.3pt;padding:0in 5.4pt 0in 5.4pt"&gt;&lt;p class="TableText"&gt;%CurrencyCode% %Amount%&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;</source>
+          <target>&lt;p&gt;&lt;span style="font-size: 11.0pt; font-family: Calibri"&gt;%DocumentType% %DocumentNo%&lt;/span&gt;&lt;span style="font-size: 11.0pt; font-family: Calibri"&gt; %Action%&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style="font-size: 11.0pt; font-family: Calibri"&gt;&lt;a href="%RTCUrl%"&gt;%RTCHyperlink%&lt;/a&gt; (&lt;a href="%WebUrl%"&gt;%WebHyperlink%&lt;/a&gt;) %CustomUrl%&lt;/span&gt;&lt;/p&gt;&lt;table border="1" width="54%" id="table2" cellspacing="0" cellpadding="0" style="font-size: 11.0pt; font-family: Calibri"&gt;&lt;tr&gt;&lt;td width="139" colspan="2" valign="top" style="width:1.45in;padding:0in 5.4pt 0in 5.4pt"&gt;&lt;p class="TableTextBold"&gt;&lt;b&gt;%DocumentType% %DocumentNo% %Details%&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width="139" valign="top" style="width:1.45in;padding:0in 5.4pt 0in 5.4pt"&gt;&lt;p class="TableTextBold"&gt;&lt;b&gt;%AmountCaption%&lt;/b&gt;&lt;/td&gt;&lt;td width="494" valign="top" style="width:370.3pt;padding:0in 5.4pt 0in 5.4pt"&gt;&lt;p class="TableText"&gt;%CurrencyCode% %Amount%&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;</target>
+          <note from="Developer" annotates="general" priority="2">, Locked=true</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Notification Template - NamedType ApprovalNotificationBodyPart1Txt</note>
+        </trans-unit>
+        <trans-unit id="Table 2520380967 - NamedType 128447569" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&lt;tr&gt;&lt;td width="139" valign="top" style="width:1.45in;padding:0in 5.4pt 0in 5.4pt"&gt;&lt;p class="TableTextBold"&gt;&lt;b&gt;%AmountLCYCaption%&lt;/font&gt;&lt;/b&gt;&lt;/td&gt;&lt;td width="494" valign="top" style="width:370.3pt;padding:0in 5.4pt 0in 5.4pt"&gt;&lt;p class="TableText"&gt;%AmountLCY%&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width="139" valign="top" style="width:1.45in;padding:0in 5.4pt 0in 5.4pt"&gt;&lt;p class="TableTextBold"&gt;&lt;b&gt;%CustomerVendorCaption%&lt;/b&gt;&lt;/td&gt;&lt;td width="494" valign="top" style="width:370.3pt;padding:0in 5.4pt 0in 5.4pt"&gt;&lt;p class="TableText"&gt;%CustomerVendorNo% %CustomerVendorName%&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width="139" valign="top" style="width:1.45in;padding:0in 5.4pt 0in 5.4pt"&gt;&lt;p class="TableTextBold"&gt;&lt;b&gt;%DueDateCaption%&lt;/font&gt;&lt;/b&gt;&lt;/td&gt;&lt;td width="494" valign="top" style="width:370.3pt;padding:0in 5.4pt 0in 5.4pt"&gt;&lt;p class="TableText"&gt;%DueDate%&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;</source>
+          <target>&lt;tr&gt;&lt;td width="139" valign="top" style="width:1.45in;padding:0in 5.4pt 0in 5.4pt"&gt;&lt;p class="TableTextBold"&gt;&lt;b&gt;%AmountLCYCaption%&lt;/font&gt;&lt;/b&gt;&lt;/td&gt;&lt;td width="494" valign="top" style="width:370.3pt;padding:0in 5.4pt 0in 5.4pt"&gt;&lt;p class="TableText"&gt;%AmountLCY%&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width="139" valign="top" style="width:1.45in;padding:0in 5.4pt 0in 5.4pt"&gt;&lt;p class="TableTextBold"&gt;&lt;b&gt;%CustomerVendorCaption%&lt;/b&gt;&lt;/td&gt;&lt;td width="494" valign="top" style="width:370.3pt;padding:0in 5.4pt 0in 5.4pt"&gt;&lt;p class="TableText"&gt;%CustomerVendorNo% %CustomerVendorName%&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width="139" valign="top" style="width:1.45in;padding:0in 5.4pt 0in 5.4pt"&gt;&lt;p class="TableTextBold"&gt;&lt;b&gt;%DueDateCaption%&lt;/font&gt;&lt;/b&gt;&lt;/td&gt;&lt;td width="494" valign="top" style="width:370.3pt;padding:0in 5.4pt 0in 5.4pt"&gt;&lt;p class="TableText"&gt;%DueDate%&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;</target>
+          <note from="Developer" annotates="general" priority="2">, Locked=true</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Notification Template - NamedType ApprovalNotificationBodyPart2Txt</note>
+        </trans-unit>
+        <trans-unit id="Table 2520380967 - NamedType 3439083218" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&lt;tr&gt;&lt;td width="139" valign="top" style="width:1.45in;padding:0in 5.4pt 0in 5.4pt"&gt;&lt;p class="TableTextBold"&gt;&lt;b&gt;%CreditLimitCaption%&lt;/font&gt;&lt;/b&gt;&lt;/td&gt;&lt;td width="494" valign="top" style="width:370.3pt;padding:0in 5.4pt 0in 5.4pt"&gt;&lt;p class="TableText"&gt;%CreditLimit%&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width="139" valign="top" style="width:1.45in;padding:0in 5.4pt 0in 5.4pt"&gt;&lt;p class="TableTextBold"&gt;&lt;b&gt;%SenderNameCaption%&lt;/font&gt;&lt;/b&gt;&lt;/td&gt;&lt;td width="494" valign="top" style="width:370.3pt;padding:0in 5.4pt 0in 5.4pt"&gt;&lt;p class="TableText"&gt;%SenderName%&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;%ApprovalComments%</source>
+          <target>&lt;tr&gt;&lt;td width="139" valign="top" style="width:1.45in;padding:0in 5.4pt 0in 5.4pt"&gt;&lt;p class="TableTextBold"&gt;&lt;b&gt;%CreditLimitCaption%&lt;/font&gt;&lt;/b&gt;&lt;/td&gt;&lt;td width="494" valign="top" style="width:370.3pt;padding:0in 5.4pt 0in 5.4pt"&gt;&lt;p class="TableText"&gt;%CreditLimit%&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width="139" valign="top" style="width:1.45in;padding:0in 5.4pt 0in 5.4pt"&gt;&lt;p class="TableTextBold"&gt;&lt;b&gt;%SenderNameCaption%&lt;/font&gt;&lt;/b&gt;&lt;/td&gt;&lt;td width="494" valign="top" style="width:370.3pt;padding:0in 5.4pt 0in 5.4pt"&gt;&lt;p class="TableText"&gt;%SenderName%&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;%ApprovalComments%</target>
+          <note from="Developer" annotates="general" priority="2">, Locked=true</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Notification Template - NamedType ApprovalNotificationBodyPart3Txt</note>
+        </trans-unit>
+        <trans-unit id="Table 2520380967 - NamedType 2495812801" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&lt;span style="font-size: 11.0pt; font-family: Calibri"&gt;&lt;a href="%RTCChangeSettingsHyperLink%"&gt;Change Notification Settings&lt;/a&gt; &lt;a href="%WebChangeSettingsHyperLink%"&gt;(Web client)&lt;/a&gt;&lt;/span&gt;&lt;/body&gt;&lt;/html&gt;</source>
+          <target>&lt;span style="font-size: 11.0pt; font-family: Calibri"&gt;&lt;a href="%RTCChangeSettingsHyperLink%"&gt;Change Notification Settings&lt;/a&gt; &lt;a href="%WebChangeSettingsHyperLink%"&gt;(Web client)&lt;/a&gt;&lt;/span&gt;&lt;/body&gt;&lt;/html&gt;</target>
+          <note from="Developer" annotates="general" priority="2">, Locked=true</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Notification Template - NamedType ApprovalNotificationFooterTxt</note>
+        </trans-unit>
+        <trans-unit id="Table 2520380967 - NamedType 225413372" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&lt;html&gt;&lt;head&gt;&lt;meta http-equiv="Content-Type" content="text/html; charset=windows-1252"&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;&lt;span style="font-family: Calibri; font-size: 11.0pt; font-weight: bold"&gt;%Title%&lt;/span&gt;&lt;/p&gt;</source>
+          <target>&lt;html&gt;&lt;head&gt;&lt;meta http-equiv="Content-Type" content="text/html; charset=windows-1252"&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;&lt;span style="font-family: Calibri; font-size: 11.0pt; font-weight: bold"&gt;%Title%&lt;/span&gt;&lt;/p&gt;</target>
+          <note from="Developer" annotates="general" priority="2">, Locked=true</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Notification Template - NamedType OverdueNotificationHeaderTxt</note>
+        </trans-unit>
+        <trans-unit id="Table 2520380967 - NamedType 3946413505" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&lt;p&gt;&lt;span style="font-size: 11.0pt; font-family: Calibri"&gt;%DocumentType% %DocumentNo%&lt;/span&gt;&lt;span style="font-size: 11.0pt; font-family: Calibri"&gt; %Action%&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style="font-family: Calibri; font-size: 11.0pt"&gt;&lt;a href="%RTCUrl%"&gt;%RTCHyperlink%&lt;/a&gt; (&lt;a href="%WebUrl%"&gt;%WebHyperlink%&lt;/a&gt;) %CustomUrl%&lt;/span&gt;&lt;/p&gt;</source>
+          <target>&lt;p&gt;&lt;span style="font-size: 11.0pt; font-family: Calibri"&gt;%DocumentType% %DocumentNo%&lt;/span&gt;&lt;span style="font-size: 11.0pt; font-family: Calibri"&gt; %Action%&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style="font-family: Calibri; font-size: 11.0pt"&gt;&lt;a href="%RTCUrl%"&gt;%RTCHyperlink%&lt;/a&gt; (&lt;a href="%WebUrl%"&gt;%WebHyperlink%&lt;/a&gt;) %CustomUrl%&lt;/span&gt;&lt;/p&gt;</target>
+          <note from="Developer" annotates="general" priority="2">, Locked=true</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Notification Template - NamedType OverdueNotificationBodyTxt</note>
+        </trans-unit>
+        <trans-unit id="Table 2520380967 - NamedType 1186327158" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&lt;span style="font-size: 11.0pt; font-family: Calibri"&gt;&lt;a href="%RTCChangeSettingsHyperLink%"&gt;Change Notification Settings&lt;/a&gt; &lt;a href="%WebChangeSettingsHyperLink%"&gt;(Web client)&lt;/a&gt;&lt;/span&gt;&lt;/body&gt;&lt;/html&gt;</source>
+          <target>&lt;span style="font-size: 11.0pt; font-family: Calibri"&gt;&lt;a href="%RTCChangeSettingsHyperLink%"&gt;Change Notification Settings&lt;/a&gt; &lt;a href="%WebChangeSettingsHyperLink%"&gt;(Web client)&lt;/a&gt;&lt;/span&gt;&lt;/body&gt;&lt;/html&gt;</target>
+          <note from="Developer" annotates="general" priority="2">, Locked=true</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Notification Template - NamedType OverdueNotificationFooterTxt</note>
+        </trans-unit>
+        <trans-unit id="Table 2520380967 - NamedType 2582859112" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Generic notification for approvals</source>
+          <target>Notificación genérica para aprobaciones</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Notification Template - NamedType ApprNotifTempDescTxt</note>
+        </trans-unit>
+        <trans-unit id="Table 2520380967 - NamedType 2905696273" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Basic notification for a new record</source>
+          <target>Notificación básica para un nuevo registro</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Notification Template - NamedType NewRecNotifTempDescTxt</note>
+        </trans-unit>
+        <trans-unit id="Table 2520380967 - NamedType 3265781999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Generic notification for overdue approval requests</source>
+          <target>Notificación genérica para solicitudes de aprobaciones vencidas</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Notification Template - NamedType OverdueNotifTempDescTxt</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3470817506 - Field 2877945414 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Purchase Order No.</source>
+          <target>Orden de compra número.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50105 - Field Purchase Order No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2195424272 - Change 3507948476 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>General,Sales,Purchases,Cash Receipts,Payments,Assets,Intercompany,Jobs,,,,,Cartera,,,,,GAAP Adjustments,Tax Adjustments,Group Adjustments</source>
+          <target>General,Ventas,Compras,Recibos de efectivo,Pagos,Activos,Empresas vinculadas,Proyectos,,,,,Cartera</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50107 - Change Template Type - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 920031038 - Field 507029944 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>IBAN / Bank Account</source>
+          <target>IBAN / Cuenta Bancaria</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50109 - Field IBAN / Bank Account - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 920031038 - Field 3003898253 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>URL</source>
+          <target>URL</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50109 - Field URL - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 920031038 - Field 1541011875 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>E-Mail</source>
+          <target>Correo electrónico</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50109 - Field E-Mail - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 920031038 - Field 2877945414 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Purchase Order No.</source>
+          <target>Orden de compra número.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50109 - Field Purchase Order No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4219020610 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Job Queue</source>
+          <target>Cola proyecto</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Job Queue - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4219020610 - Field 3004954119 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Code</source>
+          <target>Código</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Job Queue - Field Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4219020610 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target>Descripción</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Job Queue - Field Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4219020610 - Field 1858340602 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Job Queue Category Filter</source>
+          <target>Filtro categoría cola proyectos</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Job Queue - Field Job Queue Category Filter - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4219020610 - Field 3975658731 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Server Instance ID</source>
+          <target>Id. instancia de servidor</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Job Queue - Field Server Instance ID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4219020610 - Field 1829104285 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Session ID</source>
+          <target>Id. sesión</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Job Queue - Field Session ID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4219020610 - Field 4273901710 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Last Heartbeat</source>
+          <target>Òltimo latido</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Job Queue - Field Last Heartbeat - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4219020610 - Field 816905803 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Started</source>
+          <target>Iniciado</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Job Queue - Field Started - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4219020610 - Field 305103745 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Start Automatically From NAS</source>
+          <target>Iniciar automáticamente desde NAS</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Job Queue - Field Start Automatically From NAS - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4219020610 - Field 2513376576 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Start on This NAS Computer</source>
+          <target>Iniciar en este equipo NAS</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Job Queue - Field Start on This NAS Computer - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4219020610 - Field 632066142 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Start on This NAS Instance</source>
+          <target>Iniciar en esta instancia NAS</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Job Queue - Field Start on This NAS Instance - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4219020610 - Field 1022305099 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Running as User ID</source>
+          <target>Ejecutándose como Id. usuario</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Job Queue - Field Running as User ID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4219020610 - Field 2264209472 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Running on Server Computer</source>
+          <target>Ejecutándose en equipo servidor</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Job Queue - Field Running on Server Computer - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4219020610 - Field 382899038 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Running on Server Instance</source>
+          <target>Ejecutándose en instancia de servidor</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Job Queue - Field Running on Server Instance - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4219020610 - Field 1196097820 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Session Unique ID</source>
+          <target>Id. único de sesión</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Job Queue - Field Session Unique ID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4219020610 - NamedType 3114637384" size-unit="char" translate="yes" xml:space="preserve">
+          <source>This Job Queue has been set up to start from NAS. The Job Queue will start automatically when the NAS service is started.</source>
+          <target>Esta cola de proyecto se ha configurado para iniciar desde NAS. La cola de proyecto se iniciará automáticamente cuando se inicie el servicio NAS.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Job Queue - NamedType Text001</note>
+        </trans-unit>
+        <trans-unit id="Table 3293111575 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Integration Page</source>
+          <target>Página de integración</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Integration Page - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3293111575 - Field 2229797486 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Service Name</source>
+          <target>Nombre del servicio</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Integration Page - Field Service Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3293111575 - Field 894914730 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Page ID</source>
+          <target>Id. página</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Integration Page - Field Page ID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3293111575 - Field 90601618 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Source Table ID</source>
+          <target>Id. de tabla de origen</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Integration Page - Field Source Table ID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3293111575 - Field 1434822636 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Published</source>
+          <target>Publicado</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Integration Page - Field Published - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2078481573 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Service Connection Error</source>
+          <target>Error de conexión de servicio</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Service Connection Error - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2078481573 - Field 3004954119 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Code</source>
+          <target>Código</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Service Connection Error - Field Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2078481573 - Field 3916415109 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Dynamics CRM URL</source>
+          <target>URL de Dynamics CRM</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Service Connection Error - Field Server Address - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2078481573 - Field 1409889439 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Last Occurrence</source>
+          <target>Òltima repetición</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Service Connection Error - Field Last Occurrence - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2078481573 - Field 2248886284 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Error</source>
+          <target>Error</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Service Connection Error - Field Error - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2078481573 - Field 2662783598 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash</source>
+          <target>Hash</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Service Connection Error - Field Hash - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2078481573 - Field 640733087 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>First Occurrence</source>
+          <target>Primera repetición</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Service Connection Error - Field First Occurrence - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2078481573 - Field 1009239592 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Occurrence Count</source>
+          <target>Recuento de repeticiones</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Service Connection Error - Field Occurrence Count - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2078481573 - NamedType 750120336" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Are you sure that you want to delete connection failure errors?</source>
+          <target>¿Está seguro de que desea eliminar los errores de conexión?</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Service Connection Error - NamedType ConfirmQst</note>
+        </trans-unit>
+        <trans-unit id="Table 2054493193 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Service Connection Status</source>
+          <target>Estado de conexión de servicio</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Service Connection Status - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2054493193 - Field 3004954119 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Code</source>
+          <target>Código</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Service Connection Status - Field Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2054493193 - Field 3916415109 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Dynamics CRM URL</source>
+          <target>URL de Dynamics CRM</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Service Connection Status - Field Server Address - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2054493193 - Field 513339096 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Status</source>
+          <target>Estado</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Service Connection Status - Field Status - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2054493193 - Field 513339096 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Connected,Disabled,Error</source>
+          <target>Conectado,Deshabilitado,Error</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Service Connection Status - Field Status - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 4007086048 - Change 1878130204 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>General,Sales,Purchases,Cash Receipts,Payments,Assets,Intercompany,Jobs,,,,,Cartera,,,,GAAP Adjustments,Tax Adjustments,Group Adjustments</source>
+          <target>General,Ventas,Compras,Recibos de efectivo,Pagos,Activos,Empresas vinculadas,Proyectos,,,,,Cartera</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50125 - Change Type - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 349815369 - Field 507029944 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>IBAN / Bank Account</source>
+          <target>IBAN / Cuenta Bancaria</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50126 - Field IBAN / Bank Account - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 349815369 - Field 3003898253 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>URL</source>
+          <target>URL</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50126 - Field URL - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 349815369 - Field 1541011875 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>E-Mail</source>
+          <target>Correo electrónico</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50126 - Field E-Mail - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 349815369 - Field 2877945414 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Purchase Order No.</source>
+          <target>Orden de compra número.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50126 - Field Purchase Order No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2090401615 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>DO Payment Connection Details</source>
+          <target>Detalles de conexión de pago de DE</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Connection Details - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2090401615 - Field 1663593181 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Primary Key</source>
+          <target>Clave primaria</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Connection Details - Field Primary Key - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2090401615 - Field 3549826426 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>UserName</source>
+          <target>UserName</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Connection Details - Field UserName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2090401615 - Field 2575460289 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Password</source>
+          <target>Contraseña</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Connection Details - Field Password - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2687023196 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Microsoft Dynamics ERP Payment Services Setup</source>
+          <target>Configuración de servicios de pago de Microsoft Dynamics ERP</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Connection Setup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2687023196 - Field 1663593181 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Primary Key</source>
+          <target>Clave primaria</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Connection Setup - Field Primary Key - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2687023196 - Field 1090351696 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Active</source>
+          <target>Activo</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Connection Setup - Field Active - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2687023196 - Field 397321629 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Run in Test Mode</source>
+          <target>Ejecutar en modo de prueba</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Connection Setup - Field Run in Test Mode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2687023196 - Field 3415520404 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Service ID</source>
+          <target>Id. de servicio</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Connection Setup - Field Service ID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2687023196 - Field 1317552199 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Environment</source>
+          <target>Entorno</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Connection Setup - Field Environment - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2687023196 - Field 265216690 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>OrganizationId</source>
+          <target>OrganizationId</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Connection Setup - Field OrganizationId - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2687023196 - Field 97033977 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ServiceGroupId</source>
+          <target>ServiceGroupId</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Connection Setup - Field ServiceGroupId - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2687023196 - NamedType 3114637384" size-unit="char" translate="yes" xml:space="preserve">
+          <source>You must complete the sign-up process and associate your Microsoft Dynamics ERP Services account with Microsoft Dynamics NAV before you can enable this feature.</source>
+          <target>Para poder habilitar esta característica, debe completar el proceso de registro y asociar su cuenta de servicios de Microsoft Dynamics ERP a Microsoft Dynamics NAV.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Connection Setup - NamedType Text001</note>
+        </trans-unit>
+        <trans-unit id="Table 2687023196 - NamedType 732759939" size-unit="char" translate="yes" xml:space="preserve">
+          <source>http://go.microsoft.com/fwlink/?LinkId=106549&amp;ServiceID=</source>
+          <target>http://go.microsoft.com/fwlink/?LinkId=106549&amp;ServiceID=</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Connection Setup - NamedType Text004</note>
+        </trans-unit>
+        <trans-unit id="Table 3801447746 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Dynamics Online Payment Setup</source>
+          <target>Configurac. pagos de Dynamics Online</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Setup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3801447746 - Field 1663593181 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Primary Key</source>
+          <target>Clave primaria</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Setup - Field Primary Key - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3801447746 - Field 3519718390 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Authorization Required</source>
+          <target>Se necesita autorización</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Setup - Field Authorization Required - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3801447746 - Field 2457557713 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Days Before Auth. Expiry</source>
+          <target>Días restantes para expiración de autoriz.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Setup - Field Days Before Auth. Expiry - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3801447746 - Field 849731087 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Credit Card Nos.</source>
+          <target>Núms. tarjetas de crédito</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Setup - Field Credit Card Nos. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3801447746 - Field 172424966 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Charge Type</source>
+          <target>Tipo de cargo</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Setup - Field Charge Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3801447746 - Field 172424966 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Percent,Fixed</source>
+          <target>Porcentual,Fijo</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Setup - Field Charge Type - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Table 3801447746 - Field 1554599955 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Charge Value</source>
+          <target>Valor de cargo</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Setup - Field Charge Value - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3801447746 - Field 3018739965 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Max. Charge Amount (LCY)</source>
+          <target>Importe máx. de cargo (DL)</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Setup - Field Max. Charge Amount (LCY) - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3155532820 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Dynamics Online Payment Credit Card</source>
+          <target>Tarjeta de crédito de pago de Dynamics Online</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Credit Card - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3155532820 - Field 4200184881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No.</source>
+          <target>Nº</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Credit Card - Field No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3155532820 - Field 1878130204 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Type</source>
+          <target>Tipo</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Credit Card - Field Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3155532820 - Field 387235406 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Credit Card Number</source>
+          <target>Número de tarjeta de crédito</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Credit Card - Field Credit Card Number - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3155532820 - Field 3142631117 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Expiry Date</source>
+          <target>Fecha de expiración</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Credit Card - Field Expiry Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3155532820 - Field 99538541 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Card Holder Name</source>
+          <target>Nombre del titular de la tarjeta</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Credit Card - Field Card Holder Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3155532820 - Field 4190130733 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer No.</source>
+          <target>Nº cliente</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Credit Card - Field Customer No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3155532820 - Field 202036913 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Contact No.</source>
+          <target>Nº contacto</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Credit Card - Field Contact No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3155532820 - Field 2928954931 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cvc No.</source>
+          <target>Nº CVV</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Credit Card - Field Cvc No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3155532820 - Field 1351594800 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No. Series</source>
+          <target>Nos. serie</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Credit Card - Field No. Series - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3155532820 - NamedType 2008153173" size-unit="char" translate="yes" xml:space="preserve">
+          <source>%1 must be 4 characters, for example, 1094 for October, 1994.</source>
+          <target>%1 debe tener 4 caracteres, por ejemplo, 1094 para octubre de 1994.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Credit Card - NamedType Text006</note>
+        </trans-unit>
+        <trans-unit id="Table 3155532820 - NamedType 2645849790" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Check the month number.</source>
+          <target>Compruebe el número del mes.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Credit Card - NamedType Text007</note>
+        </trans-unit>
+        <trans-unit id="Table 3155532820 - NamedType 1664139952" size-unit="char" translate="yes" xml:space="preserve">
+          <source>You cannot delete %1 %2 because it has a valid transaction log entry.</source>
+          <target>No se puede eliminar %1 %2 porque tiene un movimiento de registro de transacción válido.</target>
+          <note from="Developer" annotates="general" priority="2">, Comment='%1=table caption, %2=record no.'</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Credit Card - NamedType Text010</note>
+        </trans-unit>
+        <trans-unit id="Table 3155532820 - NamedType 1026443335" size-unit="char" translate="yes" xml:space="preserve">
+          <source>%1 must be a number.</source>
+          <target>%1 debe ser un número.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Credit Card - NamedType Text011</note>
+        </trans-unit>
+        <trans-unit id="Table 2116177285 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>DO Payment Credit Card Number</source>
+          <target>Número de tarjeta de crédito de pago de DE</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Credit Card Number - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2116177285 - Field 4200184881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No.</source>
+          <target>Nº</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Credit Card Number - Field No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2116177285 - Field 1447994436 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Data</source>
+          <target>Datos</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Credit Card Number - Field Data - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 408372047 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>DO Payment Trans. Log Entry</source>
+          <target>Movimiento de registro de trans. de pago de DE</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Trans. Log Entry - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 408372047 - Field 883711285 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Entry No.</source>
+          <target>Nº mov.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Trans. Log Entry - Field Entry No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 408372047 - Field 2363328873 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document Type</source>
+          <target>Tipo documento</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Trans. Log Entry - Field Document Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 408372047 - Field 2363328873 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source> ,Order,Invoice,Payment,Refund</source>
+          <target> ,Pedido,Factura,Pago,Reembolso</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Trans. Log Entry - Field Document Type - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Table 408372047 - Field 486908828 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document No.</source>
+          <target>Nº documento</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Trans. Log Entry - Field Document No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 408372047 - Field 4190130733 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer No.</source>
+          <target>Nº cliente</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Trans. Log Entry - Field Customer No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 408372047 - Field 1944422922 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Credit Card No.</source>
+          <target>Nº tarjeta de crédito</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Trans. Log Entry - Field Credit Card No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 408372047 - Field 3773776616 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Transaction Type</source>
+          <target>Naturaleza transacción</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Trans. Log Entry - Field Transaction Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 408372047 - Field 3773776616 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Authorization,Void,Capture,Refund</source>
+          <target>Autorización,Anulación,Captura,Reembolso</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Trans. Log Entry - Field Transaction Type - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Table 408372047 - Field 3384758183 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Transaction Result</source>
+          <target>Resultado de transacción</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Trans. Log Entry - Field Transaction Result - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 408372047 - Field 3384758183 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Success,Failed</source>
+          <target>Correcta,Incorrecta</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Trans. Log Entry - Field Transaction Result - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Table 408372047 - Field 1191998814 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Transaction Description</source>
+          <target>Descripción de transacción</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Trans. Log Entry - Field Transaction Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 408372047 - Field 636392376 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Amount</source>
+          <target>Importe</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Trans. Log Entry - Field Amount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 408372047 - Field 2465246668 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Transaction Date-Time</source>
+          <target>Fecha y hora de la transacción</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Trans. Log Entry - Field Transaction Date-Time - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 408372047 - Field 587668972 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Transaction Status</source>
+          <target>Estado de la transacción</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Trans. Log Entry - Field Transaction Status - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 408372047 - Field 587668972 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source> ,Voided,Expired,Captured,Refunded,Posting Not Finished</source>
+          <target> ,Anulada,Expirada,Capturada,Reembolsada,Registro incompleto</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Trans. Log Entry - Field Transaction Status - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Table 408372047 - Field 1582530403 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cust. Ledger Entry No.</source>
+          <target>Nº mov. cliente</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Trans. Log Entry - Field Cust. Ledger Entry No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 408372047 - Field 4198939294 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Currency Code</source>
+          <target>Cód. divisa</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Trans. Log Entry - Field Currency Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 408372047 - Field 1948785701 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Transaction GUID</source>
+          <target>GUID de transacción</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Trans. Log Entry - Field Transaction GUID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 408372047 - Field 443943387 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Transaction ID</source>
+          <target>Id. de transacción</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Trans. Log Entry - Field Transaction ID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 408372047 - Field 2708250016 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>User ID</source>
+          <target>Id. usuario</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Trans. Log Entry - Field User ID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 408372047 - Field 1068272785 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Parent Entry No.</source>
+          <target>Nº movimiento principal</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Trans. Log Entry - Field Parent Entry No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 408372047 - Field 4204358744 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Reference GUID</source>
+          <target>GUID de referencia</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Trans. Log Entry - Field Reference GUID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2926447639 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Dynamics Online Payment Card Type</source>
+          <target>Tipo de tarjeta de crédito de pago de Dynamics Online</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Card Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2926447639 - Field 3915705456 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sort Order</source>
+          <target>Orden</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Card Type - Field Sort Order - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2926447639 - Field 2961552353 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Name</source>
+          <target>Nombre</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Card Type - Field Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2926447639 - Field 2266218639 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Validation Rule</source>
+          <target>Regla de validación</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Card Type - Field Validation Rule - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2926447639 - Field 725314857 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Numeric Only</source>
+          <target>Sólo numérico</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Card Type - Field Numeric Only - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2926447639 - Field 3836870466 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Allow Spaces</source>
+          <target>Permitir espacios</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Card Type - Field Allow Spaces - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2926447639 - Field 3372615628 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Min. Length</source>
+          <target>Longitud mín.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Card Type - Field Min. Length - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2926447639 - Field 1106072834 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Max. Length</source>
+          <target>Longitud máx.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DO Payment Card Type - Field Max. Length - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 987511986 - Field 401100613 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>AR Bank Account No.</source>
+          <target>Número de cuenta bancaria de AR</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50127 - Field AR Bank Account No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 987511986 - Field 1370911971 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>AP Bank Account No.</source>
+          <target>Número de cuenta bancaria de AP</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50127 - Field AP Bank Account No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 818602963 - Field 250179357 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Corp. GL Acc. No.</source>
+          <target>Corp. GL Acc. No.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50128 - Field Corp. GL Acc. No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 818602963 - Field 1122557917 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Corp. GL Acc. Name</source>
+          <target>Corp. GL Acc. Name</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50128 - Field Corp. GL Acc. Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 818602963 - Field 3997336476 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Company Name</source>
+          <target>Nombre De Empresa</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50128 - Field Company Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 818602963 - Field 3740247633 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Country Name</source>
+          <target>Nombre Del País</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50128 - Field Country Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 818602963 - Field 4198939294 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Currency Code</source>
+          <target>Código De Moneda</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50128 - Field Currency Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1456299580 - Field 250179357 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Corp. GL Acc. No.</source>
+          <target>Corp. GL Acc. No.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50129 - Field Corp. GL Acc. No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1456299580 - Field 1122557917 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Corp. GL Acc. Name</source>
+          <target>Corp. GL Acc. Name</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50129 - Field Corp. GL Acc. Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1456299580 - Field 3997336476 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Company Name</source>
+          <target>Nombre De Empresa</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50129 - Field Company Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1456299580 - Field 3740247633 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Country Name</source>
+          <target>Nombre Del País</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50129 - Field Country Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1456299580 - Field 4198939294 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Currency Code</source>
+          <target>Código De Moneda</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50129 - Field Currency Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1702789236 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Config. Text Transformation</source>
+          <target>Transformación de texto de configuración</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Config. Text Transformation - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1702789236 - Field 4253581577 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Package Code</source>
+          <target>Código de paquete</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Config. Text Transformation - Field Package Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1702789236 - Field 3135334477 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Table ID</source>
+          <target>Id. tabla</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Config. Text Transformation - Field Table ID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1702789236 - Field 869342929 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field ID</source>
+          <target>Id. campo</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Config. Text Transformation - Field Field ID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1702789236 - Field 3891959083 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Transformation Type</source>
+          <target>Tipo de transformación</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Config. Text Transformation - Field Transformation Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1702789236 - Field 3891959083 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Uppercase,Lowercase,Title Case,Trim,Substring,Replace,Regular Expression,Remove Non-Alphanumeric Characters,Date and Time Formatting</source>
+          <target>Mayúscula,Minúscula,Tipo título,Recortar,Subcadena,Reemplazar,Expresión regular,Quitar caracteres no alfanuméricos,Formato de fecha y hora</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Config. Text Transformation - Field Transformation Type - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Table 1702789236 - Field 2681241495 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Processing Order</source>
+          <target>Pedido de procesamiento</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Config. Text Transformation - Field Processing Order - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1702789236 - Field 3808951907 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Table Name</source>
+          <target>Nombre tabla</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Config. Text Transformation - Field Table Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1702789236 - Field 3070320983 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field Name</source>
+          <target>Nombre de campo</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Config. Text Transformation - Field Field Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1702789236 - Field 1260872790 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Current Value</source>
+          <target>Valor actual</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Config. Text Transformation - Field Current Value - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1702789236 - Field 2432660905 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>New Value</source>
+          <target>Valor nuevo</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Config. Text Transformation - Field New Value - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1702789236 - Field 2878852403 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Start Position</source>
+          <target>Posición inicial</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Config. Text Transformation - Field Start Position - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1702789236 - Field 1881551368 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Length</source>
+          <target>Longitud</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Config. Text Transformation - Field Length - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1702789236 - Field 2737878565 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Format</source>
+          <target>Formato</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Config. Text Transformation - Field Format - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1702789236 - Field 450009889 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Language ID</source>
+          <target>Id. idioma</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Config. Text Transformation - Field Language ID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1702789236 - Field 2891538263 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+          <target>Activado</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Config. Text Transformation - Field Enabled - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1702789236 - Field 4149371990 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Last Used Field ID</source>
+          <target>Id. de último campo usado</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Config. Text Transformation - Field Last Used Field ID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1702789236 - NamedType 140479914" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The Value entered must be greater than zero.</source>
+          <target>El valor especificado debe ser mayor que cero.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Config. Text Transformation - NamedType MustBeGreaterThanZeroErr</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 3876590687 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Kyriba File - Export</source>
+          <target>Archivo Kyriba - Exportar</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort Kyriba File - Export - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="en-GB" original="Please update this value">
+    <body>
+      <group id="body">
+        <trans-unit id="Page 2933553532 - Control 4290449583 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>VAT Integration</source>
+          <target>Posting</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page EY Core Setup - Control VAT Integration - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1202211439 - Control 1629782075 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ARTransPost</source>
+          <target>ARTransPost</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page WS Import Log - Control ARTransPost - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1202211439 - Control 3618018429 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>APTransPost</source>
+          <target>APTransPost</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page WS Import Log - Control APTransPost - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3470817506 - Field 2877945414 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Purchase Order No.</source>
+          <target>Purchase Order No.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50105 - Field Purchase Order No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 920031038 - Field 507029944 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>IBAN / Bank Account</source>
+          <target>IBAN / Bank Account</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50109 - Field IBAN / Bank Account - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 920031038 - Field 3003898253 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>URL</source>
+          <target>URL</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50109 - Field URL - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 920031038 - Field 2877945414 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Purchase Order No.</source>
+          <target>Purchase Order No.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50109 - Field Purchase Order No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 349815369 - Field 507029944 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>IBAN / Bank Account</source>
+          <target>IBAN / Bank Account</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50126 - Field IBAN / Bank Account - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 349815369 - Field 3003898253 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>URL</source>
+          <target>URL</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50126 - Field URL - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 349815369 - Field 2877945414 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Purchase Order No.</source>
+          <target>Purchase Order No.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50126 - Field Purchase Order No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 349815369 - Field 3653985623 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source> ,AR Transactions,AP Transactions</source>
+          <target> ,AR Transactions,AP Transactions</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50126 - Field Interface Type - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 1414360946 - NamedType 2295203022" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Action must be specified against WindowsLogin SID %1</source>
+          <target>Action must be specified against WindowsLogin SID %1</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort Security - NamedType txtActionNotSpecifiedWL</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 1414360946 - NamedType 686153077" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Action must be specified against RoleID %1 (WindowsLogin SID %2)</source>
+          <target>Action must be specified against RoleID %1 (WindowsLogin SID %2)</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort Security - NamedType txtActionNotSpecifiedR</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 1414360946 - NamedType 3057530620" size-unit="char" translate="yes" xml:space="preserve">
+          <source>You cannot specify Roles when Action is Delete</source>
+          <target>You cannot specify Roles when Action is Delete</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort Security - NamedType txtRolesActionDelete</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

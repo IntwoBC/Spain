@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="de-DE" original="Please update this value">
+    <body>
+      <group id="body">
+        <trans-unit id="Page 1521902132 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Role Center</source>
+          <target>Rollencenter</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Purchase Document Approver RC - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2733579777 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Activities</source>
+          <target>Aktivitäten</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Purchase Document Approver Act - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2767214008 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posted Approval Entries</source>
+          <target>Gebuchte Genehmigungseinträge</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page MyTaxi Posted Approval Entries - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2767214008 - Control 3326559251 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Approved</source>
+          <target>Genehmigt</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page MyTaxi Posted Approval Entries - Control PostedRecordID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2767214008 - Control 318613646 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Details</source>
+          <target>Details</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page MyTaxi Posted Approval Entries - Control Details - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2767214008 - Action 4494671 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&amp;Show</source>
+          <target>An&amp;zeigen</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page MyTaxi Posted Approval Entries - Action &amp;Show - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2767214008 - Action 503024588 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Comments</source>
+          <target>Bemerkungen</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page MyTaxi Posted Approval Entries - Action Comments - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2767214008 - Action 3875867463 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Record</source>
+          <target>Datensatz</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page MyTaxi Posted Approval Entries - Action Record - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2767214008 - NamedType 2040845566" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The record does not exist.</source>
+          <target>Der Datensatz ist nicht vorhanden.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page MyTaxi Posted Approval Entries - NamedType RecNotExistTxt</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1535058607 - Action 1126443836 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Export Kyriba File</source>
+          <target>Kyriba-Datei exportieren</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension pageextension50130 - Action Export Kyriba File - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3900721994 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Automatic Application of Customers</source>
+          <target>Automatischer Ausgleich der Debitoren</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Customer Application - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3900721994 - Control 2346885236 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Options</source>
+          <target>Optionen</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Customer Application - Control Options - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3900721994 - Control 3037438984 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posting Date</source>
+          <target>Buchungsdatum</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Customer Application - Control PostingDate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3900721994 - Control 2109571312 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Analyze document no.</source>
+          <target>Belegnummer analysieren</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Customer Application - Control AnalyzeDoc - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3900721994 - Control 2357654335 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Analyze external document no.</source>
+          <target>Ext. Belegnummer analysieren</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Customer Application - Control AnalyzeExtDoc - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3900721994 - Control 2104263200 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Analyze Remaining Amount</source>
+          <target>Restbetrag analysieren</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Customer Application - Control AnalyzeAmt - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3900721994 - NamedType 1662466016" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Please enter a posting date in &lt;Options&gt; first.</source>
+          <target>Bitte geben Sie unter &lt;Options&gt; ein Buchungsdatum ein.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Customer Application - NamedType EnterPostingDate</note>
+        </trans-unit>
+        <trans-unit id="Report 3900721994 - NamedType 2588653081" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Open entries analyzed:           \</source>
+          <target>Offene Posten werden bearbeitet: \</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Customer Application - NamedType Line1</note>
+        </trans-unit>
+        <trans-unit id="Report 3900721994 - NamedType 1950956464" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Account No.   #1#################\</source>
+          <target>Konto Nr.     #1#################\</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Customer Application - NamedType Line2</note>
+        </trans-unit>
+        <trans-unit id="Report 3900721994 - NamedType 1313259847" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document No.  #2#################</source>
+          <target>Beleg Nr.     #2#################</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Customer Application - NamedType Line3</note>
+        </trans-unit>
+        <trans-unit id="Report 3900721994 - NamedType 1265060937" size-unit="char" translate="yes" xml:space="preserve">
+          <source>%1 entries have been applied.</source>
+          <target>Es wurden %1 Posten ausgeglichen.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Customer Application - NamedType EntriesApplied</note>
+        </trans-unit>
+        <trans-unit id="Report 3900721994 - NamedType 3035138738" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No entries have been applied.</source>
+          <target>Es wurden keine Posten ausgeglichen.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Customer Application - NamedType NoEntriesApplied</note>
+        </trans-unit>
+        <trans-unit id="Report 3900721994 - Method 4180432052 - NamedType 3114637384" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field %1 not defined in Table %2.</source>
+          <target>Feld %1 in Tabelle %2 nicht definiert.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Customer Application - Method LookUpField - NamedType Text001</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3470817506 - Field 2877945414 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Purchase Order No.</source>
+          <target>Bestellnummer</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50105 - Field Purchase Order No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 920031038 - Field 507029944 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>IBAN / Bank Account</source>
+          <target>IBAN / Bankkonto</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50109 - Field IBAN / Bank Account - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 920031038 - Field 3003898253 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>URL</source>
+          <target>URL</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50109 - Field URL - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 920031038 - Field 2877945414 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Purchase Order No.</source>
+          <target>Bestellnummer</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50109 - Field Purchase Order No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 349815369 - Field 507029944 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>IBAN / Bank Account</source>
+          <target>IBAN / Bankkonto</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50126 - Field IBAN / Bank Account - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 349815369 - Field 3003898253 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>URL</source>
+          <target>URL</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50126 - Field URL - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 349815369 - Field 2877945414 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Purchase Order No.</source>
+          <target>Bestellnummer</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50126 - Field Purchase Order No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 987511986 - Field 401100613 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>AR Bank Account No.</source>
+          <target>AR Bankkonto Nr.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50127 - Field AR Bank Account No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 987511986 - Field 1370911971 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>AP Bank Account No.</source>
+          <target>AP Bankkonto Nr.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50127 - Field AP Bank Account No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 3876590687 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Kyriba File - Export</source>
+          <target>Kyriba-Datei - Exportieren</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort Kyriba File - Export - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

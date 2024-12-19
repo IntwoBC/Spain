@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="es-MX" original="Please update this value">
+    <body>
+      <group id="body">
+        <trans-unit id="Codeunit 4124964174 - NamedType 1114256714" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Equity %1</source>
+          <target>Fondos propios %1</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit GAAP Mgt. - Equity Reconcil. - NamedType txt60000</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4124964174 - NamedType 476560097" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Result %1</source>
+          <target>Resultado %1</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit GAAP Mgt. - Equity Reconcil. - NamedType txt60001</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4124964174 - NamedType 4133830776" size-unit="char" translate="yes" xml:space="preserve">
+          <source>CORPORATE GAAP EQUITY</source>
+          <target>EVOLUCION DE FONDOS PROPIOS GAAP CORPORATIVA</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit GAAP Mgt. - Equity Reconcil. - NamedType txt60002</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4124964174 - NamedType 3496134159" size-unit="char" translate="yes" xml:space="preserve">
+          <source>LOCAL GAAP EQUITY</source>
+          <target>CUENTAS LEGALES GAAP LOCALES %1</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit GAAP Mgt. - Equity Reconcil. - NamedType txt60003</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4124964174 - NamedType 3665043182" size-unit="char" translate="yes" xml:space="preserve">
+          <source>RESULT OF THE YEAR</source>
+          <target>GANANCIAS RETENIDAS</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit GAAP Mgt. - Equity Reconcil. - NamedType txt60004</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4124964174 - NamedType 3027346565" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Delta on Equity %1</source>
+          <target>Delta de fondos propios %1</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit GAAP Mgt. - Equity Reconcil. - NamedType txt60005</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4124964174 - NamedType 2389649948" size-unit="char" translate="yes" xml:space="preserve">
+          <source>LOCAL TAX ACCOUNTS %1</source>
+          <target>IMPUESTO LOCAL CUENTAS %1</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit GAAP Mgt. - Equity Reconcil. - NamedType txt60006</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4124964174 - NamedType 1751953331" size-unit="char" translate="yes" xml:space="preserve">
+          <source>GROUP ADJUSTMENTS</source>
+          <target>AJUSTES DE GRUPO</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit GAAP Mgt. - Equity Reconcil. - NamedType txt60007</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1016180170 - NamedType 1114256714" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Balance %1</source>
+          <target>Saldo %1</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit GAAP Mgt. -Financial Statement - NamedType txt60000</note>
+        </trans-unit>
+        <trans-unit id="Report 1551106481 - ReportLabel 1987762555" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Page</source>
+          <target>Página</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Global View Pack - ReportLabel CurrReport_PAGENOCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1551106481 - NamedType 2315513509" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Global View Pack</source>
+          <target>Paquete de vista global</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Global View Pack - NamedType txtGlobalViewPackCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1551106481 - NamedType 1547756623" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Statutory Reporting</source>
+          <target>Informe legal</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Global View Pack - NamedType txtStatutoryReportingCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1551106481 - NamedType 3349626230" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cover Page</source>
+          <target>Portada</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Global View Pack - NamedType txtCoverPageCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1551106481 - NamedType 3444831706" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Contents</source>
+          <target>Contenido</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Global View Pack - NamedType txtContentPageCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1551106481 - NamedType 924871870" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Mapped Corporate GAAP TB to Local GAAP TB %1</source>
+          <target>Balance GAAP Corporativa a Balance GAAP local %1</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Global View Pack - NamedType txtGlobalViewCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1551106481 - NamedType 3068689999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Corporate GAAP %1</source>
+          <target>GAAP corporativo %1</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Global View Pack - NamedType txtCorpGAAPCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1551106481 - NamedType 4250687731" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Prior Year Adjustments</source>
+          <target>Ajustes de años anteriores</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Global View Pack - NamedType txtPriorYearAdjustmentsCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1551106481 - NamedType 468617386" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Current Year Adjustments</source>
+          <target>Ajustes del año en curso</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Global View Pack - NamedType txtCurrentYearAdjustmentsCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1551106481 - NamedType 3387293428" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Current Year Reclassifications</source>
+          <target>Reclasificaciones del año en curso</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Global View Pack - NamedType txtCurrentYearReclassificationsCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1551106481 - NamedType 4294113959" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Statutory TB %1</source>
+          <target>TB legal %1</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Global View Pack - NamedType txtStatutoryTBCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1551106481 - NamedType 2317089576" size-unit="char" translate="yes" xml:space="preserve">
+          <source>FS Code</source>
+          <target>Código de estado financiero</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Global View Pack - NamedType txtFSCodeCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1551106481 - NamedType 3835298598" size-unit="char" translate="yes" xml:space="preserve">
+          <source>FS Code Description</source>
+          <target>Descripción código FS</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Global View Pack - NamedType txtFSCodeDescriptionCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1551106481 - NamedType 469961251" size-unit="char" translate="yes" xml:space="preserve">
+          <source> (PY)</source>
+          <target> (AA)</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Global View Pack - NamedType txtPY</note>
+        </trans-unit>
+        <trans-unit id="Report 1551106481 - NamedType 3522877789" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Account Class</source>
+          <target>Clase de cuenta</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Global View Pack - NamedType txtAccountClassCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1551106481 - NamedType 1670985978" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Equity Reconciliation %1</source>
+          <target>Reconciliación de fondos propios %1</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Global View Pack - NamedType txtEquityReconciliationCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1551106481 - NamedType 2389281715" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Code</source>
+          <target>Código</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Global View Pack - NamedType txtCodeCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1551106481 - NamedType 1113563126" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target>Descripción</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Global View Pack - NamedType txtDescriptionCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1551106481 - NamedType 3715237786" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Entry Description</source>
+          <target>Descripción movimiento</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Global View Pack - NamedType txtEntryDescriptionCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1551106481 - NamedType 4010426973" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Year</source>
+          <target>Año</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Global View Pack - NamedType txtYearCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1551106481 - NamedType 1246407286" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document No.</source>
+          <target>Nº documento</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Global View Pack - NamedType txtDocumentNoCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1551106481 - NamedType 2589212223" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Local Statutory Adjustments %1</source>
+          <target>Ajustes legales locales %1</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Global View Pack - NamedType txtAdjustmentsViewCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1551106481 - NamedType 1039913508" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Local Financial Statements %1</source>
+          <target>Estados financieros locales %1</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Global View Pack - NamedType txtFinancialStatementCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1551106481 - NamedType 708370546" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description (English)</source>
+          <target>Descripción (Inglés)</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Global View Pack - NamedType txtDescriptionEngCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1551106481 - NamedType 3205211668" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posting Date</source>
+          <target>Fecha registro</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Global View Pack - NamedType txtPostingDateCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1551106481 - NamedType 1771366736" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Corporate G/L Account No.</source>
+          <target>Nº cuenta corporativa</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Global View Pack - NamedType txtCorporateGLAccountNoCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1551106481 - NamedType 2998615758" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Corporate G/L Account Name</source>
+          <target>Nombre cuenta corporativa</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Global View Pack - NamedType txtCorporateGLAccountNameCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1551106481 - NamedType 3442664721" size-unit="char" translate="yes" xml:space="preserve">
+          <source>G/L Account No.</source>
+          <target>Nº cuenta</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Global View Pack - NamedType txtGLAccountNoCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1551106481 - NamedType 2333555643" size-unit="char" translate="yes" xml:space="preserve">
+          <source>G/L Account Name</source>
+          <target>Nombre cuenta</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Global View Pack - NamedType txtGLAccountNameCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1551106481 - NamedType 4180243020" size-unit="char" translate="yes" xml:space="preserve">
+          <source>GAAP Adjustment Reason</source>
+          <target>Razón ajuste GAAP</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Global View Pack - NamedType txtGAAPAdjustmentReasonCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1551106481 - NamedType 1664600209" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Adjustment Role</source>
+          <target>Función de ajuste</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Global View Pack - NamedType txtAdjustmentRoleCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1551106481 - NamedType 69407684" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Amount</source>
+          <target>Importe</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Global View Pack - NamedType txtAmountCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1551106481 - NamedType 2240327350" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Equity Correction Code</source>
+          <target>Cód. corrección fondos propios</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Global View Pack - NamedType txtEquityCorrectionCodeCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1551106481 - NamedType 2539730434" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Equity Correction Code Description</source>
+          <target>Descripción cód. corrección fondos propios</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Global View Pack - NamedType txtEquityCorrCodeDescriptionCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1551106481 - NamedType 4158402287" size-unit="char" translate="yes" xml:space="preserve">
+          <source>DRAFT</source>
+          <target>BORRADOR</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Global View Pack - NamedType txtDraft</note>
+        </trans-unit>
+        <trans-unit id="Report 2199288001 - NamedType 3114637384" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Step                       #1####################\\</source>
+          <target>Procesando cuentas                 #1####################\\</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report MyTaxi Update Document No - NamedType Text001</note>
+        </trans-unit>
+        <trans-unit id="Report 2199288001 - NamedType 3752334001" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invoices                 #2####################\\</source>
+          <target>Procesando cuentas                 #1####################\\</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report MyTaxi Update Document No - NamedType Text002</note>
+        </trans-unit>
+        <trans-unit id="Report 2199288001 - NamedType 95063322" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Credit Memo           #3####################\\</source>
+          <target>Procesando cuentas                 #1####################\\</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report MyTaxi Update Document No - NamedType Text003</note>
+        </trans-unit>
+        <trans-unit id="Report 2199288001 - NamedType 732759939" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Update progess       @4@@@@@@@@@@@@@@@@</source>
+          <target>Procesando cuentas                 #1####################\\</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report MyTaxi Update Document No - NamedType Text004</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

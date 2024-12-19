@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="it-IT" original="Please update this value">
+    <body>
+      <group id="body">
+        <trans-unit id="Codeunit 859719942 - NamedType 1109901106" size-unit="char" translate="yes" xml:space="preserve">
+          <source>%1 reconciliation lines out of %2 are matched.\\</source>
+          <target>%1 righe di riconciliazione su %2 corrispondenti.\\.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Match Bank Rec. Lines MyTaxi - NamedType MatchSummaryMsg</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 859719942 - NamedType 480554738" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Text shorter than %1 characters cannot be matched.</source>
+          <target>Impossibile individuare la corrispondenza di testo inferiore a %1 caratteri.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Match Bank Rec. Lines MyTaxi - NamedType MissingMatchMsg</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 859719942 - NamedType 1549244863" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Please wait while the operation is being completed.</source>
+          <target>Attendere il completamento dell'operazione.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Match Bank Rec. Lines MyTaxi - NamedType ProgressBarMsg</note>
+        </trans-unit>
+        <trans-unit id="Page 3112795515 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bank Acc. Reconciliation</source>
+          <target>Riconciliazioni C/C bancari</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Bank Acc. Recon. Match - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3112795515 - Property 2019332006" size-unit="char" translate="yes" xml:space="preserve">
+          <source>New,Process,Report,Bank,Matching</source>
+          <target>Nuovo,Elabora,Report,Banca,Corrispondenza</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Bank Acc. Recon. Match - Property PromotedActionCategories</note>
+        </trans-unit>
+        <trans-unit id="Page 3112795515 - Control 3540653242 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bank Account No.</source>
+          <target>Nr. conto corrente</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Bank Acc. Recon. Match - Control BankAccountNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3112795515 - Control 3110712400 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Statement No.</source>
+          <target>Nr. estratto conto</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Bank Acc. Recon. Match - Control StatementNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3112795515 - Control 3898393787 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Statement Date</source>
+          <target>Data estratto conto</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Bank Acc. Recon. Match - Control StatementDate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3112795515 - Control 2029789003 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Balance Last Statement</source>
+          <target>Saldo ultimo estratto conto</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Bank Acc. Recon. Match - Control BalanceLastStatement - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3112795515 - Control 190674816 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Statement Ending Balance</source>
+          <target>Saldo finale estratto conto</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Bank Acc. Recon. Match - Control StatementEndingBalance - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3112795515 - Control 3781986068 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bank Statement Lines</source>
+          <target>Righe rendiconto bancario</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Bank Acc. Recon. Match - Control StmtLine - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3112795515 - Action 2076138351 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&amp;Recon.</source>
+          <target>&amp;Ricon.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Bank Acc. Recon. Match - Action &amp;Recon. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3112795515 - Action 2123807494 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&amp;Card</source>
+          <target>S&amp;cheda</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Bank Acc. Recon. Match - Action &amp;Card - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3112795515 - Action 3106002577 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>F&amp;unctions</source>
+          <target>F&amp;unzioni</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Bank Acc. Recon. Match - Action F&amp;unctions - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3112795515 - Action 3637974719 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>M&amp;atching</source>
+          <target>Corrispondenz&amp;a</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Bank Acc. Recon. Match - Action M&amp;atching - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3112795515 - Action 3703598467 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Show All</source>
+          <target>Mostra tutto</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Bank Acc. Recon. Match - Action All - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3112795515 - Action 2941975297 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Show Nonmatched</source>
+          <target>Mostra non collegati</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Bank Acc. Recon. Match - Action NotMatched - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1782113816 - Action 2373327566 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Details</source>
+          <target>Dettagli</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Bank Acc. Recon. Lines Match - Action ShowStatementLineDetails - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3540312573 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bank Acc. Reconciliation List Match</source>
+          <target>Lista riconc. C/C bancari</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Bank Acc. Recon. List Match - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3540312573 - Action 2076138351 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&amp;Recon.</source>
+          <target>&amp;Ricon.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Bank Acc. Recon. List Match - Action &amp;Recon. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3540312573 - Action 2123807494 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&amp;Card</source>
+          <target>S&amp;cheda</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Bank Acc. Recon. List Match - Action &amp;Card - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3540312573 - Action 3106002577 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>F&amp;unctions</source>
+          <target>F&amp;unzioni</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Bank Acc. Recon. List Match - Action F&amp;unctions - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4062702900 - Property 2019332006" size-unit="char" translate="yes" xml:space="preserve">
+          <source>New,Process,Report,Bank,Prepare,Approve</source>
+          <target>Nuovo,Processo,Report,Banca,Preparazione,Approvazione</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Payment Journal Match - Property PromotedActionCategories</note>
+        </trans-unit>
+        <trans-unit id="Page 4062702900 - Control 874212758 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Batch Name</source>
+          <target>Nome batch</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Payment Journal Match - Control CurrentJnlBatchName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4062702900 - Control 4213264591 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Applied (Yes/No)</source>
+          <target>Applicato (Sì/No)</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Payment Journal Match - Control Applied (Yes/No) - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4062702900 - Control 1921406409 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Applies-to Doc. Due Date</source>
+          <target>Collega a - Scadenza doc.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Payment Journal Match - Control GetAppliesToDocDueDate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4062702900 - Control 2570447981 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total Exported Amount</source>
+          <target>Importo totale esportato</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Payment Journal Match - Control TotalExportedAmount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4062702900 - Control 2588032914 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Account Name</source>
+          <target>Nome conto</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Payment Journal Match - Control Account Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4062702900 - Control 777301097 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bal. Account Name</source>
+          <target>Descrizione contropartita</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Payment Journal Match - Control Bal. Account Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4062702900 - Control 1287395299 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bal. Account Name</source>
+          <target>Descrizione contropartita</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Payment Journal Match - Control BalAccName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4062702900 - Control 2200380698 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Balance</source>
+          <target>Saldo</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Payment Journal Match - Control Control1900545401 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4062702900 - Control 25700210 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Balance</source>
+          <target>Saldo</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Payment Journal Match - Control Balance - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4062702900 - Control 1038316384 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total Balance</source>
+          <target>Saldo totale</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Payment Journal Match - Control Total Balance - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4062702900 - Control 938567880 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total Balance</source>
+          <target>Saldo totale</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Payment Journal Match - Control TotalBalance - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4062702900 - Action 1402615620 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&amp;Line</source>
+          <target>R&amp;iga</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Payment Journal Match - Action &amp;Line - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4062702900 - Action 2173385693 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Dimensions</source>
+          <target>Dimensioni</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Payment Journal Match - Action Dimensions - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4062702900 - Action 2577889954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Incoming Document</source>
+          <target>Documento in entrata</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Payment Journal Match - Action IncomingDoc - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4062702900 - Action 1892509601 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>A&amp;ccount</source>
+          <target>&amp;Conto</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Payment Journal Match - Action A&amp;ccount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4062702900 - Action 4125097576 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Card</source>
+          <target>Scheda</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Payment Journal Match - Action Card - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4062702900 - Action 1111476699 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ledger E&amp;ntries</source>
+          <target>Mov. co&amp;ntabili</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Payment Journal Match - Action Ledger E&amp;ntries - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4062702900 - Action 1894708121 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&amp;Payments</source>
+          <target>&amp;Pagamenti</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Payment Journal Match - Action &amp;Payments - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4062702900 - Action 3356747371 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Suggest Vendor Payments</source>
+          <target>Sugg. pagamenti fornitore</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Payment Journal Match - Action SuggestVendorPayments - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4062702900 - Action 2840652712 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>P&amp;review Check</source>
+          <target>Antep&amp;rima assegno</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Payment Journal Match - Action PreviewCheck - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4062702900 - Action 3297653785 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Print Check</source>
+          <target>Stampa assegno</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Payment Journal Match - Action PrintCheck - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4062702900 - Action 1787783558 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Void Check</source>
+          <target>Annullo assegno</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Payment Journal Match - Action Void Check - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4062702900 - Action 3668851114 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Void &amp;All Checks</source>
+          <target>A&amp;nn. tutti gli assegni</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Payment Journal Match - Action Void &amp;All Checks - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4062702900 - Action 825470496 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Credit Transfer Reg. Entries</source>
+          <target>Movimenti dei registri di bonifici</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Payment Journal Match - Action CreditTransferRegEntries - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4062702900 - Action 3382227008 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Credit Transfer Registers</source>
+          <target>Registri di bonifici</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Payment Journal Match - Action CreditTransferRegisters - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4062702900 - Action 3860314472 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Approvals</source>
+          <target>Approvazioni</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Payment Journal Match - Action Approvals - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4062702900 - Action 3106002577 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>F&amp;unctions</source>
+          <target>F&amp;unzioni</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Payment Journal Match - Action F&amp;unctions - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4062702900 - Action 2541273125 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Renumber Document Numbers</source>
+          <target>Rinumera documenti</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Payment Journal Match - Action Renumber Document Numbers - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4062702900 - Action 3302314122 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Apply Entries</source>
+          <target>Collega movimenti</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Payment Journal Match - Action ApplyEntries - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4062702900 - Action 1819442748 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Export Payments to File</source>
+          <target>Esporta pagamenti su file</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Payment Journal Match - Action ExportPaymentsToFile - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4062702900 - Action 2291183348 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Calculate Posting Date</source>
+          <target>Calcola data registrazione</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Payment Journal Match - Action CalculatePostingDate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4062702900 - Action 2297931729 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Insert Conv. LCY Rndg. Lines</source>
+          <target>Inserisci righe arrot. conv.VL</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Payment Journal Match - Action Insert Conv. LCY Rndg. Lines - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4062702900 - Action 1016302289 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Positive Pay Export</source>
+          <target>Esportazione Positive Pay</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Payment Journal Match - Action PositivePayExport - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4062702900 - Action 2245087378 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>P&amp;osting</source>
+          <target>Re&amp;gistrazione</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Payment Journal Match - Action P&amp;osting - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4062702900 - Action 4130217538 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Reconcile</source>
+          <target>Riconcilia</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Payment Journal Match - Action Reconcile - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4062702900 - Action 1347063835 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Vendor Pre-Payment Journal</source>
+          <target>Registrazioni pagamenti anticipati fornitori</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Payment Journal Match - Action PreCheck - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4062702900 - Action 3150094508 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Test Report</source>
+          <target>Report test</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Payment Journal Match - Action Test Report - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4062702900 - Action 2282416948 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>P&amp;ost</source>
+          <target>Re&amp;gistra</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Payment Journal Match - Action Post - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4062702900 - Action 4266201246 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Preview Posting</source>
+          <target>Anteprima registrazione</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Payment Journal Match - Action Preview - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4062702900 - Action 1333595352 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Post and &amp;Print</source>
+          <target>Registra e stam&amp;pa</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Payment Journal Match - Action Post and &amp;Print - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4062702900 - Action 2364670106 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Request Approval</source>
+          <target>Approvazione richieste</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Payment Journal Match - Action Request Approval - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4062702900 - Action 383335270 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Send Approval Request</source>
+          <target>Invia richiesta approvazione</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Payment Journal Match - Action SendApprovalRequest - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4062702900 - Action 2014229241 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Journal Batch</source>
+          <target>Batch registrazioni</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Payment Journal Match - Action SendApprovalRequestJournalBatch - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4062702900 - Action 2036791095 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Selected Journal Lines</source>
+          <target>Righe di registrazione selezionate</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Payment Journal Match - Action SendApprovalRequestJournalLine - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4062702900 - Action 858296388 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cancel Approval Request</source>
+          <target>Annulla richiesta approvazione</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Payment Journal Match - Action CancelApprovalRequest - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4062702900 - Action 140439479 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Journal Batch</source>
+          <target>Batch registrazioni</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Payment Journal Match - Action CancelApprovalRequestJournalBatch - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4062702900 - Action 286452233 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Selected Journal Lines</source>
+          <target>Righe di registrazione selezionate</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Payment Journal Match - Action CancelApprovalRequestJournalLine - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4062702900 - Action 227370865 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Approval</source>
+          <target>Approvazione</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Payment Journal Match - Action Approval - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4062702900 - Action 803889193 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Approve</source>
+          <target>Approva</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Payment Journal Match - Action Approve - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4062702900 - Action 113888489 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Reject</source>
+          <target>Rifiuta</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Payment Journal Match - Action Reject - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4062702900 - Action 1013253961 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Delegate</source>
+          <target>Delega</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Payment Journal Match - Action Delegate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4062702900 - Action 2790486453 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Comments</source>
+          <target>Commenti</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Payment Journal Match - Action Comment - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4062702900 - NamedType 2476940767" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Void Check %1?</source>
+          <target>Annullo assegno %1?</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Payment Journal Match - NamedType Text000</note>
+        </trans-unit>
+        <trans-unit id="Page 4062702900 - NamedType 3114637384" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Void all printed checks?</source>
+          <target>Invalido tutti gli assegni stampati?</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Payment Journal Match - NamedType Text001</note>
+        </trans-unit>
+        <trans-unit id="Page 100490276 - Control 2961552353 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Name</source>
+          <target>Nome</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Bank State. Line Details Match - Control Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 457810916 - Action 2373327566 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Details</source>
+          <target>Dettagli</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Bank Acc. Recon. Lines M List - Action ShowStatementLineDetails - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1535058607 - Action 1126443836 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Export Kyriba File</source>
+          <target>Esporta file Kyriba</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension pageextension50130 - Action Export Kyriba File - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 737749329 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Match Bank Entries</source>
+          <target>Movimenti bancari corrispondenti</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Match Bank Entries MyTaxi - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 737749329 - Control 2837086909 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Transaction Date Tolerance (Days)</source>
+          <target>Tolleranza data transazione (giorni)</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Match Bank Entries MyTaxi - Control DateRange - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3470817506 - Field 2877945414 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Purchase Order No.</source>
+          <target>Ordine d'Acquisto N °.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50105 - Field Purchase Order No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 920031038 - Field 507029944 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>IBAN / Bank Account</source>
+          <target>IBAN / Conto bancario</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50109 - Field IBAN / Bank Account - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 920031038 - Field 3003898253 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>URL</source>
+          <target>URL</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50109 - Field URL - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 920031038 - Field 2877945414 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Purchase Order No.</source>
+          <target>Ordine d'Acquisto N °.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50109 - Field Purchase Order No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3747349779 - Field 824028820 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bal. Account Type</source>
+          <target>Tipo contropartita</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50113 - Field Bal. Account Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3747349779 - Field 824028820 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>G/L Account,Customer,Vendor,Bank Account,Fixed Asset</source>
+          <target>Conto C/G,Cliente,Fornitore,Banca,Cespite</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50113 - Field Bal. Account Type - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3747349779 - Field 1891586249 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bal. Account No.</source>
+          <target>Contropartita</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50113 - Field Bal. Account No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3747349779 - Field 3684440170 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Journal Template Name</source>
+          <target>Nome def. registrazioni</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50113 - Field Journal Template Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3747349779 - Field 2704330142 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Journal Batch Name</source>
+          <target>Nome batch contabile</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50113 - Field Journal Batch Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3747349779 - Field 2365828768 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>G/L Account,Customer,Vendor,Bank Account,Fixed Asset</source>
+          <target>Conto C/G,Cliente,Fornitore,Banca,Cespite</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50113 - Field New Bal. Account Type - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3747349779 - Field 371354798 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>None,Low,Medium,High,High - Text-to-Account Mapping,Manual,Accepted</source>
+          <target>Nessuna,Bassa,Media,Alta,Alta - Mappatura testo a conto,Manuale,Accettata</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50113 - Field Applyment Confidence - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 349815369 - Field 507029944 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>IBAN / Bank Account</source>
+          <target>IBAN / Conto bancario</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50126 - Field IBAN / Bank Account - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 349815369 - Field 3003898253 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>URL</source>
+          <target>URL</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50126 - Field URL - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 349815369 - Field 2877945414 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Purchase Order No.</source>
+          <target>Ordine d'Acquisto N °.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50126 - Field Purchase Order No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 987511986 - Field 401100613 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>AR Bank Account No.</source>
+          <target>Conto bancario AR n.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50127 - Field AR Bank Account No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 987511986 - Field 1370911971 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>AP Bank Account No.</source>
+          <target>Conto bancario AP n.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50127 - Field AP Bank Account No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 3876590687 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Kyriba File - Export</source>
+          <target>File Kyriba - Esporta</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort Kyriba File - Export - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

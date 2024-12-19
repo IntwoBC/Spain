@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="fr-FR" original="Please update this value">
+    <body>
+      <group id="body">
+        <trans-unit id="Codeunit 2314937300 - NamedType 492687049" size-unit="char" translate="yes" xml:space="preserve">
+          <source>*locked by*</source>
+          <target>*locked by*</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit MyTaxi CRM Interface Run - NamedType Error70000</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2314937300 - NamedType 1130383666" size-unit="char" translate="yes" xml:space="preserve">
+          <source>*activity was deadlocked*</source>
+          <target>*activity was deadlocked*</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit MyTaxi CRM Interface Run - NamedType Error70001</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3506898735 - Method 180923563 - NamedType 316866893" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Select a file to import</source>
+          <target>Choisir un fichier à importer</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit MyTaxi CRM Interface WS - Method ImportMasterData - NamedType ImportJsonFile</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3506898735 - Method 180923563 - NamedType 3014721114" size-unit="char" translate="yes" xml:space="preserve">
+          <source>All Files(*.*)|*.*|XML Files(*.json)|*.json</source>
+          <target>Tous les fichiers(*.*)|*.*|Fichiers XML(*.xml)|*.xml|Fichiers texte(*.txt;*.csv;*.asc)|*.txt;*.csv;*.asc,*.nda</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit MyTaxi CRM Interface WS - Method ImportMasterData - NamedType FileFilterTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3506898735 - Method 180923563 - NamedType 4100096721" size-unit="char" translate="yes" xml:space="preserve">
+          <source>json</source>
+          <target>txt,csv,asc,xml,nda</target>
+          <note from="Developer" annotates="general" priority="2">, Locked=true</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit MyTaxi CRM Interface WS - Method ImportMasterData - NamedType FileFilterExtensionTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3506898735 - Method 3024902341 - NamedType 316866893" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Select a file to import</source>
+          <target>Choisir un fichier à importer</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit MyTaxi CRM Interface WS - Method ImporttInvoices - NamedType ImportJsonFile</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3506898735 - Method 3024902341 - NamedType 3014721114" size-unit="char" translate="yes" xml:space="preserve">
+          <source>All Files(*.*)|*.*|XML Files(*.json)|*.json</source>
+          <target>Tous les fichiers(*.*)|*.*|Fichiers XML(*.xml)|*.xml|Fichiers texte(*.txt;*.csv;*.asc)|*.txt;*.csv;*.asc,*.nda</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit MyTaxi CRM Interface WS - Method ImporttInvoices - NamedType FileFilterTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3506898735 - Method 3024902341 - NamedType 4100096721" size-unit="char" translate="yes" xml:space="preserve">
+          <source>json</source>
+          <target>txt,csv,asc,xml,nda</target>
+          <note from="Developer" annotates="general" priority="2">, Locked=true</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit MyTaxi CRM Interface WS - Method ImporttInvoices - NamedType FileFilterExtensionTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 604926782 - NamedType 2415257204" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Please wait while the operation is being completed.</source>
+          <target>Veuillez patienter lors de l'exécution de l'opération.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Process Bank Acc. Rec Lines MT - NamedType ProgressWindowMsg</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 604926782 - NamedType 1276599038" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The file that you are trying to import, %1, is different from the specified %2, %3.\\The value in line %4, column %5 is missing.</source>
+          <target>Le fichier que vous tentez d'importer, %1, est différent du %2 spécifié, %3.\\La valeur de la ligne %4, colonne %5 est manquante.</target>
+          <note from="Developer" annotates="general" priority="2">, Comment='%1=File Name;%2=Data Exch.Def Type;%3=Data Exch. Def Code;%4=Line No;%5=Column No'</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Process Bank Acc. Rec Lines MT - NamedType MissingValueErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1596884818 - NamedType 2711926903" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Select a file to import</source>
+          <target>Choisir un fichier à importer</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Read Data Exch. from File MY - NamedType ImportBankStmtTxt</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3549576533 - Action 1556226285 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Transfer to Payment Journal</source>
+          <target>Transférer vers feuille comptabilité</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension pageextension50114 - Action Transfer to Payment Journal - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 291470346 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document Layouts</source>
+          <target>Présentations document</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page MyTaxi Reminder Report Select. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 291470346 - Control 4184316645 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Report ID</source>
+          <target>ID état</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page MyTaxi Reminder Report Select. - Control ReportID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 291470346 - Control 253704284 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Report Caption</source>
+          <target>Légende de l'état</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page MyTaxi Reminder Report Select. - Control ReportCaption - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 291470346 - Control 2048374893 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Custom Layout Description</source>
+          <target>Description présentation personnalisée</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page MyTaxi Reminder Report Select. - Control CustomReportDescription - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 291470346 - Control 2017693789 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Send To Email</source>
+          <target>Envoyer vers e-mail</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page MyTaxi Reminder Report Select. - Control SendToEmail - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1468259860 - Control 2346885236 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Options</source>
+          <target>Options</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Trans. Bank Rec. to Gen. MyTax - Control Options - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1468259860 - Control 1143374494 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Gen. Journal Template</source>
+          <target>Modèle feuille comptabilité</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Trans. Bank Rec. to Gen. MyTax - Control GenJnlLine."Journal Template Name" - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1468259860 - Control 2681070026 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Gen. Journal Batch</source>
+          <target>Nom feuille comptabilité</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Trans. Bank Rec. to Gen. MyTax - Control GenJnlLine."Journal Batch Name" - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 737749329 - Control 1143374494 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Gen. Journal Template</source>
+          <target>Modèle feuille comptabilité</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Match Bank Entries MyTaxi - Control GenJnlLine."Journal Template Name" - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 737749329 - Control 2681070026 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Gen. Journal Batch</source>
+          <target>Nom feuille comptabilité</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Match Bank Entries MyTaxi - Control GenJnlLine."Journal Batch Name" - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 737749329 - Control 3629966692 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Gen. Journal Template</source>
+          <target>Modèle feuille comptabilité</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Match Bank Entries MyTaxi - Control GenJnlLine2."Journal Template Name" - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 737749329 - Control 1145483152 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Gen. Journal Batch</source>
+          <target>Nom feuille comptabilité</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Match Bank Entries MyTaxi - Control GenJnlLine2."Journal Batch Name" - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 737749329 - NamedType 539210126" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Statement No.    #1##########\Matching Lines @2@@@@@@@@@@@@@\Reverse Lines @3@@@@@@@@@@@@@</source>
+          <target>Nom feuille    #1##########\\Validation @2@@@@@@@@@@@@@\#3#############</target>
+          <note from="Developer" annotates="general" priority="2">, Comment='This is a message for dialog window. Parameters do not require translation.'</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Match Bank Entries MyTaxi - NamedType MatchingMsg</note>
+        </trans-unit>
+        <trans-unit id="Report 3433622543 - NamedType 539210126" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Statement No.    #1##########\Matching Lines @2@@@@@@@@@@@@@\Reverse Lines @3@@@@@@@@@@@@@</source>
+          <target>Nom feuille    #1##########\\Validation @2@@@@@@@@@@@@@\#3#############</target>
+          <note from="Developer" annotates="general" priority="2">, Comment='This is a message for dialog window. Parameters do not require translation.'</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Init Match Reconc. Li Fields - NamedType MatchingMsg</note>
+        </trans-unit>
+        <trans-unit id="Report 1963027557 - Control 2346885236 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Options</source>
+          <target>Options</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Trans. Bank Rec. to Gen. Origi - Control Options - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1963027557 - Control 1143374494 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Gen. Journal Template</source>
+          <target>Modèle feuille comptabilité</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Trans. Bank Rec. to Gen. Origi - Control GenJnlLine."Journal Template Name" - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1963027557 - Control 2681070026 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Gen. Journal Batch</source>
+          <target>Nom feuille comptabilité</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Trans. Bank Rec. to Gen. Origi - Control GenJnlLine."Journal Batch Name" - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2799453882 - Field 633819257 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Gen. Bus. Posting Group</source>
+          <target>Groupe compta. marché</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table MyTaxi CRM Int. Posting Setup - Field Gen. Bus. Posting Group - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2799453882 - Field 410940989 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer Posting Group</source>
+          <target>Groupe compta. client</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table MyTaxi CRM Int. Posting Setup - Field Customer Posting Group - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2799453882 - Field 251611246 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cash Receipt Journal Template Name</source>
+          <target>Nom modèle feuille règlement</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table MyTaxi CRM Int. Posting Setup - Field Cash Rec. Jnl. Template Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2799453882 - Field 4234008250 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cash Receipt Journal Batch Name</source>
+          <target>Nom feuille règlement</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table MyTaxi CRM Int. Posting Setup - Field Cash Rec. Jnl. Batch Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2799453882 - Field 779172171 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Auto-Post Payment Journal</source>
+          <target>Valider automatiquement feuille de règlement</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table MyTaxi CRM Int. Posting Setup - Field Auto-Post Payment Journal - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1060289242 - Field 883711285 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Entry No.</source>
+          <target>N° Séquence</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table MyTaxi CRM Interface Logs - Field Entry No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1060289242 - Field 3730438861 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Batch No.</source>
+          <target>N° traitement</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table MyTaxi CRM Interface Logs - Field Batch No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1060289242 - Field 1878130204 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Type</source>
+          <target>Type</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table MyTaxi CRM Interface Logs - Field Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1060289242 - Field 3192175264 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Date</source>
+          <target>Date</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table MyTaxi CRM Interface Logs - Field Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1060289242 - Field 1230148255 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Time</source>
+          <target>Heure</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table MyTaxi CRM Interface Logs - Field Time - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1060289242 - Field 1618324396 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Interface Code</source>
+          <target>Code interface</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table MyTaxi CRM Interface Logs - Field Interface Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1060289242 - Field 3135334477 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Table ID</source>
+          <target>ID table</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table MyTaxi CRM Interface Logs - Field Table ID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1060289242 - Field 2708250016 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>User ID</source>
+          <target>Code utilisateur</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table MyTaxi CRM Interface Logs - Field User ID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1060289242 - Field 397261633 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Table Position</source>
+          <target>Position table</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table MyTaxi CRM Interface Logs - Field Table Position - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1060289242 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target>Désignation</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table MyTaxi CRM Interface Logs - Field Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1060289242 - Field 47657272 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description 2</source>
+          <target>Désignation 2</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table MyTaxi CRM Interface Logs - Field Description 2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1060289242 - Field 3393556346 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>File Link</source>
+          <target>Lien fichier</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table MyTaxi CRM Interface Logs - Field File Link - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1060289242 - Field 1780264958 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Flow Type</source>
+          <target>Type flux</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table MyTaxi CRM Interface Logs - Field Flow Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1060289242 - Field 200097045 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sent by Email</source>
+          <target>Envoyé par e-mail</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table MyTaxi CRM Interface Logs - Field Sent by Email - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1060289242 - Field 3101918620 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Email Date</source>
+          <target>Date e-mail</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table MyTaxi CRM Interface Logs - Field Email Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1060289242 - Field 3822414971 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Email Time</source>
+          <target>Heure e-mail</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table MyTaxi CRM Interface Logs - Field Email Time - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1060289242 - Field 1908046867 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Reason Code</source>
+          <target>Code motif</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table MyTaxi CRM Interface Logs - Field Reason Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1060289242 - Field 2885572998 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Reason Description</source>
+          <target>Désignation motif</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table MyTaxi CRM Interface Logs - Field Reason Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1049512721 - Field 3072303673 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Transfer Date</source>
+          <target>Date transfert</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table MyTaxi CRM Interface Records - Field Transfer Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1049512721 - Field 3921466314 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Transfer Time</source>
+          <target>Heure transfert</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table MyTaxi CRM Interface Records - Field Transfer Time - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
