@@ -3,7 +3,7 @@ page 80000 "SII History Mod"
     PageType = List;
     SourceTable = "SII History";
     ApplicationArea = All;
-UsageCategory=lists;
+    UsageCategory=lists;
     layout
     {
         area(content)

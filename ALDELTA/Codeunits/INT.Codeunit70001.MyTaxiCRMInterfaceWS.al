@@ -51,6 +51,7 @@ codeunit 70001 "MyTaxi CRM Interface WS"
         CalledFromMasterDataByID: Boolean;
         CommaSeparatedIDsLbl: Label 'Please provide comma separated Customer IDs';
         GetCustomersByIDLbl: Label 'Get Customers by ID';
+        CheckList: List of [Integer];
 
     procedure SetParams(pInterfaceType: Option " ",Customers,"Sales Invoice"; pFlowType: Option " ",Process,Import,Export; pMyTaxiCRMInterfaceRecords: Record "MyTaxi CRM Interface Records")
     begin
@@ -109,7 +110,7 @@ codeunit 70001 "MyTaxi CRM Interface WS"
                 // Evaluate(FromDate, Window.InputBox('From Date', 'INPUT', Format(MyTaxiCRMInterfaceSetup."Master Data Last Max Date"), 20, 20));
                 // Evaluate(ToDate, Window.InputBox('To Date', 'INPUT', Format(Today), 20, 20));
                 FromDate := MyTaxiCRMInterfaceSetup."Master Data Last Max Date"; // Use default date from setup
-                ToDate := Today; // Default to current date
+                ToDate := DMY2Date(18, 12, 2024); // Default to current date
             end;
             if (FromDate = 0D) or (ToDate = 0D) then exit;
         end;
@@ -137,98 +138,103 @@ codeunit 70001 "MyTaxi CRM Interface WS"
                 LastEntryNo := MyTaxiCRMInterfaceRecords."Entry No." + 1
             else
                 LastEntryNo := 1;
-            TmpMyTaxiCRMInterfaceRecords.Init();
-            TmpMyTaxiCRMInterfaceRecords."Entry No." := LastEntryNo;
-            TmpMyTaxiCRMInterfaceRecords."Interface Type" := TmpMyTaxiCRMInterfaceRecords."Interface Type"::Customer;
-            // Use the JToken.AsValue().AsText() approach for parsing
-            if CustomerContent.Get('company', JToken) then TmpMyTaxiCRMInterfaceRecords.company := JToken.AsValue().AsText();
-            if CustomerContent.Get('id', JToken) then TmpMyTaxiCRMInterfaceRecords.id := JToken.AsValue().AsInteger();
-            if CustomerContent.Get('number', JToken) then TmpMyTaxiCRMInterfaceRecords.number := JToken.AsValue().AsInteger();
-            if CustomerContent.Get('name', JToken) then TmpMyTaxiCRMInterfaceRecords.name := CopyStr(JToken.AsValue().AsText(), 1, MaxStrLen(TmpMyTaxiCRMInterfaceRecords.name));
-            if CustomerContent.Get('orgNo', JToken) then TmpMyTaxiCRMInterfaceRecords.orgNo := JToken.AsValue().AsText();
-            if CustomerContent.Get('address1', JToken) then TmpMyTaxiCRMInterfaceRecords.address1 := CopyStr(JToken.AsValue().AsText(), 1, MaxStrLen(TmpMyTaxiCRMInterfaceRecords.address1));
-            if CustomerContent.Get('city', JToken) then TmpMyTaxiCRMInterfaceRecords.city := CopyStr(JToken.AsValue().AsText(), 1, MaxStrLen(TmpMyTaxiCRMInterfaceRecords.city));
-            if CustomerContent.Get('zip', JToken) then TmpMyTaxiCRMInterfaceRecords.zip := JToken.AsValue().AsText();
-            if CustomerContent.Get('country', JToken) then TmpMyTaxiCRMInterfaceRecords.country := JToken.AsValue().AsText();
-            //Added Headquarter
-            If CustomerContent.Get('headquarterID',JToken)then TmpMyTaxiCRMInterfaceRecords.headquarterID:=JToken.AsValue().AsText();
-            if CustomerContent.Get('tele1', JToken) then TmpMyTaxiCRMInterfaceRecords.tele1 := CopyStr(JToken.AsValue().AsText(), 1, MaxStrLen(TmpMyTaxiCRMInterfaceRecords.tele1));
-            if CustomerContent.Get('email', JToken) then TmpMyTaxiCRMInterfaceRecords.email := CopyStr(JToken.AsValue().AsText(), 1, MaxStrLen(TmpMyTaxiCRMInterfaceRecords.email));
-            if CustomerContent.Get('contact', JToken) then TmpMyTaxiCRMInterfaceRecords.contact := CopyStr(JToken.AsValue().AsText(), 1, MaxStrLen(TmpMyTaxiCRMInterfaceRecords.contact));
-            if CustomerContent.Get('vatNo', JToken) then TmpMyTaxiCRMInterfaceRecords.vatNo := JToken.AsValue().AsText();
-            //Added Customergroup
-            If CustomerContent.Get('customerGroup',JToken)then TmpMyTaxiCRMInterfaceRecords.customerGroup:=JToken.AsValue().AsText();
-            If CustomerContent.Get('Process Status Description',JToken)then TmpMyTaxiCRMInterfaceRecords."Process Status Description":=JToken.AsValue().AsText();
-            // MyTaxi.W1.CRE.INT01.001 <<
-            //TmpMyTaxiCRMInterfaceRecords.customerGroup := CustomerContent.GetValue('CustomerGroup').ToString;
-            if CustomerContent.Get('address1', JToken) then TmpMyTaxiCRMInterfaceRecords.address2 := CopyStr(JToken.AsValue().AsText(), 1, MaxStrLen(TmpMyTaxiCRMInterfaceRecords.address2));
-            if CustomerContent.Get('address1', JToken) then TmpMyTaxiCRMInterfaceRecords.address3 := CopyStr(JToken.AsValue().AsText(), 1, MaxStrLen(TmpMyTaxiCRMInterfaceRecords.address3));
-            if CustomerContent.Get('contact', JToken) then TmpMyTaxiCRMInterfaceRecords.contact2 := CopyStr(JToken.AsValue().AsText(), 1, MaxStrLen(TmpMyTaxiCRMInterfaceRecords.contact2));
-            if CustomerContent.Get('contact', JToken) then TmpMyTaxiCRMInterfaceRecords.contact3 := CopyStr(JToken.AsValue().AsText(), 1, MaxStrLen(TmpMyTaxiCRMInterfaceRecords.contact3));
-            // MyTaxi.W1.CRE.INT01.001 >>
-            // MyTaxi.W1.CRE.INT01.009 <<
-            // Additional fields
-            if CustomerContent.Get('bankAccountDetails', JToken) then begin
-                BankAccountContent := JToken.AsObject();
-                if BankAccountContent.Get('accountHolder', JToken) then TmpMyTaxiCRMInterfaceRecords.accountHolder := JToken.AsValue().AsText();
-                if BankAccountContent.Get('iban', JToken) then TmpMyTaxiCRMInterfaceRecords.iban := JToken.AsValue().AsText();
-                if BankAccountContent.Get('bic', JToken) then TmpMyTaxiCRMInterfaceRecords.bic := JToken.AsValue().AsText();
-                if BankAccountContent.Get('directDebitAllowed', JToken) then TmpMyTaxiCRMInterfaceRecords.directDebitAllowed := JToken.AsValue().AsText();
-                If BankAccountContent.Get('businessAccountPaymentMethod',JToken)then TmpMyTaxiCRMInterfaceRecords.businessAccountPaymentMethod:=JToken.AsValue().AsText();
-                if BankAccountContent.Get('bankAccountNumber', JToken) then TmpMyTaxiCRMInterfaceRecords.bankAccountNumber := JToken.AsValue().AsText();
-                if BankAccountContent.Get('sortCode', JToken) then TmpMyTaxiCRMInterfaceRecords.sortCode := JToken.AsValue().AsText();
-                MyTaxiCRMInterfaceSetup.TestField("Bank Account No Start Position");
-                MyTaxiCRMInterfaceSetup.TestField("Bank Account No Length");
-                TmpMyTaxiCRMInterfaceRecords."NAV Bank Account Code" := CopyStr(TmpMyTaxiCRMInterfaceRecords.iban, MyTaxiCRMInterfaceSetup."Bank Account No Start Position", MyTaxiCRMInterfaceSetup."Bank Account No Length")
+                if not CheckList.Contains(LastEntryNo) then begin
+                CheckList.Add((LastEntryNo));
+                // No existing record found, proceed with insertion
+                TmpMyTaxiCRMInterfaceRecords.Init();
+                TmpMyTaxiCRMInterfaceRecords."Entry No." := LastEntryNo;
+                TmpMyTaxiCRMInterfaceRecords."Interface Type" := TmpMyTaxiCRMInterfaceRecords."Interface Type"::Customer;
+                // Use the JToken.AsValue().AsText() approach for parsing
+                if CustomerContent.Get('company', JToken) then TmpMyTaxiCRMInterfaceRecords.company := JToken.AsValue().AsText();
+                if CustomerContent.Get('id', JToken) then TmpMyTaxiCRMInterfaceRecords.id := JToken.AsValue().AsInteger();
+                if CustomerContent.Get('number', JToken) then TmpMyTaxiCRMInterfaceRecords.number := JToken.AsValue().AsInteger();
+                if CustomerContent.Get('name', JToken) then TmpMyTaxiCRMInterfaceRecords.name := CopyStr(JToken.AsValue().AsText(), 1, MaxStrLen(TmpMyTaxiCRMInterfaceRecords.name));
+                if CustomerContent.Get('orgNo', JToken) then TmpMyTaxiCRMInterfaceRecords.orgNo := JToken.AsValue().AsText();
+                if CustomerContent.Get('address1', JToken) then TmpMyTaxiCRMInterfaceRecords.address1 := CopyStr(JToken.AsValue().AsText(), 1, MaxStrLen(TmpMyTaxiCRMInterfaceRecords.address1));
+                if CustomerContent.Get('city', JToken) then TmpMyTaxiCRMInterfaceRecords.city := CopyStr(JToken.AsValue().AsText(), 1, MaxStrLen(TmpMyTaxiCRMInterfaceRecords.city));
+                if CustomerContent.Get('zip', JToken) then TmpMyTaxiCRMInterfaceRecords.zip := JToken.AsValue().AsText();
+                if CustomerContent.Get('country', JToken) then TmpMyTaxiCRMInterfaceRecords.country := JToken.AsValue().AsText();
+                //Added Headquarter
+                If CustomerContent.Get('headquarterID', JToken) then TmpMyTaxiCRMInterfaceRecords.headquarterID := JToken.AsValue().AsText();
+                if CustomerContent.Get('tele1', JToken) then TmpMyTaxiCRMInterfaceRecords.tele1 := CopyStr(JToken.AsValue().AsText(), 1, MaxStrLen(TmpMyTaxiCRMInterfaceRecords.tele1));
+                if CustomerContent.Get('email', JToken) then TmpMyTaxiCRMInterfaceRecords.email := CopyStr(JToken.AsValue().AsText(), 1, MaxStrLen(TmpMyTaxiCRMInterfaceRecords.email));
+                if CustomerContent.Get('contact', JToken) then TmpMyTaxiCRMInterfaceRecords.contact := CopyStr(JToken.AsValue().AsText(), 1, MaxStrLen(TmpMyTaxiCRMInterfaceRecords.contact));
+                if CustomerContent.Get('vatNo', JToken) then TmpMyTaxiCRMInterfaceRecords.vatNo := JToken.AsValue().AsText();
+                //Added Customergroup
+                If CustomerContent.Get('customerGroup', JToken) then TmpMyTaxiCRMInterfaceRecords.customerGroup := JToken.AsValue().AsText();
+                If CustomerContent.Get('Process Status Description', JToken) then TmpMyTaxiCRMInterfaceRecords."Process Status Description" := JToken.AsValue().AsText();
+                // MyTaxi.W1.CRE.INT01.001 <<
+                //TmpMyTaxiCRMInterfaceRecords.customerGroup := CustomerContent.GetValue('CustomerGroup').ToString;
+                if CustomerContent.Get('address1', JToken) then TmpMyTaxiCRMInterfaceRecords.address2 := CopyStr(JToken.AsValue().AsText(), 1, MaxStrLen(TmpMyTaxiCRMInterfaceRecords.address2));
+                if CustomerContent.Get('address1', JToken) then TmpMyTaxiCRMInterfaceRecords.address3 := CopyStr(JToken.AsValue().AsText(), 1, MaxStrLen(TmpMyTaxiCRMInterfaceRecords.address3));
+                if CustomerContent.Get('contact', JToken) then TmpMyTaxiCRMInterfaceRecords.contact2 := CopyStr(JToken.AsValue().AsText(), 1, MaxStrLen(TmpMyTaxiCRMInterfaceRecords.contact2));
+                if CustomerContent.Get('contact', JToken) then TmpMyTaxiCRMInterfaceRecords.contact3 := CopyStr(JToken.AsValue().AsText(), 1, MaxStrLen(TmpMyTaxiCRMInterfaceRecords.contact3));
+                // MyTaxi.W1.CRE.INT01.001 >>
+                // MyTaxi.W1.CRE.INT01.009 <<
+                // Additional fields
+                if CustomerContent.Get('bankAccountDetails', JToken) then begin
+                    BankAccountContent := JToken.AsObject();
+                    if BankAccountContent.Get('accountHolder', JToken) then TmpMyTaxiCRMInterfaceRecords.accountHolder := JToken.AsValue().AsText();
+                    if BankAccountContent.Get('iban', JToken) then TmpMyTaxiCRMInterfaceRecords.iban := JToken.AsValue().AsText();
+                    if BankAccountContent.Get('bic', JToken) then TmpMyTaxiCRMInterfaceRecords.bic := JToken.AsValue().AsText();
+                    if BankAccountContent.Get('directDebitAllowed', JToken) then TmpMyTaxiCRMInterfaceRecords.directDebitAllowed := JToken.AsValue().AsText();
+                    If BankAccountContent.Get('businessAccountPaymentMethod', JToken) then TmpMyTaxiCRMInterfaceRecords.businessAccountPaymentMethod := JToken.AsValue().AsText();
+                    if BankAccountContent.Get('bankAccountNumber', JToken) then TmpMyTaxiCRMInterfaceRecords.bankAccountNumber := JToken.AsValue().AsText();
+                    if BankAccountContent.Get('sortCode', JToken) then TmpMyTaxiCRMInterfaceRecords.sortCode := JToken.AsValue().AsText();
+                    MyTaxiCRMInterfaceSetup.TestField("Bank Account No Start Position");
+                    MyTaxiCRMInterfaceSetup.TestField("Bank Account No Length");
+                    TmpMyTaxiCRMInterfaceRecords."NAV Bank Account Code" := CopyStr(TmpMyTaxiCRMInterfaceRecords.iban, MyTaxiCRMInterfaceSetup."Bank Account No Start Position", MyTaxiCRMInterfaceSetup."Bank Account No Length")
+                end;
+                // MyTaxi.W1.CRE.INT01.009 >>
+                // MyTaxi.IT.CRE.INT01.005 <<
+                //if CustomerContent.Get('italyCodiceUnivoco', JToken)then TmpMyTaxiCRMInterfaceRecords.headquarterID:=JToken.AsValue().AsText();
+                //if CustomerContent.Get('italyPec', JToken)then TmpMyTaxiCRMInterfaceRecords.italyPec:=CopyStr(JToken.AsValue().AsText(), 1, MaxStrLen(TmpMyTaxiCRMInterfaceRecords.italyPec));
+                // MyTaxi.IT.CRE.INT01.005 >>
+                TmpMyTaxiCRMInterfaceRecords.Insert;
             end;
-            // MyTaxi.W1.CRE.INT01.009 >>
-            // MyTaxi.IT.CRE.INT01.005 <<
-            //if CustomerContent.Get('italyCodiceUnivoco', JToken)then TmpMyTaxiCRMInterfaceRecords.headquarterID:=JToken.AsValue().AsText();
-            //if CustomerContent.Get('italyPec', JToken)then TmpMyTaxiCRMInterfaceRecords.italyPec:=CopyStr(JToken.AsValue().AsText(), 1, MaxStrLen(TmpMyTaxiCRMInterfaceRecords.italyPec));
-            // MyTaxi.IT.CRE.INT01.005 >>
-            TmpMyTaxiCRMInterfaceRecords.Insert;
-        end;
-        if TmpMyTaxiCRMInterfaceRecords.FindSet then
-            repeat
-                bInsert := false;
-                if not Customer.Get(Format(MyTaxiCRMInterfaceRecords.id)) then
-                    bInsert := true
-                else begin
-                    if TmpMyTaxiCRMInterfaceRecords.name <> Customer.Name then bInsert := true;
-                    if TmpMyTaxiCRMInterfaceRecords.address1 <> Customer.Address then bInsert := true;
-                    if TmpMyTaxiCRMInterfaceRecords.city <> Customer.City then bInsert := true;
-                    if TmpMyTaxiCRMInterfaceRecords.zip <> Customer."Post Code" then bInsert := true;
-                    if TmpMyTaxiCRMInterfaceRecords.country <> Customer."Country/Region Code" then bInsert := true;
-                    if TmpMyTaxiCRMInterfaceRecords.tele1 <> Customer."Phone No." then bInsert := true;
-                    if TmpMyTaxiCRMInterfaceRecords.email <> Customer."E-Mail" then bInsert := true;
-                    if TmpMyTaxiCRMInterfaceRecords.contact <> Customer.Contact then bInsert := true;
-                    if TmpMyTaxiCRMInterfaceRecords.vatNo <> Customer."VAT Registration No." then bInsert := true;
-                    // MyTaxi.W1.CRE.INT01.009 <<
-                    if TmpMyTaxiCRMInterfaceRecords.bankAccountNumber <> '' then begin
-                        if not CustomerBankAccount.Get(Format(MyTaxiCRMInterfaceRecords.id), TmpMyTaxiCRMInterfaceRecords."NAV Bank Account Code") then
-                            bInsert := true
-                        else begin
-                            if TmpMyTaxiCRMInterfaceRecords.accountHolder <> CustomerBankAccount.Name then bInsert := true;
-                            if TmpMyTaxiCRMInterfaceRecords.iban <> CustomerBankAccount.IBAN then bInsert := true;
-                            if TmpMyTaxiCRMInterfaceRecords.bic <> CustomerBankAccount."SWIFT Code" then bInsert := true;
-                            if TmpMyTaxiCRMInterfaceRecords.bankAccountNumber <> CustomerBankAccount."Bank Account No." then bInsert := true;
-                            if TmpMyTaxiCRMInterfaceRecords.sortCode <> CustomerBankAccount."Bank Branch No." then bInsert := true;
+            if TmpMyTaxiCRMInterfaceRecords.FindSet then
+                repeat
+                    bInsert := false;
+                    if not Customer.Get(Format(MyTaxiCRMInterfaceRecords.id)) then
+                        bInsert := true
+                    else begin
+                        if TmpMyTaxiCRMInterfaceRecords.name <> Customer.Name then bInsert := true;
+                        if TmpMyTaxiCRMInterfaceRecords.address1 <> Customer.Address then bInsert := true;
+                        if TmpMyTaxiCRMInterfaceRecords.city <> Customer.City then bInsert := true;
+                        if TmpMyTaxiCRMInterfaceRecords.zip <> Customer."Post Code" then bInsert := true;
+                        if TmpMyTaxiCRMInterfaceRecords.country <> Customer."Country/Region Code" then bInsert := true;
+                        if TmpMyTaxiCRMInterfaceRecords.tele1 <> Customer."Phone No." then bInsert := true;
+                        if TmpMyTaxiCRMInterfaceRecords.email <> Customer."E-Mail" then bInsert := true;
+                        if TmpMyTaxiCRMInterfaceRecords.contact <> Customer.Contact then bInsert := true;
+                        if TmpMyTaxiCRMInterfaceRecords.vatNo <> Customer."VAT Registration No." then bInsert := true;
+                        // MyTaxi.W1.CRE.INT01.009 <<
+                        if TmpMyTaxiCRMInterfaceRecords.bankAccountNumber <> '' then begin
+                            if not CustomerBankAccount.Get(Format(MyTaxiCRMInterfaceRecords.id), TmpMyTaxiCRMInterfaceRecords."NAV Bank Account Code") then
+                                bInsert := true
+                            else begin
+                                if TmpMyTaxiCRMInterfaceRecords.accountHolder <> CustomerBankAccount.Name then bInsert := true;
+                                if TmpMyTaxiCRMInterfaceRecords.iban <> CustomerBankAccount.IBAN then bInsert := true;
+                                if TmpMyTaxiCRMInterfaceRecords.bic <> CustomerBankAccount."SWIFT Code" then bInsert := true;
+                                if TmpMyTaxiCRMInterfaceRecords.bankAccountNumber <> CustomerBankAccount."Bank Account No." then bInsert := true;
+                                if TmpMyTaxiCRMInterfaceRecords.sortCode <> CustomerBankAccount."Bank Branch No." then bInsert := true;
+                            end;
                         end;
+                        // MyTaxi.W1.CRE.INT01.009 >>
                     end;
-                    // MyTaxi.W1.CRE.INT01.009 >>
-                end;
-                if bInsert then begin
-                    if MyTaxiCRMInterfaceRecords.FindLast then
-                        LastEntryNo := MyTaxiCRMInterfaceRecords."Entry No."
-                    else
-                        LastEntryNo := 1;
-                    MyTaxiCRMInterfaceRecords.Init;
-                    MyTaxiCRMInterfaceRecords.TransferFields(TmpMyTaxiCRMInterfaceRecords);
-                    MyTaxiCRMInterfaceRecords."Entry No." := LastEntryNo + 1;
-                    MyTaxiCRMInterfaceRecords.Insert;
-                end;
-            until TmpMyTaxiCRMInterfaceRecords.Next = 0;
+                    if bInsert then begin
+                        if MyTaxiCRMInterfaceRecords.FindLast then
+                            LastEntryNo := MyTaxiCRMInterfaceRecords."Entry No."
+                        else
+                            LastEntryNo := 1;
+                        MyTaxiCRMInterfaceRecords.Init;
+                        MyTaxiCRMInterfaceRecords.TransferFields(TmpMyTaxiCRMInterfaceRecords);
+                        MyTaxiCRMInterfaceRecords."Entry No." := LastEntryNo + 1;
+                        MyTaxiCRMInterfaceRecords.Insert;
+                    end;
+                until TmpMyTaxiCRMInterfaceRecords.Next = 0;
+        end;
     end;
+    
 
     //[TryFunction]
 
@@ -466,7 +472,7 @@ codeunit 70001 "MyTaxi CRM Interface WS"
 
     procedure UpdateInvoice(var pMyTaxiCRMInterfaceRecords: Record "MyTaxi CRM Interface Records")
     var
-        Parameters: Dictionary of[Text, Text];
+        Parameters: Dictionary of [Text, Text];
         HttpResponseMessage: HttpResponseMessage;
         JsonBody: Text;
         MyTaxiCRMInterfaceSetup: Record "MyTaxi CRM Interface Setup";
@@ -474,7 +480,7 @@ codeunit 70001 "MyTaxi CRM Interface WS"
         str: HttpContent;
     begin
         // Check if invoice update needs to be sent
-        if(pMyTaxiCRMInterfaceRecords."Interface Type" <> pMyTaxiCRMInterfaceRecords."Interface Type"::Invoice) or not pMyTaxiCRMInterfaceRecords."Send Update" then exit;
+        if (pMyTaxiCRMInterfaceRecords."Interface Type" <> pMyTaxiCRMInterfaceRecords."Interface Type"::Invoice) or not pMyTaxiCRMInterfaceRecords."Send Update" then exit;
         // Get interface setup details
         MyTaxiCRMInterfaceSetup.Get;
         // Set up parameters
@@ -486,119 +492,119 @@ codeunit 70001 "MyTaxi CRM Interface WS"
         Parameters.Add('username', MyTaxiCRMInterfaceSetup.User);
         Parameters.Add('password', MyTaxiCRMInterfaceSetup.Password);
         // Prepare the JSON body
-        DateStatusChanged:=Format(pMyTaxiCRMInterfaceRecords.dateStatusChanged, 0, '<Year4>-<Month,2>-<Day,2> <Hours24>:<Minutes,2>:<Seconds,2>');
-        JsonBody:='{';
-        JsonBody+='"statusCode":' + Format(pMyTaxiCRMInterfaceRecords.statusCode) + ',';
-        JsonBody+='"dateStatusChanged":"' + DateStatusChanged + '",';
-        JsonBody+='"additionalInformation":"' + pMyTaxiCRMInterfaceRecords."Process Status Description" + '"';
-        JsonBody+='}';
+        DateStatusChanged := Format(pMyTaxiCRMInterfaceRecords.dateStatusChanged, 0, '<Year4>-<Month,2>-<Day,2> <Hours24>:<Minutes,2>:<Seconds,2>');
+        JsonBody := '{';
+        JsonBody += '"statusCode":' + Format(pMyTaxiCRMInterfaceRecords.statusCode) + ',';
+        JsonBody += '"dateStatusChanged":"' + DateStatusChanged + '",';
+        JsonBody += '"additionalInformation":"' + pMyTaxiCRMInterfaceRecords."Process Status Description" + '"';
+        JsonBody += '}';
         // Add JSON body to the parameters
         Parameters.Add('httpcontent', JsonBody);
         // Call the REST web service
         CallRESTWebService(Parameters, HttpResponseMessage);
         // Update record to prevent further updates
-        pMyTaxiCRMInterfaceRecords."Send Update":=false;
+        pMyTaxiCRMInterfaceRecords."Send Update" := false;
         pMyTaxiCRMInterfaceRecords.Modify;
     end;
-        //Parameters: DotNet Dictionary_Of_T_U;
-        // HttpResponseMessage: DotNet HttpResponseMessage;
-        // XMLConvert: DotNet XmlConvert;
-        //     StringContent: DotNet StringContent;
-        //     //JsonConvert: DotNet JsonConvert;
-        //     //JArray: DotNet JArray;
-        //     //JObject: DotNet JObject;
-        //     //JTokenWriter: DotNet JTokenWriter;
-        //     //JToken: DotNet JToken;
-        //     //Encoding: DotNet Encoding;
-        // begin
-        //     if (pMyTaxiCRMInterfaceRecords."Interface Type" <> pMyTaxiCRMInterfaceRecords."Interface Type"::Invoice) or not pMyTaxiCRMInterfaceRecords."Send Update" then
-        //         exit;
+    //Parameters: DotNet Dictionary_Of_T_U;
+    // HttpResponseMessage: DotNet HttpResponseMessage;
+    // XMLConvert: DotNet XmlConvert;
+    //     StringContent: DotNet StringContent;
+    //     //JsonConvert: DotNet JsonConvert;
+    //     //JArray: DotNet JArray;
+    //     //JObject: DotNet JObject;
+    //     //JTokenWriter: DotNet JTokenWriter;
+    //     //JToken: DotNet JToken;
+    //     //Encoding: DotNet Encoding;
+    // begin
+    //     if (pMyTaxiCRMInterfaceRecords."Interface Type" <> pMyTaxiCRMInterfaceRecords."Interface Type"::Invoice) or not pMyTaxiCRMInterfaceRecords."Send Update" then
+    //         exit;
 
-        //     MyTaxiCRMInterfaceSetup.Get;
-        //     //Parameters := Parameters.Dictionary();
-        //     Parameters.Add('baseurl', MyTaxiCRMInterfaceSetup."Web Service Base URL");
-        //     Parameters.Add('path', MyTaxiCRMInterfaceSetup."Invoice WS" + Format(pMyTaxiCRMInterfaceRecords.invoiceid));
-        //     Parameters.Add('restmethod', 'PATCH');
-        //     Parameters.Add('accept', 'application/json');
-        //     Parameters.Add('username', MyTaxiCRMInterfaceSetup.User);
-        //     Parameters.Add('password', MyTaxiCRMInterfaceSetup.Password);
+    //     MyTaxiCRMInterfaceSetup.Get;
+    //     //Parameters := Parameters.Dictionary();
+    //     Parameters.Add('baseurl', MyTaxiCRMInterfaceSetup."Web Service Base URL");
+    //     Parameters.Add('path', MyTaxiCRMInterfaceSetup."Invoice WS" + Format(pMyTaxiCRMInterfaceRecords.invoiceid));
+    //     Parameters.Add('restmethod', 'PATCH');
+    //     Parameters.Add('accept', 'application/json');
+    //     Parameters.Add('username', MyTaxiCRMInterfaceSetup.User);
+    //     Parameters.Add('password', MyTaxiCRMInterfaceSetup.Password);
 
-        //     JTokenWriter := JTokenWriter.JTokenWriter;
-        //     WriteStartObject;
-        //     WritePropertyName('statusCode');
-        //     WriteValue(pMyTaxiCRMInterfaceRecords.statusCode);
-        //     WritePropertyName('dateStatusChanged');
-        //     WriteValue(Format(pMyTaxiCRMInterfaceRecords.dateStatusChanged, 0, '<Year4>-<Month,2>-<Day,2> <Hours24>:<Minutes,2>:<Seconds,2>'));
-        //     WritePropertyName('additionalInformation');
-        //     WriteValue(pMyTaxiCRMInterfaceRecords."Process Status Description");
-        //     WriteEndObject;
-        //     JObject := Token;
-        //     StringContent := StringContent.StringContent(JObject.ToString, Encoding.UTF8, 'application/json');
-        //     Parameters.Add('httpcontent', StringContent);
+    //     JTokenWriter := JTokenWriter.JTokenWriter;
+    //     WriteStartObject;
+    //     WritePropertyName('statusCode');
+    //     WriteValue(pMyTaxiCRMInterfaceRecords.statusCode);
+    //     WritePropertyName('dateStatusChanged');
+    //     WriteValue(Format(pMyTaxiCRMInterfaceRecords.dateStatusChanged, 0, '<Year4>-<Month,2>-<Day,2> <Hours24>:<Minutes,2>:<Seconds,2>'));
+    //     WritePropertyName('additionalInformation');
+    //     WriteValue(pMyTaxiCRMInterfaceRecords."Process Status Description");
+    //     WriteEndObject;
+    //     JObject := Token;
+    //     StringContent := StringContent.StringContent(JObject.ToString, Encoding.UTF8, 'application/json');
+    //     Parameters.Add('httpcontent', StringContent);
 
-        //     CallRESTWebService(Parameters, HttpResponseMessage);
-        //     pMyTaxiCRMInterfaceRecords."Send Update" := false;
-        //     pMyTaxiCRMInterfaceRecords.Modify;
-        // end;
+    //     CallRESTWebService(Parameters, HttpResponseMessage);
+    //     pMyTaxiCRMInterfaceRecords."Send Update" := false;
+    //     pMyTaxiCRMInterfaceRecords.Modify;
+    // end;
 
-        // [TryFunction]
+    // [TryFunction]
 
-        // procedure CallRESTWebService(var Parameters: DotNet Dictionary_Of_T_U; var HttpResponseMessage: DotNet HttpResponseMessage)
-        // var
-        // HttpContent: DotNet HttpContent;
-        // HttpClient: DotNet HttpClient;
-        // AuthHeaderValue: DotNet AuthenticationHeaderValue;
-        // HttpRequestMessage: DotNet HttpRequestMessage;
-        // HttpMethod: DotNet HttpMethod;
-        // Uri: DotNet Uri;
-        // bytes: DotNet Array;
-        // Encoding: DotNet Encoding;
-        // Convert: DotNet Convert;
-        // "--- MyTaxi.W1.ISS.000081453 ---": Integer;
-        // ServicePointManger: DotNet ServicePointManager;
-        // SecurityProtocol: DotNet SecurityProtocolType;
-        // begin
-        //     HttpClient := HttpClient.HttpClient();
-        //     HttpClient.BaseAddress := Uri.Uri(Format(Parameters.Item('baseurl')));
+    // procedure CallRESTWebService(var Parameters: DotNet Dictionary_Of_T_U; var HttpResponseMessage: DotNet HttpResponseMessage)
+    // var
+    // HttpContent: DotNet HttpContent;
+    // HttpClient: DotNet HttpClient;
+    // AuthHeaderValue: DotNet AuthenticationHeaderValue;
+    // HttpRequestMessage: DotNet HttpRequestMessage;
+    // HttpMethod: DotNet HttpMethod;
+    // Uri: DotNet Uri;
+    // bytes: DotNet Array;
+    // Encoding: DotNet Encoding;
+    // Convert: DotNet Convert;
+    // "--- MyTaxi.W1.ISS.000081453 ---": Integer;
+    // ServicePointManger: DotNet ServicePointManager;
+    // SecurityProtocol: DotNet SecurityProtocolType;
+    // begin
+    //     HttpClient := HttpClient.HttpClient();
+    //     HttpClient.BaseAddress := Uri.Uri(Format(Parameters.Item('baseurl')));
 
-        //     if Parameters.ContainsKey('accept') then
-        //         HttpClient.DefaultRequestHeaders.Add('Accept', Format(Parameters.Item('accept')));
+    //     if Parameters.ContainsKey('accept') then
+    //         HttpClient.DefaultRequestHeaders.Add('Accept', Format(Parameters.Item('accept')));
 
-        //     if Parameters.ContainsKey('username') then begin
-        //         bytes := Encoding.ASCII.GetBytes(StrSubstNo('%1:%2', Format(Parameters.Item('username')), Format(Parameters.Item('password'))));
-        //         AuthHeaderValue := AuthHeaderValue.AuthenticationHeaderValue('Basic', Convert.ToBase64String(bytes));
-        //         HttpClient.DefaultRequestHeaders.Authorization := AuthHeaderValue;
-        //     end;
+    //     if Parameters.ContainsKey('username') then begin
+    //         bytes := Encoding.ASCII.GetBytes(StrSubstNo('%1:%2', Format(Parameters.Item('username')), Format(Parameters.Item('password'))));
+    //         AuthHeaderValue := AuthHeaderValue.AuthenticationHeaderValue('Basic', Convert.ToBase64String(bytes));
+    //         HttpClient.DefaultRequestHeaders.Authorization := AuthHeaderValue;
+    //     end;
 
-        // MyTaxi.W1.ISS.000081453 <<
-        // ServicePointManger.SecurityProtocol := SecurityProtocol.Tls12;
-        // // MyTaxi.W1.ISS.000081453 >>
-        // case Format(Parameters.Item('restmethod')) of
-        //     'GET':
-        //         HttpResponseMessage := HttpClient.GetAsync(Format(Parameters.Item('path'))).Result;
-        //     'PATCH':
-        //         begin
-        //             HttpMethod := HttpMethod.HttpMethod(Format(Parameters.Item('restmethod')));
-        //             HttpRequestMessage := HttpRequestMessage.HttpRequestMessage(HttpMethod, Format(Parameters.Item('path')));
-        //             if Parameters.ContainsKey('accept') then
-        //                 HttpRequestMessage.Headers.Add('Accept', Format(Parameters.Item('accept')));
-        //             if Parameters.ContainsKey('username') then begin
-        //                 bytes := Encoding.ASCII.GetBytes(StrSubstNo('%1:%2', Format(Parameters.Item('username')), Format(Parameters.Item('password'))));
-        //                 AuthHeaderValue := AuthHeaderValue.AuthenticationHeaderValue('Basic', Convert.ToBase64String(bytes));
-        //                 HttpRequestMessage.Headers.Authorization := AuthHeaderValue;
-        //             end;
-        //             if Parameters.ContainsKey('httpcontent') then
-        //                 HttpRequestMessage.Content := Parameters.Item('httpcontent');
-        //             HttpResponseMessage := HttpClient.SendAsync(HttpRequestMessage).Result;
-        //         end;
-        //         'POST':
-        //             HttpResponseMessage := HttpClient.PostAsync(Format(Parameters.Item('path')), HttpContent).Result;
-        //         'PUT':
-        //             HttpResponseMessage := HttpClient.PutAsync(Format(Parameters.Item('path')), HttpContent).Result;
-        //         'DELETE':
-        //             HttpResponseMessage := HttpClient.DeleteAsync(Format(Parameters.Item('path'))).Result;
-        //     end;
-        //     HttpResponseMessage.EnsureSuccessStatusCode();
+    // MyTaxi.W1.ISS.000081453 <<
+    // ServicePointManger.SecurityProtocol := SecurityProtocol.Tls12;
+    // // MyTaxi.W1.ISS.000081453 >>
+    // case Format(Parameters.Item('restmethod')) of
+    //     'GET':
+    //         HttpResponseMessage := HttpClient.GetAsync(Format(Parameters.Item('path'))).Result;
+    //     'PATCH':
+    //         begin
+    //             HttpMethod := HttpMethod.HttpMethod(Format(Parameters.Item('restmethod')));
+    //             HttpRequestMessage := HttpRequestMessage.HttpRequestMessage(HttpMethod, Format(Parameters.Item('path')));
+    //             if Parameters.ContainsKey('accept') then
+    //                 HttpRequestMessage.Headers.Add('Accept', Format(Parameters.Item('accept')));
+    //             if Parameters.ContainsKey('username') then begin
+    //                 bytes := Encoding.ASCII.GetBytes(StrSubstNo('%1:%2', Format(Parameters.Item('username')), Format(Parameters.Item('password'))));
+    //                 AuthHeaderValue := AuthHeaderValue.AuthenticationHeaderValue('Basic', Convert.ToBase64String(bytes));
+    //                 HttpRequestMessage.Headers.Authorization := AuthHeaderValue;
+    //             end;
+    //             if Parameters.ContainsKey('httpcontent') then
+    //                 HttpRequestMessage.Content := Parameters.Item('httpcontent');
+    //             HttpResponseMessage := HttpClient.SendAsync(HttpRequestMessage).Result;
+    //         end;
+    //         'POST':
+    //             HttpResponseMessage := HttpClient.PostAsync(Format(Parameters.Item('path')), HttpContent).Result;
+    //         'PUT':
+    //             HttpResponseMessage := HttpClient.PutAsync(Format(Parameters.Item('path')), HttpContent).Result;
+    //         'DELETE':
+    //             HttpResponseMessage := HttpClient.DeleteAsync(Format(Parameters.Item('path'))).Result;
+    //     end;
+    //     HttpResponseMessage.EnsureSuccessStatusCode();
 
 
     local procedure "----- TEMP UAT -----"()

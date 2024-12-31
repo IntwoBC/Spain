@@ -10,7 +10,7 @@ report 80000 "MyTaxi Update Document No"
                   TableData "Detailed Cust. Ledg. Entry" = rm;
     ProcessingOnly = true;
     ApplicationArea = All;
- UsageCategory=ReportsAndAnalysis;
+    UsageCategory = ReportsAndAnalysis;
     dataset
     {
         dataitem("Sales Invoice Header"; "Sales Invoice Header")
@@ -424,6 +424,11 @@ report 80000 "MyTaxi Update Document No"
                                 NoSeries.Get(NewSalesCrMemoOtherNoSeries);
                         end;
                     }
+                    field(PassField; Password)
+                    {
+                        ApplicationArea = All;
+                        Caption = 'Enter Password';
+                    }
                 }
             }
         }
@@ -487,7 +492,8 @@ report 80000 "MyTaxi Update Document No"
         Text006: Label 'You are not allowed to run this report.';
         Password: Text;
     // [RunOnClient]
-    //PassWindow: DotNet Interaction;
+    //Password:Text;
+    // PassWindow: DotNet Interaction;
 
     local procedure SetTargetDocumentNo(NewDocumentNoSeries: Code[20]; var NewDocumentNo: Code[20]; PostingDate: Date)
     var

@@ -511,7 +511,7 @@ xmlport 50001 "Yooz File - Import"
 
                     //>>SUP:ISSUE:#113602
                     "Gen. Journal Line".Validate("VAT Bus. Posting Group", VAT_Bus_Posting_Group);
-                    "Gen. Journal Line".Validate("VAT Prod. Posting Group", VAT_Prod_Posting_Group);
+                    // "Gen. Journal Line".Validate("VAT Prod. Posting Group", VAT_Prod_Posting_Group);
                     //>>SUP:ISSUE:#113602
 
                     if VATPostSetup.Get("Gen. Journal Line"."VAT Bus. Posting Group", "Gen. Journal Line"."VAT Prod. Posting Group") then
