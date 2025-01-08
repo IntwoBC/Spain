@@ -8,9 +8,9 @@ codeunit 61001 "T:G/L Account"
     [EventSubscriber(ObjectType::Table, 15, 'OnAfterModifyEvent', '', false, false)]
     local procedure levtOnAfterModify(var Rec: Record "G/L Account"; var xRec: Record "G/L Account"; RunTrigger: Boolean)
     var
-//lmdlFSCodeMgt: Codeunit "Fin. Stmt. Code Management";
+    lmdlFSCodeMgt: Codeunit "Fin. Stmt.Code Management";
     begin
-        //lmdlFSCodeMgt.gfcnUpdateGLAccFSCodeAndHistory(Rec, xRec."Financial Statement Code");
+        lmdlFSCodeMgt.gfcnUpdateGLAccFSCodeAndHistory(Rec, xRec."Financial Statement Code");
     end;
 
     [EventSubscriber(ObjectType::Table, 15, 'OnBeforeValidateEvent', 'Account Class', false, false)]

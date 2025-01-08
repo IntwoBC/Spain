@@ -1,4 +1,4 @@
-page 60023 "Corporate Chart of Accounts"
+Page 60023 "Corporate Chart of Accounts"
 {
     // MP 19-11-13
     // Added support for bottom-up companies, controling visibility of field "Local G/L Account No." and filtering on
@@ -15,7 +15,7 @@ page 60023 "Corporate Chart of Accounts"
     PageType = List;
     SourceTable = "Corporate G/L Account";
     ApplicationArea = All;
-    UsageCategory=lists;
+    UsageCategory = lists;
 
     layout
     {
@@ -187,7 +187,7 @@ page 60023 "Corporate Chart of Accounts"
                     RunObject = Page "General Ledger Entries";
                     RunPageLink = "Corporate G/L Account No." = FIELD("No."),
                                   "Global Dimension 1 Code" = FIELD("Global Dimension 1 Filter");
-                    RunPageView = SORTING("Corporate G/L Account No.", "Global Dimension 1 Code");
+                    // RunPageView = SORTING("Corporate G/L Account No.", "Global Dimension 1 Code");
                     ShortCutKey = 'Ctrl+F7';
                     ToolTip = 'Executes the Ledger E&ntries action.';
                 }
@@ -196,7 +196,7 @@ page 60023 "Corporate Chart of Accounts"
                     Caption = 'Co&mments';
                     Image = ViewComments;
                     RunObject = Page "Comment Sheet";
-                    RunPageLink = "Table Name" = CONST("Historic G/L Account"),
+                    RunPageLink = "Table Name" = CONST("Corporate G/L Account"),
                                   "No." = FIELD("No.");
                     ApplicationArea = all;
                     ToolTip = 'Executes the Co&mments action.';
@@ -311,7 +311,7 @@ page 60023 "Corporate Chart of Accounts"
 
     trigger OnNewRecord(BelowxRec: Boolean)
     begin
-        // SetupNewGLAcc(xRec, BelowxRec);
+        Rec.SetupNewGLAcc(xRec, BelowxRec);
     end;
 
     trigger OnOpenPage()
@@ -348,4 +348,3 @@ page 60023 "Corporate Chart of Accounts"
         NameEmphasize := Rec."Account Type" <> Rec."Account Type"::Posting;
     end;
 }
-

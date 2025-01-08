@@ -53,7 +53,7 @@ table 60014 "Corporate G/L Account"
 
             trigger OnValidate()
             var
-                GLEntry: Record "G/L Entry";
+                 GLEntry: Record "I2I G/L Entry";
             begin
                 if ("Account Type" <> "Account Type"::Posting) and
                    (xRec."Account Type" = xRec."Account Type"::Posting)
@@ -82,7 +82,7 @@ table 60014 "Corporate G/L Account"
         }
         field(12; Comment; Boolean)
         {
-            CalcFormula = Exist("Comment Line" WHERE("Table Name" = CONST("Historic G/L Account"),
+            CalcFormula = Exist("Comment Line" WHERE("Table Name" = CONST("Corporate G/L Account"),
                                                       "No." = FIELD("No.")));
             Caption = 'Comment';
             Editable = false;
@@ -129,7 +129,7 @@ table 60014 "Corporate G/L Account"
         field(31; "Balance at Date"; Decimal)
         {
             AutoFormatType = 1;
-            CalcFormula = Sum("G/L Entry".Amount WHERE("Corporate G/L Account No." = FIELD("No."),
+  CalcFormula = Sum("I2I G/L Entry".Amount WHERE("Corporate G/L Account No." = FIELD("No."),
                                                         "Corporate G/L Account No." = FIELD(FILTER(Totaling)),
                                                         "Business Unit Code" = FIELD("Business Unit Filter"),
                                                         "Global Dimension 1 Code" = FIELD("Global Dimension 1 Filter"),
@@ -144,7 +144,7 @@ table 60014 "Corporate G/L Account"
         field(32; "Net Change"; Decimal)
         {
             AutoFormatType = 1;
-            CalcFormula = Sum("G/L Entry".Amount WHERE("Corporate G/L Account No." = FIELD("No."),
+CalcFormula = Sum("I2I G/L Entry".Amount WHERE("Corporate G/L Account No." = FIELD("No."),
                                                         "Corporate G/L Account No." = FIELD(FILTER(Totaling)),
                                                         "Business Unit Code" = FIELD("Business Unit Filter"),
                                                         "Global Dimension 1 Code" = FIELD("Global Dimension 1 Filter"),
@@ -174,7 +174,7 @@ table 60014 "Corporate G/L Account"
         field(36; Balance; Decimal)
         {
             AutoFormatType = 1;
-            CalcFormula = Sum("G/L Entry".Amount WHERE("Corporate G/L Account No." = FIELD("No."),
+  CalcFormula = Sum("I2I G/L Entry".Amount WHERE("Corporate G/L Account No." = FIELD("No."),
                                                         "Corporate G/L Account No." = FIELD(FILTER(Totaling)),
                                                         "Business Unit Code" = FIELD("Business Unit Filter"),
                                                         "Global Dimension 1 Code" = FIELD("Global Dimension 1 Filter"),
@@ -195,7 +195,7 @@ table 60014 "Corporate G/L Account"
         {
             AutoFormatType = 1;
             BlankZero = true;
-            CalcFormula = Sum("G/L Entry"."Debit Amount" WHERE("Corporate G/L Account No." = FIELD("No."),
+ CalcFormula = Sum("I2I G/L Entry"."Debit Amount" WHERE("Corporate G/L Account No." = FIELD("No."),
                                                                 "Corporate G/L Account No." = FIELD(FILTER(Totaling)),
                                                                 "Business Unit Code" = FIELD("Business Unit Filter"),
                                                                 "Global Dimension 1 Code" = FIELD("Global Dimension 1 Filter"),
@@ -211,7 +211,7 @@ table 60014 "Corporate G/L Account"
         {
             AutoFormatType = 1;
             BlankZero = true;
-            CalcFormula = Sum("G/L Entry"."Credit Amount" WHERE("Corporate G/L Account No." = FIELD("No."),
+ CalcFormula = Sum("I2I G/L Entry"."Credit Amount" WHERE("Corporate G/L Account No." = FIELD("No."),
                                                                  "Corporate G/L Account No." = FIELD(FILTER(Totaling)),
                                                                  "Business Unit Code" = FIELD("Business Unit Filter"),
                                                                  "Global Dimension 1 Code" = FIELD("Global Dimension 1 Filter"),
@@ -225,9 +225,10 @@ table 60014 "Corporate G/L Account"
         }
         field(60; "Additional-Currency Net Change"; Decimal)
         {
-            AutoFormatExpression = GetCurrencyCode();
+ AutoFormatExpression = GetCurrencyCode;
             AutoFormatType = 1;
-            CalcFormula = Sum("G/L Entry"."Additional-Currency Amount" WHERE("Corporate G/L Account No." = FIELD("No."),
+            CalcFormula = Sum("I2I G/L Entry"."Additional-Currency Amount" WHERE("Corporate G/L Account No." = FIELD("No."),
+
                                                                               "Corporate G/L Account No." = FIELD(FILTER(Totaling)),
                                                                               "Business Unit Code" = FIELD("Business Unit Filter"),
                                                                               "Global Dimension 1 Code" = FIELD("Global Dimension 1 Filter"),
@@ -243,7 +244,7 @@ table 60014 "Corporate G/L Account"
         {
             AutoFormatExpression = GetCurrencyCode();
             AutoFormatType = 1;
-            CalcFormula = Sum("G/L Entry"."Additional-Currency Amount" WHERE("Corporate G/L Account No." = FIELD("No."),
+ CalcFormula = Sum("I2I G/L Entry"."Additional-Currency Amount" WHERE("Corporate G/L Account No." = FIELD("No."),
                                                                               "Corporate G/L Account No." = FIELD(FILTER(Totaling)),
                                                                               "Business Unit Code" = FIELD("Business Unit Filter"),
                                                                               "Global Dimension 1 Code" = FIELD("Global Dimension 1 Filter"),
@@ -259,7 +260,7 @@ table 60014 "Corporate G/L Account"
         {
             AutoFormatExpression = GetCurrencyCode();
             AutoFormatType = 1;
-            CalcFormula = Sum("G/L Entry"."Additional-Currency Amount" WHERE("Corporate G/L Account No." = FIELD("No."),
+ CalcFormula = Sum("I2I G/L Entry"."Additional-Currency Amount" WHERE("Corporate G/L Account No." = FIELD("No."),
                                                                               "Corporate G/L Account No." = FIELD(FILTER(Totaling)),
                                                                               "Business Unit Code" = FIELD("Business Unit Filter"),
                                                                               "Global Dimension 1 Code" = FIELD("Global Dimension 1 Filter"),
@@ -274,7 +275,7 @@ table 60014 "Corporate G/L Account"
         {
             AutoFormatExpression = GetCurrencyCode();
             AutoFormatType = 1;
-            CalcFormula = Sum("G/L Entry"."Add.-Currency Debit Amount" WHERE("Corporate G/L Account No." = FIELD("No."),
+ CalcFormula = Sum("I2I G/L Entry"."Add.-Currency Debit Amount" WHERE("Corporate G/L Account No." = FIELD("No."),
                                                                               "Corporate G/L Account No." = FIELD(FILTER(Totaling)),
                                                                               "Business Unit Code" = FIELD("Business Unit Filter"),
                                                                               "Global Dimension 1 Code" = FIELD("Global Dimension 1 Filter"),
@@ -288,9 +289,10 @@ table 60014 "Corporate G/L Account"
         }
         field(65; "Add.-Currency Credit Amount"; Decimal)
         {
-            AutoFormatExpression = GetCurrencyCode();
+ AutoFormatExpression = GetCurrencyCode;
             AutoFormatType = 1;
-            CalcFormula = Sum("G/L Entry"."Add.-Currency Credit Amount" WHERE("Corporate G/L Account No." = FIELD("No."),
+            CalcFormula = Sum("I2I G/L Entry"."Add.-Currency Credit Amount" WHERE("Corporate G/L Account No." = FIELD("No."),
+
                                                                                "Corporate G/L Account No." = FIELD(FILTER(Totaling)),
                                                                                "Business Unit Code" = FIELD("Business Unit Filter"),
                                                                                "Global Dimension 1 Code" = FIELD("Global Dimension 1 Filter"),
@@ -394,7 +396,7 @@ table 60014 "Corporate G/L Account"
             Editable = false;
             FieldClass = FlowField;
         }
-        field(60100; "Local G/L Acc. Name"; Text[50])
+        field(60100; "Local G/L Acc. Name"; Text[100])
         {
             CalcFormula = Lookup("G/L Account".Name WHERE("No." = FIELD("Local G/L Account No.")));
             Caption = 'Local G/L Acc. Name';
@@ -477,7 +479,7 @@ table 60014 "Corporate G/L Account"
     trigger OnDelete()
     var
         CommentLine: Record "Comment Line";
-        lrecGLEntry: Record "G/L Entry";
+        lrecGLEntry: Record "I2I G/L Entry";
     begin
         lrecGLEntry.SetCurrentKey("Corporate G/L Account No.");
         lrecGLEntry.SetRange("Corporate G/L Account No.", "No.");
@@ -486,16 +488,16 @@ table 60014 "Corporate G/L Account"
 
         CommentLine.SetRange("Table Name", CommentLine."Table Name"::"G/L Account");
         CommentLine.SetRange("No.", "No.");
-        CommentLine.DeleteAll();
+       CommentLine.DeleteAll;
     end;
 
     trigger OnModify()
     var
-       // lmdlFSCodeMgt: Codeunit "Fin. Stmt. Code Management";
+        lmdlFSCodeMgt: Codeunit "Fin. Stmt.Code Management";
     begin
         "Last Date Modified" := Today;
 
-        //lmdlFSCodeMgt.gfcnUpdateCorpGLAccFSCodeAndHistory(Rec, xRec."Financial Statement Code"); // MP 22-03-16
+        lmdlFSCodeMgt.gfcnUpdateCorpGLAccFSCodeAndHistory(Rec, xRec."Financial Statement Code"); // MP 22-03-16
     end;
 
     trigger OnRename()

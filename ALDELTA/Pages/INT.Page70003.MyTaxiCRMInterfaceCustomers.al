@@ -211,10 +211,21 @@ page 70003 "MyTaxi CRM Interface Customers"
                 Promoted = true;
                 PromotedCategory = New;
                 PromotedIsBig = true;
-                RunObject = Page "Customer Card";
+                //RunObject = Page "Customer Card";
                 //RunPageLink = "No." = FIELD(id);
                 ApplicationArea = all;
                 ToolTip = 'Executes the Customer Card action.';
+                trigger OnAction()
+                var
+                    Customer: Record Customer;
+                    CustomerCard: Page "Customer Card";
+                begin
+                    if Customer.Get(Rec.id) then begin
+                        CustomerCard.SetRecord(Customer);
+                        CustomerCard.Run();
+                    end;
+                end;
+
             }
             action("Get MyTaxi Customers")
             {
@@ -229,9 +240,18 @@ page 70003 "MyTaxi CRM Interface Customers"
                 trigger OnAction()
                 var
                     MyTaxiCRMInterfaceWS: Codeunit "MyTaxi CRM Interface WS";
+                    FromDate: Date;
+                    ToDate: Date;
+                    MyTaxiCRMInterfaceSetup: Record "MyTaxi CRM Interface Setup";
                 begin
+                    MyTaxiCRMInterfaceSetup.Get;
+                    // Request user input for From Date and To Date
+                    FromDate := MyTaxiCRMInterfaceSetup."Master Data Last Max Date";
 
-                    MyTaxiCRMInterfaceWS.GetMasterData(Today, Today);
+                    if OpenDateDialog(FromDate, ToDate) then begin
+                        // Call the interface with user-provided dates
+                        MyTaxiCRMInterfaceWS.GetMasterData(FromDate, ToDate);
+                    end;
                 end;
             }
             action("Get MyTaxi Customers by ID")
@@ -303,5 +323,17 @@ page 70003 "MyTaxi CRM Interface Customers"
             }
         }
     }
+    local procedure OpenDateDialog(var FromDate: Date; var ToDate: Date): Boolean
+    var
+        Dialog: Page "I2I Input Date Range Dialog"; // A custom page for date input
+    begin
+        Dialog.SetDateRange(FromDate, ToDate);
+        if Dialog.RunModal = Action::OK then begin
+            FromDate := Dialog.GetFromDate();
+            ToDate := Dialog.GetToDate();
+            exit(true);
+        end;
+        exit(false);
+    end;
 }
 

@@ -310,12 +310,12 @@
 //         exit(true);
 //     end;
 
-    
+
 //     procedure "<-- Stage 4 related ->"()
 //     begin
 //     end;
 
-    
+
 //     procedure gfncValidateLocalData(var p_recImportLog: Record "Import Log"; p_blnDialog: Boolean) r_blnResult: Boolean
 //     var
 //         lrecGLAccountStaging: Record "G/L Account (Staging)";
@@ -337,18 +337,18 @@
 //         // Sample code <--
 //     end;
 
-    
+
 //     procedure "<-- Stage 5 related ->"()
 //     begin
 //     end;
 
-    
+
 //     procedure gfncPostTransactions(var p_recImportLog: Record "Import Log"; p_blnDialog: Boolean) r_blnResult: Boolean
 //     var
 //         lrecGLAccountStaging: Record "G/L Account (Staging)";
 //         lrecGLAccount: Record "G/L Account";
 //         lrecFinancialStatementCode: Record "Financial Statement Code";
-//         lmdlFSCodeMgt: Codeunit "Fin. Stmt. Code Management";
+//         lmdlFSCodeMgt: Codeunit "Fin. Stmt.Code Management";
 //         lcodOrgFSCode: Code[10];
 //     begin
 //         lrecGLAccountStaging.SetCurrentKey("Import Log Entry No.");
@@ -397,12 +397,12 @@
 //         exit(true);
 //     end;
 
-    
+
 //     procedure "<-- Other -->"()
 //     begin
 //     end;
 
-    
+
 //     procedure gfncArchive(var p_recImportLog: Record "Import Log"; p_blnDialog: Boolean) r_blnResult: Boolean
 //     var
 //         lrecStaging: Record "G/L Account (Staging)";

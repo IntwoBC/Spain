@@ -3,7 +3,7 @@ report 80006 "SII Update"
     DefaultLayout = RDLC;
     RDLCLayout = './SIIUpdate.rdlc';
     ApplicationArea = All;
- UsageCategory=ReportsAndAnalysis;
+    UsageCategory=ReportsAndAnalysis;
     dataset
     {
         dataitem("SII Doc. Upload State"; "SII Doc. Upload State")

@@ -29,7 +29,7 @@ page 60024 "Corporate G/L Account Card"
     RefreshOnActivate = true;
     SourceTable = "Corporate G/L Account";
     ApplicationArea = All;
-    UsageCategory=lists;
+    UsageCategory = lists;
 
     layout
     {
@@ -238,8 +238,8 @@ page 60024 "Corporate G/L Account Card"
                     Caption = 'Co&mments';
                     Image = ViewComments;
                     RunObject = Page "Comment Sheet";
-                    RunPageLink = "Table Name" = CONST("Historic G/L Account"),
-                                  "No." = FIELD("No.");
+                    //RunPageLink = "Table Name" = CONST("Historic G/L Account"),
+                    //  "No." = FIELD("No.");
                     ApplicationArea = all;
                     ToolTip = 'Executes the Co&mments action.';
 
@@ -391,7 +391,7 @@ page 60024 "Corporate G/L Account Card"
 
     trigger OnNewRecord(BelowxRec: Boolean)
     begin
-        //SetupNewGLAcc(xRec, BelowxRec);
+        Rec.SetupNewGLAcc(xRec, BelowxRec);
     end;
 
     trigger OnOpenPage()

@@ -11,7 +11,7 @@ report 50001 "Customer Application"
     // // t84313.001 COSMO.ADT 16/04/20
     //   Not applying if different Cust. Posting Groups
 
-    Caption = 'Automatic Application of Customers';
+    Caption = 'Customer Application';
     Permissions = TableData "Cust. Ledger Entry" = rm;
     ProcessingOnly = true;
     ApplicationArea = All;
