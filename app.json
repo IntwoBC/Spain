@@ -10,7 +10,13 @@
     "help": "",
     "url": "",
     "logo": "",
-    "dependencies": [],
+    "dependencies": [
+        {
+        "appId": "58623bfa-0559-4bc2-ae1c-0979c29fd9e0",
+        "publisher": "Microsoft",
+        "name": "Intelligent Cloud Base",
+        "version": "25.1.25873.26186"
+    }],
     "screenshots": [],
     "platform": "1.0.0.0",
     "application": "25.0.23364.24599",

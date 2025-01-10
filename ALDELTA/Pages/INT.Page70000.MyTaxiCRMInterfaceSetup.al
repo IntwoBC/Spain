@@ -14,7 +14,7 @@ page 70000 "MyTaxi CRM Interface Setup"
     PageType = Card;
     SourceTable = "MyTaxi CRM Interface Setup";
     ApplicationArea = All;
-UsageCategory=lists;
+    UsageCategory = lists;
     layout
     {
         area(content)

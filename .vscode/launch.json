@@ -6,7 +6,7 @@
             "request": "launch",
             "type": "al",
             "environmentType": "Sandbox",
-            "environmentName": "ALHAMBRA_DEV_ES",
+            "environmentName": "ALHAMBRA_ES",
             "tenant": "b470fdc8-4351-4598-b6b2-34092850a8d4",
             "startupObjectId": 22,
             "startupObjectType": "Page",
