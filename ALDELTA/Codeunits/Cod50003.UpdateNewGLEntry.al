@@ -4,20 +4,21 @@ codeunit 50003 UpdateNewGLEntry
     var
         I2IGLentry: Record "I2I G/L Entry";
         GLEntry: Record "G/L Entry";
+        LastProcessedEntryNo: Integer;
     begin
-        Clear(GLEntry);
-        Clear(I2IGLentry);
-        GLEntry.SetFilter("Entry No.", '<>%1', 0);
+        if I2IGLentry.FindLast() then
+            LastProcessedEntryNo := I2IGLentry."Entry No."
+        else
+            LastProcessedEntryNo := 0; // No entries processed yet
+
+        GLEntry.SetFilter("Entry No.", '>=%1', LastProcessedEntryNo + 1);
 
         if GLEntry.FindSet() then
             repeat
-                if not I2IGLentry.Get(GLEntry."Entry No.") then begin
-                    I2IGLentry.Init();
-                    I2IGLentry.TransferFields(GLEntry);
-                    I2IGLentry."Entry No." := GLEntry."Entry No."; // Ensure Entry No. is set
-                    I2IGLentry.Insert();
-                end;
+                I2IGLentry.Init();
+                I2IGLentry.TransferFields(GLEntry);
+                I2IGLentry."Entry No." := GLEntry."Entry No.";
+                I2IGLentry.Insert();
             until GLEntry.Next() = 0;
     end;
-
 }
