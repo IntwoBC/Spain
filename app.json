@@ -2,7 +2,7 @@
     "id": "9554c30a-7c99-4a9f-8017-52980897995a",
     "name": "SPAINDEV",
     "publisher": "InTWO",
-    "version": "1.0.0.7",
+    "version": "1.0.0.9",
     "brief": "",
     "description": "",
     "privacyStatement": "",
@@ -12,7 +12,7 @@
     "logo": "",
     "dependencies": [
         {
-        "appId": "58623bfa-0559-4bc2-ae1c-0979c29fd9e0",
+        "id": "58623bfa-0559-4bc2-ae1c-0979c29fd9e0",
         "publisher": "Microsoft",
         "name": "Intelligent Cloud Base",
         "version": "25.1.25873.26186"
