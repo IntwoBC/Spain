@@ -52,6 +52,16 @@ codeunit 61002 "T:Gen. Journal Line"
         lfcnPopulateShortcutDim1(Rec);
     end;
 
+    [EventSubscriber(ObjectType::Table, 81, 'OnAfterValidateEvent', 'Amount', false, false)]
+    local procedure levtOnAfterValidateAmount(var Rec: Record "Gen. Journal Line"; var xRec: Record "Gen. Journal Line"; CurrFieldNo: Integer)
+    var
+        lrecGenJnlBatch: Record "Gen. Journal Batch";
+        lrecGLAcc: Record "G/L Account";
+        lblnReplaceInfo: Boolean;
+    begin
+        Rec."Corporate G/L Account No." := lfcnGetCorpAccNo(Rec."Account No.");
+    end;
+
     [EventSubscriber(ObjectType::Table, 81, 'OnAfterValidateEvent', 'Posting Date', false, false)]
     local procedure levtOnAfterValidatePostingDate(var Rec: Record "Gen. Journal Line"; var xRec: Record "Gen. Journal Line"; CurrFieldNo: Integer)
     var

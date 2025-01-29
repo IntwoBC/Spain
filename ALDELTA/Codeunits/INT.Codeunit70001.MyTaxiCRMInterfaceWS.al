@@ -228,6 +228,9 @@ codeunit 70001 "MyTaxi CRM Interface WS"
             //if CustomerContent.Get('italyPec', JToken) then
             //TmpMyTaxiCRMInterfaceRecords.italyPec := CopyStr(JToken.AsValue().AsText(), 1, MaxStrLen(TmpMyTaxiCRMInterfaceRecords.italyPec));
             // MyTaxi.IT.CRE.INT01.005 >>
+
+            if CustomerContent.Get('headquarterID', JToken) then
+                TmpMyTaxiCRMInterfaceRecords.headquarterID := JToken.AsValue().AsText();
             TmpMyTaxiCRMInterfaceRecords.Insert;
         end;
 
