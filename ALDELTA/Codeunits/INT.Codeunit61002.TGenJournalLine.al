@@ -59,7 +59,8 @@ codeunit 61002 "T:Gen. Journal Line"
         lrecGLAcc: Record "G/L Account";
         lblnReplaceInfo: Boolean;
     begin
-        Rec."Corporate G/L Account No." := lfcnGetCorpAccNo(Rec."Account No.");
+        if Rec."Account Type" = Rec."Account Type"::"G/L Account" then
+            Rec."Corporate G/L Account No." := lfcnGetCorpAccNo(Rec."Account No.");
     end;
 
     [EventSubscriber(ObjectType::Table, 81, 'OnAfterValidateEvent', 'Posting Date', false, false)]
