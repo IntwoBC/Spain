@@ -377,8 +377,15 @@ codeunit 70001 "MyTaxi CRM Interface WS"
             if (SalesHeader.Get(SalesHeader."Document Type"::Invoice, JToken.AsValue().AsInteger()) OR
                 SalesInvoiceHeader.Get(JToken.AsValue().AsInteger())) then
                 exit;
+
+            Clear(TmpMyTaxiCRMInterfaceRecords);
+            TmpMyTaxiCRMInterfaceRecords.SetRange(id, JToken.AsValue().AsInteger());
+            if TmpMyTaxiCRMInterfaceRecords.FindFirst() then
+                exit;
         end;
         LastEntryNo += 1;
+
+        Clear(TmpMyTaxiCRMInterfaceRecords);
         TmpMyTaxiCRMInterfaceRecords.Init;
         TmpMyTaxiCRMInterfaceRecords.id := JToken.AsValue().AsInteger();
         TmpMyTaxiCRMInterfaceRecords."Entry No." := LastEntryNo;
