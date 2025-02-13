@@ -247,10 +247,10 @@ then begin
 
         lrecCorpGLAcc.SetCurrentKey("Local G/L Account No.");
         lrecCorpGLAcc.SetRange("Local G/L Account No.", pcodAccNo);
-        if lrecCorpGLAcc.Count = 1 then begin
-            lrecCorpGLAcc.FindFirst();
-            exit(lrecCorpGLAcc."No.");
-        end
+        //if lrecCorpGLAcc.Count = 1 then begin
+        if lrecCorpGLAcc.FindFirst() then
+            exit(lrecCorpGLAcc."No.")
+        //end
         // MP 19-02-14 >>
         else
             exit('');

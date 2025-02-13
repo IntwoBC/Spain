@@ -7,7 +7,7 @@ report 80100 "Batch Appl. Customer Entries"
     Permissions = TableData "Cust. Ledger Entry" = rm;
     ProcessingOnly = true;
     ApplicationArea = All;
- UsageCategory=ReportsAndAnalysis;
+    UsageCategory = ReportsAndAnalysis;
     dataset
     {
         dataitem("Integer"; "Integer")
@@ -131,10 +131,11 @@ report 80100 "Batch Appl. Customer Entries"
     local procedure ApplyCustLedgEntry(var CustLedgEntry: Record "Cust. Ledger Entry")
     var
         CustEntryApplyPostedEntries: Codeunit "CustEntry-Apply Posted Entries";
+        ApplyUnapplyParameters: Record "Apply Unapply Parameters" temporary;
     begin
         SetApplID(CustLedgEntry);
         //CustEntryApplyPostedEntries.SetCalledFromBatchAppl(true);
-        //CustEntryApplyPostedEntries.Apply(CustLedgEntry, CustLedgEntry."Document No.", WorkDate);
+        CustEntryApplyPostedEntries.Apply(CustLedgEntry, ApplyUnapplyParameters);
     end;
 
     local procedure SetApplID(var CustLedgEntry: Record "Cust. Ledger Entry")
