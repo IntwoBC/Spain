@@ -11,6 +11,22 @@ pageextension 50115 pageextension50115 extends "General Journal"
             {
                 ApplicationArea = All;
                 ToolTip = 'Specifies the value of the Corporate G/L Account No. field.';
+                trigger OnLookup(var Text: Text): Boolean
+                var
+                    CorporateGLAccount: Record "Corporate G/L Account";
+                    CorporateGLaccountPage: page "Corporate G/L Account List";
+                begin
+                    if not Rec.BottomUp then begin
+                        CorporateGLAccount.SetRange("Local G/L Account No.", Rec."Account No.");
+                        CorporateGLaccountPage.SetTableView(CorporateGLAccount);
+                        CorporateGLaccountPage.LookupMode(true);
+                        if CorporateGLaccountPage.RunModal() = Action::LookupOK then begin
+                            CorporateGLaccountPage.GetRecord(CorporateGLAccount);
+                            Rec."Corporate G/L Account No." := CorporateGLAccount."No.";
+                            CurrPage.Update(true);
+                        end;
+                    end;
+                end;
             }
         }
         addafter("Succeeded VAT Registration No.")
