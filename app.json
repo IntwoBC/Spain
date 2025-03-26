@@ -2,7 +2,7 @@
     "id": "9554c30a-7c99-4a9f-8017-52980897995a",
     "name": "SPAINDEV",
     "publisher": "InTWO",
-    "version": "1.0.0.15",
+    "version": "1.0.0.16",
     "brief": "",
     "description": "",
     "privacyStatement": "",
@@ -11,18 +11,7 @@
     "url": "",
     "logo": "",
     "dependencies": [
-        {
-        "id": "58623bfa-0559-4bc2-ae1c-0979c29fd9e0",
-        "publisher": "Microsoft",
-        "name": "Intelligent Cloud Base",
-        "version": "25.1.25873.26186"
-    },
-    {
-        "id": "fbec64cb-970e-4ea1-aecf-d19f322cff7c",
-        "publisher": "VISIONDATA",
-        "name": "FreeNow Core International",
-        "version": "25.1.20.13"
-}
+    
 ],
     "screenshots": [],
     "platform": "1.0.0.0",
