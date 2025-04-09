@@ -10,6 +10,18 @@ pageextension 50112 pageextension50112 extends "Vendor Ledger Entries"
     // PK 02-09-24 EY-MYES0004 Feature 6050340: Job for settlement of open Transactions
     // Action added
     //   - Batch Application
+    layout
+    {
+        addafter("External Document No.")
+        {
+            field(URL; Rec.URL)
+            {
+                ApplicationArea = All;
+                ToolTip = 'URL';
+                Caption = 'URL';
+            }
+        }
+    }
     actions
     {
         addafter(ActionApplyEntries)
