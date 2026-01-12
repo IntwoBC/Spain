@@ -473,7 +473,7 @@ report 80000 "MyTaxi Update Document No"
         MyTaxiCRMInterfaceRecords: Record "MyTaxi CRM Interface Records";
         NewSalesInvoiceCompanyNoSeries: Code[20];
         NewSalesCrMemoCompanyNoSeries: Code[20];
-        NoSeriesMgt: Codeunit NoSeriesManagement;
+        NoSeriesMgt: Codeunit "No. Series"; //NoSeriesManagement;//NoSeriesManagement;//FreeNow: #69855:#511 Extension management compatibility with version 27.0.38460.38988 - BC
         NewDocNo: Code[20];
         Text001: Label 'Step                       #1####################\\';
         Text002: Label 'Invoices                 #2####################\\';
@@ -499,7 +499,11 @@ report 80000 "MyTaxi Update Document No"
     var
         NoSeriesCode: Code[20];
     begin
-        NoSeriesMgt.InitSeries(NewDocumentNoSeries, '', PostingDate, NewDocumentNo, NoSeriesCode);
+        //NoSeriesManagement;//FreeNow: #69855:#511 Extension management compatibility with version 27.0.38460.38988 - BC-----Start
+        //NoSeriesMgt.InitSeries(NewDocumentNoSeries, '', PostingDate, NewDocumentNo, NoSeriesCode);
+        NoSeriesMgt.TestManual(NewDocumentNoSeries);
+        NewDocumentNo := NoSeriesMgt.GetNextNo(NewDocumentNoSeries, PostingDate, true);
+        //NoSeriesManagement;//FreeNow: #69855:#511 Extension management compatibility with version 27.0.38460.38988 - BC-----End
     end;
 }
 

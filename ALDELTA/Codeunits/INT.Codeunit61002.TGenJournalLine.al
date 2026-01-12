@@ -67,15 +67,16 @@ codeunit 61002 "T:Gen. Journal Line"
     local procedure levtOnAfterValidatePostingDate(var Rec: Record "Gen. Journal Line"; var xRec: Record "Gen. Journal Line"; CurrFieldNo: Integer)
     var
         lrecGenJnlBatch: Record "Gen. Journal Batch";
-        lmdlNoSeriesMgt: Codeunit NoSeriesManagement;
+        lmdlNoSeriesMgt: Codeunit "No. Series"; //NoSeriesManagement;//FreeNow: #69855:#511 Extension management compatibility with version 27.0.38460.38988 - BC
     begin
-        if (Rec."Line No." in [0, 10000]) and
-  (CurrFieldNo = Rec.FieldNo("Posting Date"))
-then begin
+        if (Rec."Line No." in [0, 10000]) and (CurrFieldNo = Rec.FieldNo("Posting Date"))
+    then begin
             lrecGenJnlBatch.Get(Rec."Journal Template Name", Rec."Journal Batch Name");
             if lrecGenJnlBatch."No. Series" <> '' then begin
                 Clear(lmdlNoSeriesMgt);
-                Rec."Document No." := lmdlNoSeriesMgt.TryGetNextNo(lrecGenJnlBatch."No. Series", Rec."Posting Date");
+                //FreeNow: #69855: #511 Extension management compatibility with version 27.0.38460.38988 - BC
+                //Previous it was TryGetNextNo and replaced with GetNextNo
+                Rec."Document No." := lmdlNoSeriesMgt.GetNextNo(lrecGenJnlBatch."No. Series", Rec."Posting Date");
             end;
         end;
     end;

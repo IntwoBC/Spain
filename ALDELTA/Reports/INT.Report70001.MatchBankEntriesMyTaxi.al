@@ -10,7 +10,7 @@ report 70001 "Match Bank Entries MyTaxi"
                   TableData "Check Ledger Entry" = rm;
     ProcessingOnly = true;
     ApplicationArea = All;
- UsageCategory=ReportsAndAnalysis;
+    UsageCategory = ReportsAndAnalysis;
     dataset
     {
         dataitem("Bank Acc. Reconciliation"; "Bank Acc. Reconciliation")
@@ -381,7 +381,7 @@ report 70001 "Match Bank Entries MyTaxi"
         MyTaxiCRMInterfaceRecords: Record "MyTaxi CRM Interface Records";
         VendorBankAccount: Record "Vendor Bank Account";
         CustomerBankAccount: Record "Customer Bank Account";
-        NoSeriesMgt: Codeunit NoSeriesManagement;
+        NoSeriesMgt: Codeunit "No. Series"; //NoSeriesManagement;//FreeNow: #69855:#511 Extension management compatibility with version 27.0.38460.38988 - BC
         j: Integer;
         bVendorFound: Boolean;
         bCustomerFound: Boolean;

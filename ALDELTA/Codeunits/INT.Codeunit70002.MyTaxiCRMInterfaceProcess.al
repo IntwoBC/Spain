@@ -52,7 +52,7 @@ codeunit 70002 "MyTaxi CRM Interface Process"
         VATPostingSetup: Record "VAT Posting Setup";
         InterfaceType: Option " ",Customers,"Sales Invoice";
         GenJnlLine: Record "Gen. Journal Line";
-        NoSeriesMgt: Codeunit NoSeriesManagement;
+        NoSeriesMgt: Codeunit "No. Series"; //NoSeriesManagement;//NoSeriesManagement;//FreeNow: #69855:#511 Extension management compatibility with version 27.0.38460.38988 - BC
         LastLine: Integer;
         InvoiceAmount: Decimal;
         CreditMemoAmount: Decimal;

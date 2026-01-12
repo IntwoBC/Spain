@@ -2,7 +2,7 @@ pageextension 50132 pageextension50132 extends "Acc. Receivables Adm. RC"
 {
     layout
     {
-        moveafter(Control1900724808; Control1907692008)
+        //moveafter(Control1900724808; Control1907692008)//FreeNow: #69855:#511 Extension management compatibility with version 27.0.38460.38988 - BC
     }
     actions
     {

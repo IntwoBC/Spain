@@ -7,6 +7,7 @@ codeunit 70010 "Data Migration Process"
     var
         Text001: Label 'Gen. Journal Template name is blank.';
         Text002: Label 'Gen. Journal Batch name is blank.';
+        IntNo: Integer;//#69855: Extension incompatibility
     begin
         GenJnlLine.Init();
 
@@ -38,17 +39,33 @@ codeunit 70010 "Data Migration Process"
         else
             if GenJnlBatch."No. Series" <> '' then begin
                 if OldDocumentNo <> '' then begin
-                    //ERROR(OldDocumentNo);
-                    NoSeriesMgt.SetNoSeriesLineFilter(NoSeriesLine, GenJnlBatch."No. Series", GenJnlLine."Posting Date");
-                    if NoSeriesLine."Increment-by No." > 1 then
-                        NoSeriesMgt.IncrementNoText(GenJnlLine."Document No.", NoSeriesLine."Increment-by No.")
-                    else
+                    //NoSeriesManagement;//FreeNow: #69855:#511 Extension management compatibility with version 27.0.38460.38988 - BC
+                    //     //ERROR(OldDocumentNo);
+                    //     NoSeriesMgt.SetNoSeriesLineFilter(NoSeriesLine, GenJnlBatch."No. Series", GenJnlLine."Posting Date");
+                    //     if NoSeriesLine."Increment-by No." > 1 then
+                    //         NoSeriesMgt.IncrementNoText(GenJnlLine."Document No.", NoSeriesLine."Increment-by No.")
+                    //     else
+                    //         GenJnlLine."Document No." := IncStr(OldDocumentNo);
+                    // end
+                    // else begin
+                    //     Clear(NoSeriesMgt);
+                    //     //ERROR(GenJnlBatch."No. Series");
+                    //     GenJnlLine."Document No." := NoSeriesMgt.TryGetNextNo(GenJnlBatch."No. Series", GenJnlLine."Posting Date");
+                    // end;
+
+                    NoSeriesLine.Reset();
+                    NoSeriesLine.SetRange("Series Code", GenJnlBatch."No. Series");
+                    NoSeriesLine.SetFilter("Starting Date", '<=%1', GenJnlLine."Posting Date");
+                    if NoSeriesLine.FindLast() then;
+                    if NoSeriesLine."Increment-by No." > 1 then begin
+                        Evaluate(IntNo, OldDocumentNo);
+                        IntNo := IntNo + NoSeriesLine."Increment-by No.";
+                        GenJnlLine."Document No." := Format(IntNo);
+                    end else
                         GenJnlLine."Document No." := IncStr(OldDocumentNo);
-                end
-                else begin
+                end else begin
                     Clear(NoSeriesMgt);
-                    //ERROR(GenJnlBatch."No. Series");
-                    GenJnlLine."Document No." := NoSeriesMgt.TryGetNextNo(GenJnlBatch."No. Series", GenJnlLine."Posting Date");
+                    GenJnlLine."Document No." := NoSeriesMgt.GetNextNo(GenJnlBatch."No. Series", GenJnlLine."Posting Date", true);
                 end;
             end;
         //ERROR(FORMAT(GenJnlBatch."No. Series") + ' T- '+ OldDocumentNo+' - '+UseOldDocumentNo+' - '+FORMAT(Balance));
@@ -288,7 +305,7 @@ codeunit 70010 "Data Migration Process"
         NoSeriesLine: Record "No. Series Line";
         GenJournalBatch: Record "Gen. Journal Batch";
         GenJnlTemplate: Record "Gen. Journal Template";
-        NoSeriesMgt: Codeunit NoSeriesManagement;
+        NoSeriesMgt: Codeunit "No. Series"; //NoSeriesManagement;//NoSeriesManagement;//FreeNow: #69855:#511 Extension management compatibility with version 27.0.38460.38988 - BC
         BatchName: Code[10];
         TemplateCode: Code[20];
         JournalTemplate: Text[10];

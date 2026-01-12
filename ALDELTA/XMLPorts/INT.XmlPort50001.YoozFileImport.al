@@ -647,7 +647,7 @@ xmlport 50001 "Yooz File - Import"
         FirstLine: Boolean;
         Vendor: Record Vendor;
         GLAccount: Record "G/L Account";
-        NoSeriesMgt: Codeunit NoSeriesManagement;
+        NoSeriesMgt: Codeunit "No. Series"; //NoSeriesManagement;//FreeNow: #69855:#511 Extension management compatibility with version 27.0.38460.38988 - BC
         DocumentNo: Code[20];
         Increment: Integer;
         VATPostSetup: Record "VAT Posting Setup";
@@ -661,7 +661,9 @@ xmlport 50001 "Yooz File - Import"
         GenJnlBatch.TestField("No. Series");
         if GenJnlBatch."No. Series" <> '' then begin
             Clear(NoSeriesMgt);
-            exit(NoSeriesMgt.TryGetNextNo(GenJnlBatch."No. Series", WorkDate()));
+            //FreeNow: #69855:#511 Extension management compatibility with version 27.0.38460.38988 - BC
+            //Previous it was TryGetNextNo and replaced by GetNextNo
+            exit(NoSeriesMgt.GetNextNo(GenJnlBatch."No. Series", WorkDate()));
         end;
         exit('');
     end;

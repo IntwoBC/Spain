@@ -20,7 +20,7 @@ report 60005 "Close Corporate Income Statmt."
     Caption = 'Close Corporate Income Statement';
     ProcessingOnly = true;
     ApplicationArea = All;
-     UsageCategory=ReportsAndAnalysis;
+    UsageCategory = ReportsAndAnalysis;
 
     dataset
     {
@@ -597,7 +597,7 @@ report 60005 "Close Corporate Income Statmt."
         grecSuspenseGLAcc: Record "G/L Account";
         grecEYCoreSetup: Record "EY Core Setup";
         gtmpAmountBufRetainedEarnings: Record "Analysis View Entry" temporary;
-        NoSeriesMgt: Codeunit NoSeriesManagement;
+        NoSeriesMgt: Codeunit "No. Series"; //NoSeriesManagement;//FreeNow: #69855:#511 Extension management compatibility with version 27.0.38460.38988 - BC
         GenJnlPostLine: Codeunit "Gen. Jnl.-Post Line";
         DimMgt: Codeunit DimensionManagement;
         DimBufMgt: Codeunit "Dimension Buffer Management";
@@ -677,10 +677,14 @@ report 60005 "Close Corporate Income Statmt."
         DocNo := '';
         if GenJnlBatch.Get(GenJnlLine."Journal Template Name", GenJnlLine."Journal Batch Name") then
             if GenJnlBatch."No. Series" <> '' then
-                DocNo := NoSeriesMgt.TryGetNextNo(GenJnlBatch."No. Series", EndDateReq);
+                //FreeNow: #69855:#511 Extension management compatibility with version 27.0.38460.38988 - BC
+                //Previous it was TryGetNextNo and replaced by GetNextNo
+                DocNo := NoSeriesMgt.GetNextNo(GenJnlBatch."No. Series", EndDateReq);
     end;
 
     local procedure HandleGenJnlLine()
+    var
+        NextNo: Code[20];//FreeNow: #69855:#511 Extension management compatibility with version 27.0.38460.38988 - BC
     begin
         GenJnlLine."Additional-Currency Posting" :=
           GenJnlLine."Additional-Currency Posting"::None;
@@ -694,8 +698,14 @@ report 60005 "Close Corporate Income Statmt."
             end;
             if GenJnlLine.Amount <> 0 then begin
                 GenJnlPostLine.Run(GenJnlLine);
-                if DocNo = NoSeriesMgt.GetNextNo(GenJnlBatch."No. Series", EndDateReq, false) then
-                    NoSeriesMgt.SaveNoSeries();
+                //FreeNow: #69855:#511 Extension management compatibility with version 27.0.38460.38988 - BC-----Start
+                // if DocNo = NoSeriesMgt.GetNextNo(GenJnlBatch."No. Series", EndDateReq, false) then
+                //     NoSeriesMgt.SaveNoSeries();
+
+                NextNo := NoSeriesMgt.GetNextNo(GenJnlBatch."No. Series", EndDateReq, false);
+                if DocNo = NextNo then
+                    DocNo := NoSeriesMgt.GetNextNo(GenJnlBatch."No. Series", EndDateReq, true);
+                //FreeNow: #69855:#511 Extension management compatibility with version 27.0.38460.38988 - BC-----End
             end;
         end else
             if not ZeroGenJnlAmount() then
