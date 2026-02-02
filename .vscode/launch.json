@@ -6,7 +6,10 @@
             "request": "launch",
             "type": "al",
             "environmentType": "Sandbox",
+<<<<<<< HEAD
             //"environmentName": "ALHAMBRA_DEV_ES",
+=======
+>>>>>>> 5cd874eb159220ac80db05a83dd1fecae17ac11b
             "environmentName": "ES_SANDBOX_15-12-2025",
             "tenant": "b470fdc8-4351-4598-b6b2-34092850a8d4",
             "startupObjectId": 22,
