@@ -90,7 +90,7 @@ page 50007 "Cust. Det. Vend Ledg Entries"
                 field("Initial Document Type"; Rec."Initial Document Type")
                 {
                     ToolTip = 'Specifies initial Document Type';
-                    Editable = True;
+                    Editable = InitialDocEditable;
                 }
                 field("Applied by Batch Job"; Rec."Applied by Batch Job")
                 {
@@ -114,4 +114,22 @@ page 50007 "Cust. Det. Vend Ledg Entries"
             }
         }
     }
+
+    trigger OnAfterGetRecord()
+    begin
+        SetControlAppearance();
+    end;
+
+    procedure SetControlAppearance()
+    var
+        DetailRec: Record "Detailed Vendor Ledg. Entry";
+    begin
+        if Rec."Document Type" = DetailRec."Document Type"::" " then
+            InitialDocEditable := true
+        else
+            InitialDocEditable := false;
+    end;
+
+    var
+        InitialDocEditable: Boolean;
 }
