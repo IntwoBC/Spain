@@ -12,6 +12,20 @@ pageextension 50110 pageextension50110 extends "Purchase Journal"
     layout
     {
         moveafter("VAT Prod. Posting Group"; Amount)
+        // #73107	ES_BTY1-609_Purchase journal not showing account name
+        modify("<Vendor Name>")
+        {
+            Visible = false;
+        }
+        addafter("Account No.")
+        {
+            field(AccountName; AccName)
+            {
+                ApplicationArea = All;
+                Caption = 'Account Name';
+                Editable = false;
+            }
+        }
     }
 }
 
