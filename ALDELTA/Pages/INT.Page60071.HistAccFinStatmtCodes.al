@@ -7,7 +7,7 @@ page 60071 "Hist. Acc. Fin. Statmt. Codes"
     PageType = List;
     SourceTable = "Hist. Acc. Fin. Statmt. Code";
     ApplicationArea = All;
-UsageCategory=lists;
+    UsageCategory = lists;
     layout
     {
         area(content)

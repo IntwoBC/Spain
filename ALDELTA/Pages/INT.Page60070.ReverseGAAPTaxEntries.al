@@ -7,7 +7,7 @@ page 60070 "Reverse GAAP/Tax Entries"
     SaveValues = true;
     SourceTable = "Accounting Period";
     ApplicationArea = All;
-UsageCategory=lists;
+    UsageCategory = lists;
     layout
     {
         area(content)

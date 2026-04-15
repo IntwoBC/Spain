@@ -9,7 +9,7 @@ page 60076 "G/L Account/FS Code Matrix"
     PageType = List;
     SourceTable = "G/L Account";
     ApplicationArea = All;
-UsageCategory=lists;
+    UsageCategory = lists;
     layout
     {
         area(content)

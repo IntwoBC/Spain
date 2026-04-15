@@ -4,7 +4,7 @@ page 60061 "Corporate G/L Acc. Group List"
     PageType = List;
     SourceTable = "Corporate G/L Account Group";
     ApplicationArea = All;
-UsageCategory=lists;
+    UsageCategory = lists;
     layout
     {
         area(content)

@@ -10,7 +10,7 @@ page 60029 "EY Core Setup"
     PageType = Card;
     SourceTable = "EY Core Setup";
     ApplicationArea = All;
-UsageCategory=lists;
+    UsageCategory = lists;
     layout
     {
         area(content)

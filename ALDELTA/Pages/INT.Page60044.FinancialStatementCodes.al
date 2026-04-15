@@ -7,7 +7,7 @@ page 60044 "Financial Statement Codes"
     PageType = List;
     SourceTable = "Financial Statement Code";
     ApplicationArea = All;
-UsageCategory=lists;
+    UsageCategory = lists;
     layout
     {
         area(content)

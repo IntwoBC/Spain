@@ -7,7 +7,7 @@ page 60074 "Adjmts. View Subform-Excl. Unp"
     SourceTableView = SORTING("Global Dimension 1 Code", "Posting Date")
                       WHERE("Global Dimension 1 Code" = FILTER(<> ''));
     ApplicationArea = All;
-UsageCategory=lists;
+    UsageCategory = lists;
     layout
     {
         area(content)

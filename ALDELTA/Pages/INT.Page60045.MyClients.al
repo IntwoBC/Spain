@@ -4,7 +4,7 @@ page 60045 "My Clients"
     PageType = List;
     SourceTable = "My Client";
     ApplicationArea = All;
-UsageCategory=lists;
+    UsageCategory = lists;
     layout
     {
         area(content)

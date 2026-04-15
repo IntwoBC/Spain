@@ -48,7 +48,7 @@ page 80101 "Master Data Input Request"
     var
         SetVisiblity: Boolean;
         //#73376  BTY1-617 Increase digits limit in CRM customers - UK, ES, IE, IT
-        CustomerIDsToGet: Text[250];
+        CustomerIDsToGet: Text[2048];
         FromDate: Date;
         ToDate: Date;
 

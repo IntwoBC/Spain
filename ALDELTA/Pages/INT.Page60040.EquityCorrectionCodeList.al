@@ -4,7 +4,7 @@ page 60040 "Equity Correction Code List"
     PageType = List;
     SourceTable = "Equity Correction Code";
     ApplicationArea = All;
-UsageCategory=lists;
+    UsageCategory = lists;
     layout
     {
         area(content)

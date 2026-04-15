@@ -11,7 +11,7 @@ page 60060 "Financial Stat. Structure List"
     PageType = List;
     SourceTable = "Financial Statement Structure";
     ApplicationArea = All;
-UsageCategory=lists;
+    UsageCategory = lists;
     layout
     {
         area(content)

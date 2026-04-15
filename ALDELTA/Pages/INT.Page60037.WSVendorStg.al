@@ -4,7 +4,7 @@ page 60037 "WS Vendor Stg"
     PageType = List;
     SourceTable = "Vendor (Staging)";
     ApplicationArea = All;
-UsageCategory=lists;
+    UsageCategory = lists;
     layout
     {
         area(content)

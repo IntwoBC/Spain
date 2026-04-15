@@ -13,7 +13,7 @@ page 60034 "WS GL Account Stg"
     PageType = List;
     SourceTable = "G/L Account (Staging)";
     ApplicationArea = All;
-UsageCategory=lists;
+    UsageCategory = lists;
     layout
     {
         area(content)

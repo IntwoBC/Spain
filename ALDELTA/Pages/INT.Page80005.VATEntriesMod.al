@@ -7,7 +7,7 @@ page 80005 "VAT Entries Mod"
     Permissions = TableData "VAT Entry" = rm;
     SourceTable = "VAT Entry";
     ApplicationArea = All;
-UsageCategory=lists;
+    UsageCategory = lists;
     layout
     {
         area(content)

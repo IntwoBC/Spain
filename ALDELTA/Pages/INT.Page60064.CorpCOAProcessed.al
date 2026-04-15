@@ -4,7 +4,7 @@ page 60064 "Corp COA (Processed)"
     PageType = List;
     SourceTable = "Corporate G/L Acc (Processed)";
     ApplicationArea = All;
-UsageCategory=lists;
+    UsageCategory = lists;
     layout
     {
         area(content)

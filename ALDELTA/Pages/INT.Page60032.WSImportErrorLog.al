@@ -4,7 +4,7 @@ page 60032 "WS Import Error Log"
     PageType = List;
     SourceTable = "Import Error Log";
     ApplicationArea = All;
-UsageCategory=lists;
+    UsageCategory = lists;
     layout
     {
         area(content)

@@ -8,7 +8,7 @@ page 60097 "Report Links"
     SourceTable = Language;
     SourceTableTemporary = true;
     ApplicationArea = All;
-UsageCategory=lists;
+    UsageCategory = lists;
     layout
     {
         area(content)

@@ -11,7 +11,7 @@ page 60073 "Adjustments View"
     SourceTableView = SORTING(Number)
                       WHERE(Number = CONST(1));
     ApplicationArea = All;
-UsageCategory=lists;
+    UsageCategory = lists;
     layout
     {
         area(content)

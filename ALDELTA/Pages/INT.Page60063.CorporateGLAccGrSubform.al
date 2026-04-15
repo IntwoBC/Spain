@@ -5,7 +5,7 @@ page 60063 "Corporate G/L Acc. Gr. Subform"
     PageType = ListPart;
     SourceTable = "Corporate G/L Account Gr. Line";
     ApplicationArea = All;
-UsageCategory=lists;
+    UsageCategory = lists;
     layout
     {
         area(content)

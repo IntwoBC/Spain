@@ -4,7 +4,7 @@ page 60065 "Gen. Journal Line (Processed)"
     PageType = List;
     SourceTable = "Gen. Journal Line (Processed)";
     ApplicationArea = All;
-UsageCategory=lists;
+    UsageCategory = lists;
     layout
     {
         area(content)

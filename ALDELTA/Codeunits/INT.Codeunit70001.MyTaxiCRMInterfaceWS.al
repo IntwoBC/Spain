@@ -182,6 +182,10 @@ codeunit 70001 "MyTaxi CRM Interface WS"
             // MyTaxi.W1.CRE.INT01.001 <<
 
             //TmpMyTaxiCRMInterfaceRecords.customerGroup := CustomerContent.GetValue('CustomerGroup').ToString;
+            //#73376--->
+            if CustomerContent.Get('customerGroup', JToken) then//CR PL_Self Billing posting logic change BTY1-441
+                TmpMyTaxiCRMInterfaceRecords.customerGroup := CopyStr(JToken.AsValue().AsText(), 1, MaxStrLen(TmpMyTaxiCRMInterfaceRecords.customerGroup));
+            //#73376---->
             if CustomerContent.Get('address1', JToken) then
                 TmpMyTaxiCRMInterfaceRecords.address2 := CopyStr(JToken.AsValue().AsText(), 1, MaxStrLen(TmpMyTaxiCRMInterfaceRecords.address2));
 

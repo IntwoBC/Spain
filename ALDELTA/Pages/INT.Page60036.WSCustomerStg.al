@@ -4,7 +4,7 @@ page 60036 "WS Customer Stg"
     PageType = List;
     SourceTable = "Customer (Staging)";
     ApplicationArea = All;
-UsageCategory=lists;
+    UsageCategory = lists;
     layout
     {
         area(content)

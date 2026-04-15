@@ -11,7 +11,7 @@ page 60039 "G/L Entries Subform"
     PageType = ListPart;
     SourceTable = "Gen. Journal Line";
     ApplicationArea = All;
-UsageCategory=lists;
+    UsageCategory = lists;
     layout
     {
         area(content)

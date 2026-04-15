@@ -5,7 +5,7 @@ page 60019 "Status Colors"
     PageType = List;
     SourceTable = "Status Color";
     ApplicationArea = All;
-UsageCategory=lists;
+    UsageCategory = lists;
     layout
     {
         area(content)

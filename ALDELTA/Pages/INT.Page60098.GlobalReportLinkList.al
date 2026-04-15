@@ -8,7 +8,7 @@ page 60098 "Global Report Link List"
     SourceTable = "Line Number Buffer";
     SourceTableTemporary = true;
     ApplicationArea = All;
-UsageCategory=lists;
+    UsageCategory = lists;
     layout
     {
         area(content)

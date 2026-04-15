@@ -7,7 +7,7 @@ page 60075 "Adjmts. View Subform-Incl. Unp"
     SourceTableTemporary = true;
     SourceTableView = SORTING("Posting Date", "Document No.");
     ApplicationArea = All;
-UsageCategory=lists;
+    UsageCategory = lists;
     layout
     {
         area(content)

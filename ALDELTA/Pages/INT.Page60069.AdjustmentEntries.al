@@ -8,7 +8,7 @@ page 60069 "Adjustment Entries"
     SourceTable = "Adjustment Entry Buffer";
     SourceTableView = SORTING("Posting Date", "Document No.");
     ApplicationArea = All;
-UsageCategory=lists;
+    UsageCategory = lists;
     layout
     {
         area(content)

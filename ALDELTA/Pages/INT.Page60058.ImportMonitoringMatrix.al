@@ -9,7 +9,7 @@ page 60058 "Import Monitoring Matrix"
     SourceTable = "Interface Type Buffer";
     SourceTableTemporary = true;
     ApplicationArea = All;
-UsageCategory=lists;
+    UsageCategory = lists;
     layout
     {
         area(content)

@@ -4,7 +4,7 @@ page 60067 "Vendor (Processed)"
     PageType = List;
     SourceTable = "Vendor (Processed)";
     ApplicationArea = All;
-UsageCategory=lists;
+    UsageCategory = lists;
     layout
     {
         area(content)

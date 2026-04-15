@@ -10,7 +10,7 @@ page 60030 "Un-posted Balance"
     SourceTable = "G/L Account Prepost Balance";
     SourceTableTemporary = true;
     ApplicationArea = All;
-UsageCategory=lists;
+    UsageCategory = lists;
     layout
     {
         area(content)

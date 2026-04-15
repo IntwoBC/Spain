@@ -4,7 +4,7 @@ page 60068 "Subsidiary Company"
     PageType = List;
     SourceTable = "Subsidiary Company";
     ApplicationArea = All;
-UsageCategory=lists;
+    UsageCategory = lists;
     layout
     {
         area(content)

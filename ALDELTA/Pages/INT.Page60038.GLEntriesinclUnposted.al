@@ -9,7 +9,7 @@ page 60038 "G/L Entries (incl. Un-posted)"
     PageType = List;
     SourceTable = "G/L Entry";
     ApplicationArea = All;
-UsageCategory=lists;
+    UsageCategory = lists;
     layout
     {
         area(content)
