@@ -77,10 +77,13 @@ codeunit 70002 "MyTaxi CRM Interface Process"
     procedure CreateCustomers(var pMyTaxiCRMInterfaceRecords: Record "MyTaxi CRM Interface Records")
     var
         Customer: Record Customer;
+        pCustomer: Record Customer;
         TemplateHeader: Record "Config. Template Header";
         TemplateMgt: Codeunit "Config. Template Management";
         "--- MyTaxi.W1.CRE.INT01.009 ---": Integer;
         CustomerBankAccount: Record "Customer Bank Account";
+        LatestCustomerBankAccount: Record "Customer Bank Account";
+        HasLatestCustomerBankAccount: Boolean;
     begin
         if MyTaxiCRMInterfaceRecords."Interface Type" <> MyTaxiCRMInterfaceRecords."Interface Type"::Customer then
             exit;
@@ -120,12 +123,38 @@ codeunit 70002 "MyTaxi CRM Interface Process"
         Customer.Validate("Country/Region Code", CopyStr(pMyTaxiCRMInterfaceRecords.country, 1, MaxStrLen(Customer."Country/Region Code")));
         // MyTaxi.W1.CRE.INT01.001 >>
         // MyTaxi.W1.CRE.INT01.009 <<
+        Customer."Last Date Modified" := Today;
+        Customer.Modify(true);
+        SetDimensionsOnCustomer(Customer, pMyTaxiCRMInterfaceRecords);
+        //MyTaxi.W1.CRE.INT01.009 >>
+        //74769 - Customer Bank Account Modification >>
         if pMyTaxiCRMInterfaceRecords."NAV Bank Account Code" <> '' then begin
+            // Try to get bank account with incoming code
             if not CustomerBankAccount.Get(Customer."No.", pMyTaxiCRMInterfaceRecords."NAV Bank Account Code") then begin
-                CustomerBankAccount.Validate("Customer No.", Customer."No.");
-                CustomerBankAccount.Validate(Code, pMyTaxiCRMInterfaceRecords."NAV Bank Account Code");
-                CustomerBankAccount.Insert(true);
+                LatestCustomerBankAccount.Reset();
+                LatestCustomerBankAccount.SetRange("Customer No.", Customer."No.");
+                HasLatestCustomerBankAccount := false;
+                if LatestCustomerBankAccount.FindSet() then begin
+                    repeat
+                        if (not HasLatestCustomerBankAccount) or (LatestCustomerBankAccount.SystemCreatedAt > CustomerBankAccount.SystemCreatedAt) then begin
+                            CustomerBankAccount := LatestCustomerBankAccount;
+                            HasLatestCustomerBankAccount := true;
+                        end;
+                    until LatestCustomerBankAccount.Next() = 0;
+                    // Rename latest bank account
+                    CustomerBankAccount.Rename(Customer."No.", pMyTaxiCRMInterfaceRecords."NAV Bank Account Code");
+                    CustomerBankAccount.Get(Customer."No.", pMyTaxiCRMInterfaceRecords."NAV Bank Account Code");
+                end else begin
+                    // No bank accounts exist
+                    CustomerBankAccount.Init();
+                    CustomerBankAccount.Validate("Customer No.", Customer."No.");
+                    CustomerBankAccount.Validate(Code, pMyTaxiCRMInterfaceRecords."NAV Bank Account Code");
+                    CustomerBankAccount.Insert(true);
+                    CustomerBankAccount.Get(Customer."No.", pMyTaxiCRMInterfaceRecords."NAV Bank Account Code");
+                end;
             end;
+
+            // Update bank account fields
             if CopyStr(pMyTaxiCRMInterfaceRecords.accountHolder, 1, MaxStrLen(CustomerBankAccount.Contact)) <> CustomerBankAccount.Contact then
                 CustomerBankAccount.Validate(Contact, CopyStr(pMyTaxiCRMInterfaceRecords.accountHolder, 1, MaxStrLen(CustomerBankAccount.Contact)));
             if pMyTaxiCRMInterfaceRecords.iban <> CustomerBankAccount.IBAN then
@@ -137,14 +166,18 @@ codeunit 70002 "MyTaxi CRM Interface Process"
             if pMyTaxiCRMInterfaceRecords.sortCode <> CustomerBankAccount."Bank Branch No." then
                 CustomerBankAccount.Validate("Bank Branch No.", pMyTaxiCRMInterfaceRecords.sortCode);
             CustomerBankAccount.Modify(true);
-            // Customer.VALIDATE("Preferred Bank Account",CustomerBankAccount.Code);
+            // VERY IMPORTANT:
+            // Reload customer AFTER bank account modifications
+            pCustomer.Get(Customer."No.");
+            if pCustomer."Preferred Bank Account Code" <> CustomerBankAccount.Code then begin
+                pCustomer.Validate("Preferred Bank Account Code", CustomerBankAccount.Code);
+                pCustomer."Last Date Modified" := Today;
+                pCustomer.Modify(true);
+            end;
         end;
-        // MyTaxi.W1.CRE.INT01.009 >>
-        // MyTaxi.W1.CRE.INT01.017 <<
-        SetDimensionsOnCustomer(Customer, pMyTaxiCRMInterfaceRecords);
+        //74769 - Customer Bank Account Modification <<
+
         // MyTaxi.W1.CRE.INT01.017 >>
-        Customer."Last Date Modified" := Today;
-        Customer.Modify(true);
         pMyTaxiCRMInterfaceRecords."Transfer Date" := Today;
         pMyTaxiCRMInterfaceRecords."Transfer Time" := Time;
         pMyTaxiCRMInterfaceRecords.Modify();
