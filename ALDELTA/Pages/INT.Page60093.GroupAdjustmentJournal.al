@@ -29,7 +29,7 @@ page 60093 "Group Adjustment Journal"
     SaveValues = true;
     SourceTable = "Gen. Journal Line";
     ApplicationArea = All;
-    UsageCategory=lists;
+    UsageCategory = lists;
 
     layout
     {
@@ -1163,25 +1163,25 @@ page 60093 "Group Adjustment Journal"
         SetUserInteractions();
     end;
 
-    trigger OnOpenPage()
-    var
-        JnlSelected: Boolean;
-    begin
-        BalAccName := '';
-        if Rec.IsOpenedFromBatch() then begin
-            CurrentJnlBatchName := Rec."Journal Batch Name";
-            GenJnlManagement.OpenJnl(CurrentJnlBatchName, Rec);
-            lfcnSetUseReadyToPost();
-            SetControlAppearance();
-            exit;
-        end;
-        GenJnlManagement.TemplateSelection(PAGE::"Group Adjustment Journal", 19, false, Rec, JnlSelected);
-        if not JnlSelected then
-            Error('');
-        GenJnlManagement.OpenJnl(CurrentJnlBatchName, Rec);
-        lfcnSetUseReadyToPost();
-        SetControlAppearance();
-    end;
+    // trigger OnOpenPage()
+    // var
+    //     JnlSelected: Boolean;
+    // begin
+    //     BalAccName := '';
+    //     if Rec.IsOpenedFromBatch() then begin
+    //         CurrentJnlBatchName := Rec."Journal Batch Name";
+    //         GenJnlManagement.OpenJnl(CurrentJnlBatchName, Rec);
+    //         lfcnSetUseReadyToPost();
+    //         SetControlAppearance();
+    //         exit;
+    //     end;
+    //     //GenJnlManagement.TemplateSelection(PAGE::"Group Adjustment Journal", 19, false, Rec, JnlSelected);
+    //     if not JnlSelected then
+    //         Error('');
+    //     GenJnlManagement.OpenJnl(CurrentJnlBatchName, Rec);
+    //     lfcnSetUseReadyToPost();
+    //     SetControlAppearance();
+    // end;
 
     var
         ChangeExchangeRate: Page "Change Exchange Rate";

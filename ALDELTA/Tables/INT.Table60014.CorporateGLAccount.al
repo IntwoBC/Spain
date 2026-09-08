@@ -53,7 +53,7 @@ table 60014 "Corporate G/L Account"
 
             trigger OnValidate()
             var
-                 GLEntry: Record "I2I G/L Entry";
+                GLEntry: Record "I2I G/L Entry";
             begin
                 if ("Account Type" <> "Account Type"::Posting) and
                    (xRec."Account Type" = xRec."Account Type"::Posting)
@@ -129,7 +129,7 @@ table 60014 "Corporate G/L Account"
         field(31; "Balance at Date"; Decimal)
         {
             AutoFormatType = 1;
-  CalcFormula = Sum("I2I G/L Entry".Amount WHERE("Corporate G/L Account No." = FIELD("No."),
+            CalcFormula = Sum("I2I G/L Entry".Amount WHERE("Corporate G/L Account No." = FIELD("No."),
                                                         "Corporate G/L Account No." = FIELD(FILTER(Totaling)),
                                                         "Business Unit Code" = FIELD("Business Unit Filter"),
                                                         "Global Dimension 1 Code" = FIELD("Global Dimension 1 Filter"),
@@ -144,7 +144,7 @@ table 60014 "Corporate G/L Account"
         field(32; "Net Change"; Decimal)
         {
             AutoFormatType = 1;
-CalcFormula = Sum("I2I G/L Entry".Amount WHERE("Corporate G/L Account No." = FIELD("No."),
+            CalcFormula = Sum("I2I G/L Entry".Amount WHERE("Corporate G/L Account No." = FIELD("No."),
                                                         "Corporate G/L Account No." = FIELD(FILTER(Totaling)),
                                                         "Business Unit Code" = FIELD("Business Unit Filter"),
                                                         "Global Dimension 1 Code" = FIELD("Global Dimension 1 Filter"),
@@ -174,7 +174,7 @@ CalcFormula = Sum("I2I G/L Entry".Amount WHERE("Corporate G/L Account No." = FIE
         field(36; Balance; Decimal)
         {
             AutoFormatType = 1;
-  CalcFormula = Sum("I2I G/L Entry".Amount WHERE("Corporate G/L Account No." = FIELD("No."),
+            CalcFormula = Sum("I2I G/L Entry".Amount WHERE("Corporate G/L Account No." = FIELD("No."),
                                                         "Corporate G/L Account No." = FIELD(FILTER(Totaling)),
                                                         "Business Unit Code" = FIELD("Business Unit Filter"),
                                                         "Global Dimension 1 Code" = FIELD("Global Dimension 1 Filter"),
@@ -195,7 +195,7 @@ CalcFormula = Sum("I2I G/L Entry".Amount WHERE("Corporate G/L Account No." = FIE
         {
             AutoFormatType = 1;
             BlankZero = true;
- CalcFormula = Sum("I2I G/L Entry"."Debit Amount" WHERE("Corporate G/L Account No." = FIELD("No."),
+            CalcFormula = Sum("I2I G/L Entry"."Debit Amount" WHERE("Corporate G/L Account No." = FIELD("No."),
                                                                 "Corporate G/L Account No." = FIELD(FILTER(Totaling)),
                                                                 "Business Unit Code" = FIELD("Business Unit Filter"),
                                                                 "Global Dimension 1 Code" = FIELD("Global Dimension 1 Filter"),
@@ -211,7 +211,7 @@ CalcFormula = Sum("I2I G/L Entry".Amount WHERE("Corporate G/L Account No." = FIE
         {
             AutoFormatType = 1;
             BlankZero = true;
- CalcFormula = Sum("I2I G/L Entry"."Credit Amount" WHERE("Corporate G/L Account No." = FIELD("No."),
+            CalcFormula = Sum("I2I G/L Entry"."Credit Amount" WHERE("Corporate G/L Account No." = FIELD("No."),
                                                                  "Corporate G/L Account No." = FIELD(FILTER(Totaling)),
                                                                  "Business Unit Code" = FIELD("Business Unit Filter"),
                                                                  "Global Dimension 1 Code" = FIELD("Global Dimension 1 Filter"),
@@ -225,7 +225,7 @@ CalcFormula = Sum("I2I G/L Entry".Amount WHERE("Corporate G/L Account No." = FIE
         }
         field(60; "Additional-Currency Net Change"; Decimal)
         {
- AutoFormatExpression = GetCurrencyCode;
+            AutoFormatExpression = GetCurrencyCode;
             AutoFormatType = 1;
             CalcFormula = Sum("I2I G/L Entry"."Additional-Currency Amount" WHERE("Corporate G/L Account No." = FIELD("No."),
 
@@ -244,7 +244,7 @@ CalcFormula = Sum("I2I G/L Entry".Amount WHERE("Corporate G/L Account No." = FIE
         {
             AutoFormatExpression = GetCurrencyCode();
             AutoFormatType = 1;
- CalcFormula = Sum("I2I G/L Entry"."Additional-Currency Amount" WHERE("Corporate G/L Account No." = FIELD("No."),
+            CalcFormula = Sum("I2I G/L Entry"."Additional-Currency Amount" WHERE("Corporate G/L Account No." = FIELD("No."),
                                                                               "Corporate G/L Account No." = FIELD(FILTER(Totaling)),
                                                                               "Business Unit Code" = FIELD("Business Unit Filter"),
                                                                               "Global Dimension 1 Code" = FIELD("Global Dimension 1 Filter"),
@@ -260,7 +260,7 @@ CalcFormula = Sum("I2I G/L Entry".Amount WHERE("Corporate G/L Account No." = FIE
         {
             AutoFormatExpression = GetCurrencyCode();
             AutoFormatType = 1;
- CalcFormula = Sum("I2I G/L Entry"."Additional-Currency Amount" WHERE("Corporate G/L Account No." = FIELD("No."),
+            CalcFormula = Sum("I2I G/L Entry"."Additional-Currency Amount" WHERE("Corporate G/L Account No." = FIELD("No."),
                                                                               "Corporate G/L Account No." = FIELD(FILTER(Totaling)),
                                                                               "Business Unit Code" = FIELD("Business Unit Filter"),
                                                                               "Global Dimension 1 Code" = FIELD("Global Dimension 1 Filter"),
@@ -275,7 +275,7 @@ CalcFormula = Sum("I2I G/L Entry".Amount WHERE("Corporate G/L Account No." = FIE
         {
             AutoFormatExpression = GetCurrencyCode();
             AutoFormatType = 1;
- CalcFormula = Sum("I2I G/L Entry"."Add.-Currency Debit Amount" WHERE("Corporate G/L Account No." = FIELD("No."),
+            CalcFormula = Sum("I2I G/L Entry"."Add.-Currency Debit Amount" WHERE("Corporate G/L Account No." = FIELD("No."),
                                                                               "Corporate G/L Account No." = FIELD(FILTER(Totaling)),
                                                                               "Business Unit Code" = FIELD("Business Unit Filter"),
                                                                               "Global Dimension 1 Code" = FIELD("Global Dimension 1 Filter"),
@@ -289,7 +289,7 @@ CalcFormula = Sum("I2I G/L Entry".Amount WHERE("Corporate G/L Account No." = FIE
         }
         field(65; "Add.-Currency Credit Amount"; Decimal)
         {
- AutoFormatExpression = GetCurrencyCode;
+            AutoFormatExpression = GetCurrencyCode;
             AutoFormatType = 1;
             CalcFormula = Sum("I2I G/L Entry"."Add.-Currency Credit Amount" WHERE("Corporate G/L Account No." = FIELD("No."),
 
@@ -323,6 +323,7 @@ CalcFormula = Sum("I2I G/L Entry".Amount WHERE("Corporate G/L Account No." = FIE
         {
             Caption = 'Financial Statement Code';
             TableRelation = "Financial Statement Code";
+            ObsoleteState = Removed;
         }
         field(60020; "Local G/L Account No."; Code[20])
         {
@@ -337,7 +338,8 @@ CalcFormula = Sum("I2I G/L Entry".Amount WHERE("Corporate G/L Account No." = FIE
                 if "Local G/L Account No." <> '' then begin
                     lrecGLAcc.Get("Local G/L Account No.");
                     lrecGLAcc.TestField("Account Class", "Account Class");
-                    lrecGLAcc.TestField("Financial Statement Code", "Financial Statement Code");
+                    //  Ticket ID:-74794,# financial statement code + direct posting blocked as yes
+                    // lrecGLAcc.TestField("Financial Statement Code", "Financial Statement Code");
                 end;
                 // MP 19-02-14 <<
             end;
@@ -417,6 +419,7 @@ CalcFormula = Sum("I2I G/L Entry".Amount WHERE("Corporate G/L Account No." = FIE
             OptionCaption = ' ,Timing,GAAP,Reclassification,Tax';
             OptionMembers = " ",Timing,GAAP,Reclassification,Tax;
         }
+        //  Ticket ID:-74794,# financial statement code + direct posting blocked as yes
         field(60220; "Fin. Statement Description"; Text[100])
         {
             CalcFormula = Lookup("Financial Statement Code".Description WHERE(Code = FIELD("Financial Statement Code")));
@@ -424,15 +427,17 @@ CalcFormula = Sum("I2I G/L Entry".Amount WHERE("Corporate G/L Account No." = FIE
             Description = 'MP 03-11-15';
             Editable = false;
             FieldClass = FlowField;
+            ObsoleteState = Removed;
         }
         field(60230; "Fin. Statement Code (Local)"; Code[10])
         {
-            CalcFormula = Lookup("G/L Account"."Financial Statement Code" WHERE("No." = FIELD("Local G/L Account No.")));
+            //CalcFormula = Lookup("G/L Account"."Financial Statement Code" WHERE("No." = FIELD("Local G/L Account No.")));
             Caption = 'Fin. Statement Code (Local)';
             Description = 'MP 31-03-16';
             Editable = false;
             FieldClass = FlowField;
             TableRelation = "Financial Statement Code";
+            ObsoleteState = Removed;
         }
     }
 
@@ -448,18 +453,19 @@ CalcFormula = Sum("I2I G/L Entry".Amount WHERE("Corporate G/L Account No." = FIE
         key(Key3; Name)
         {
         }
-        key(Key4; "Financial Statement Code")
+        //  Ticket ID:-74794,# financial statement code + direct posting blocked as yes
+        // key(Key4; "Financial Statement Code")
+        // {
+        // }
+        key(Key4; "Local G/L Account No.")
         {
         }
-        key(Key5; "Local G/L Account No.")
+        key(Key5; "Account Class")
         {
         }
-        key(Key6; "Account Class")
-        {
-        }
-        key(Key7; "Financial Statement Code", "Local G/L Account No.")
-        {
-        }
+        // key(Key6; "Financial Statement Code", "Local G/L Account No.")
+        // {
+        // }
         key(Key8; Indentation)
         {
         }
@@ -488,16 +494,16 @@ CalcFormula = Sum("I2I G/L Entry".Amount WHERE("Corporate G/L Account No." = FIE
 
         CommentLine.SetRange("Table Name", CommentLine."Table Name"::"G/L Account");
         CommentLine.SetRange("No.", "No.");
-       CommentLine.DeleteAll;
+        CommentLine.DeleteAll;
     end;
 
     trigger OnModify()
     var
-        lmdlFSCodeMgt: Codeunit "Fin. Stmt.Code Management";
+    // lmdlFSCodeMgt: Codeunit "Fin. Stmt.Code Management";
     begin
         "Last Date Modified" := Today;
 
-        lmdlFSCodeMgt.gfcnUpdateCorpGLAccFSCodeAndHistory(Rec, xRec."Financial Statement Code"); // MP 22-03-16
+        // lmdlFSCodeMgt.gfcnUpdateCorpGLAccFSCodeAndHistory(Rec, xRec."Financial Statement Code"); // MP 22-03-16
     end;
 
     trigger OnRename()
@@ -546,21 +552,21 @@ CalcFormula = Sum("I2I G/L Entry".Amount WHERE("Corporate G/L Account No." = FIE
     end;
 
 
-    procedure gfcnGetFinancialStatementCode(pdateDate: Date): Code[10]
-    var
-        lrecHistAccFinStatmtCode: Record "Hist. Acc. Fin. Statmt. Code";
-    begin
-        // MP 03-11-15
+    // procedure gfcnGetFinancialStatementCode(pdateDate: Date): Code[10]
+    // var
+    //     lrecHistAccFinStatmtCode: Record "Hist. Acc. Fin. Statmt. Code";
+    // begin
+    //     // MP 03-11-15
 
-        lrecHistAccFinStatmtCode.SetRange("G/L Account Type", lrecHistAccFinStatmtCode."G/L Account Type"::"Corporate G/L Account");
-        lrecHistAccFinStatmtCode.SetRange("G/L Account No.", "No.");
-        lrecHistAccFinStatmtCode.SetFilter("Starting Date", '..%1', pdateDate);
-        lrecHistAccFinStatmtCode.SetFilter("Ending Date", '%1..', pdateDate);
-        if lrecHistAccFinStatmtCode.FindLast() then
-            exit(lrecHistAccFinStatmtCode."Financial Statement Code");
+    //     lrecHistAccFinStatmtCode.SetRange("G/L Account Type", lrecHistAccFinStatmtCode."G/L Account Type"::"Corporate G/L Account");
+    //     lrecHistAccFinStatmtCode.SetRange("G/L Account No.", "No.");
+    //     lrecHistAccFinStatmtCode.SetFilter("Starting Date", '..%1', pdateDate);
+    //     lrecHistAccFinStatmtCode.SetFilter("Ending Date", '%1..', pdateDate);
+    //     if lrecHistAccFinStatmtCode.FindLast() then
+    //         exit(lrecHistAccFinStatmtCode."Financial Statement Code");
 
-        exit("Financial Statement Code");
-    end;
+    //     exit("Financial Statement Code");
+    // end;
 
 
 }

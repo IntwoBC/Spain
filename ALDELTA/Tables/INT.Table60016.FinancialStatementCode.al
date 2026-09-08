@@ -5,6 +5,7 @@ table 60016 "Financial Statement Code"
 
     Caption = 'Financial Statement Code';
     DataClassification = CustomerContent;
+    ObsoleteState = Removed;
 
     fields
     {

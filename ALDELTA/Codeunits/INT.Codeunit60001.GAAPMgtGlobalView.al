@@ -129,7 +129,7 @@ codeunit 60001 "GAAP Mgt. - Global View"
     procedure gfcnCalc(var precCorpGLAcc: Record "Corporate G/L Account"; var pdecCorpAmt: array[2] of Decimal; var pdecStatPrepostAmt: array[2] of Decimal; var pdecStatAdjmtAmt: array[2] of Decimal; var pdecAuditorAdjmtAmt: array[2] of Decimal; var pdecStatTBAmt: array[2] of Decimal; var pdecTaxPrepostAmt: array[2] of Decimal; var pdecTaxAdjmtAmt: array[2] of Decimal; var pdecTaxTBAmt: array[2] of Decimal; var pdecPriorYearAdjmtAmt: Decimal; var pdecCurrYearAdjmtAmt: Decimal; var pdecCurrYearReclassAmt: Decimal; var pcodFSCode: array[2] of Code[10]; var ptxtFSDescription: array[2] of Text[100])
     var
         lrecCorpGLAcc: Record "Corporate G/L Account";
-        lrecFinancialStatementCode: Record "Financial Statement Code";
+        //lrecFinancialStatementCode: Record "Financial Statement Code";
         lrecGLAcc: Record "G/L Account";
         lmdlTGLAccount: Codeunit "T:G/L Account";
         ldecDummy: Decimal;
@@ -148,33 +148,33 @@ codeunit 60001 "GAAP Mgt. - Global View"
         Clear(pdecCurrYearReclassAmt);
         Clear(pcodFSCode);
         Clear(ptxtFSDescription);
-
+        //  Ticket ID:-74794,# financial statement code + direct posting blocked as yes
         // Get Financial Statement Code and Description >>
         // MP 31-03-16 >>
-        if lrecGLAcc.Get(precCorpGLAcc."Local G/L Account No.") then
-            pcodFSCode[1] := lmdlTGLAccount.gfcnGetFinancialStatementCode(lrecGLAcc, gdatStartCurrPeriod) // MP 24-May-16 Replaced with Codeunit call
-        else
-            // MP 31-03-16 <<
-            pcodFSCode[1] := precCorpGLAcc.gfcnGetFinancialStatementCode(gdatStartCurrPeriod);
+        // if lrecGLAcc.Get(precCorpGLAcc."Local G/L Account No.") then
+        //     pcodFSCode[1] := lmdlTGLAccount.gfcnGetFinancialStatementCode(lrecGLAcc, gdatStartCurrPeriod) // MP 24-May-16 Replaced with Codeunit call
+        // else
+        //     // MP 31-03-16 <<
+        //     pcodFSCode[1] := precCorpGLAcc.gfcnGetFinancialStatementCode(gdatStartCurrPeriod);
 
-        if lrecFinancialStatementCode.Get(pcodFSCode[1]) then
-            //ptxtFSDescription[1] := lrecFinancialStatementCode.Description;
-            ptxtFSDescription[1] := lrecFinancialStatementCode."Description (English)"; // MP 18-02-16 Replaces above line
+        // if lrecFinancialStatementCode.Get(pcodFSCode[1]) then
+        //     //ptxtFSDescription[1] := lrecFinancialStatementCode.Description;
+        //     ptxtFSDescription[1] := lrecFinancialStatementCode."Description (English)"; // MP 18-02-16 Replaces above line
 
         if gblnIncludePreviousYear or (goptColumnView = goptColumnView::"GAAP Adjustment Reason") then begin
             // MP 31-03-16 >>
-            if lrecGLAcc."No." <> '' then
-                pcodFSCode[2] := lmdlTGLAccount.gfcnGetFinancialStatementCode(lrecGLAcc, gdatStartLastYear) // MP 24-May-16 Replaced with Codeunit call
-            else
-                // MP 31-03-16 <<
-                pcodFSCode[2] := precCorpGLAcc.gfcnGetFinancialStatementCode(gdatStartLastYear);
+            // if lrecGLAcc."No." <> '' then
+            //     pcodFSCode[2] := lmdlTGLAccount.gfcnGetFinancialStatementCode(lrecGLAcc, gdatStartLastYear) // MP 24-May-16 Replaced with Codeunit call
+            // else
+            //     // MP 31-03-16 <<
+            //     pcodFSCode[2] := precCorpGLAcc.gfcnGetFinancialStatementCode(gdatStartLastYear);
 
-            if pcodFSCode[2] = pcodFSCode[1] then
-                Clear(pcodFSCode[2])
-            else
-                if lrecFinancialStatementCode.Get(pcodFSCode[2]) then
-                    //ptxtFSDescription[2] := lrecFinancialStatementCode.Description;
-                    ptxtFSDescription[2] := lrecFinancialStatementCode."Description (English)"; // MP 18-02-16 Replaces above line
+            // if pcodFSCode[2] = pcodFSCode[1] then
+            //     Clear(pcodFSCode[2])
+            // else
+            //     if lrecFinancialStatementCode.Get(pcodFSCode[2]) then
+            //         //ptxtFSDescription[2] := lrecFinancialStatementCode.Description;
+            //         ptxtFSDescription[2] := lrecFinancialStatementCode."Description (English)"; // MP 18-02-16 Replaces above line
         end;
         // MP 25-11-15 <<
 

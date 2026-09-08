@@ -90,12 +90,13 @@ Page 60023 "Corporate Chart of Accounts"
                         exit(true);
                     end;
                 }
-                field("Financial Statement Code"; Rec."Financial Statement Code")
-                {
-                    ApplicationArea = all;
-                    ToolTip = 'Specifies the value of the Financial Statement Code field.';
+                //  Ticket ID:-74794,# financial statement code + direct posting blocked as yes
+                // field("Financial Statement Code"; Rec."Financial Statement Code")
+                // {
+                //     ApplicationArea = all;
+                //     ToolTip = 'Specifies the value of the Financial Statement Code field.';
 
-                }
+                // }
                 field("Net Change"; Rec."Net Change")
                 {
                     BlankZero = true;

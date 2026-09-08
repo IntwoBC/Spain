@@ -13,7 +13,7 @@ page 60094 "Corp. G/L Acc. Map. Overview"
     SourceTableTemporary = true;
     SourceTableView = SORTING("Corporate G/L Account No.");
     ApplicationArea = All;
-UsageCategory=lists;
+    UsageCategory = lists;
     layout
     {
         area(content)
@@ -131,8 +131,8 @@ UsageCategory=lists;
                 Rec."Search Name" := lrecCorpGLAcc."No.";
                 Rec.Name := lrecCorpGLAcc.Name;
                 Rec."Name (English)" := lrecCorpGLAcc."Name (English)";
-                Rec."Account Type" := lrecCorpGLAcc."Account Type";
-                Rec."Income/Balance" := lrecCorpGLAcc."Income/Balance";
+                //Rec."Account Type" := lrecCorpGLAcc."Account Type";
+                //Rec."Income/Balance" := lrecCorpGLAcc."Income/Balance";
                 Rec."New Page" := true;
                 Rec."Corporate G/L Account No." := lcodNextNo;
                 lcodNextNo := IncStr(lcodNextNo);

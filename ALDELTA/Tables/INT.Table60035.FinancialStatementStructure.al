@@ -1,3 +1,4 @@
+//Ticket ID:-74794,financial statement code + direct posting blocked as yes
 table 60035 "Financial Statement Structure"
 {
     // MP 03-12-13
@@ -9,6 +10,7 @@ table 60035 "Financial Statement Structure"
     Caption = 'Financial Statement Structure';
     DataCaptionFields = "Code", Description;
     DataClassification = CustomerContent;
+    ObsoleteState = Removed;
 
     fields
     {
@@ -49,15 +51,15 @@ table 60035 "Financial Statement Structure"
     {
     }
 
-    trigger OnDelete()
-    var
-        lrecFinancialStatementLine: Record "Financial Statement Line";
-    begin
-        // MP 17-10-16 >>
-        lrecFinancialStatementLine.SetRange("Financial Stat. Structure Code", Code);
-        lrecFinancialStatementLine.DeleteAll(true);
-        // MP 17-10-16 <<
-    end;
+    // trigger OnDelete()
+    // var
+    //     lrecFinancialStatementLine: Record "Financial Statement Line";
+    // begin
+    //     // MP 17-10-16 >>
+    //     lrecFinancialStatementLine.SetRange("Financial Stat. Structure Code", Code);
+    //     lrecFinancialStatementLine.DeleteAll(true);
+    //     // MP 17-10-16 <<
+    // end;
 
     trigger OnInsert()
     begin

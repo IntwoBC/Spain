@@ -34,7 +34,7 @@ page 60027 "Global View"
     SourceTable = "Corporate G/L Account";
     SourceTableTemporary = true;
     ApplicationArea = All;
-    UsageCategory=lists;
+    UsageCategory = lists;
 
     layout
     {
@@ -571,14 +571,14 @@ page 60027 "Global View"
                                 gmdlGAAPMgt.gfcnDrillDown(Rec, DATABASE::"G/L Entry", '', '', true, true);
                     end;
                 }
-                field("gcodFSCode[1]"; gcodFSCode[1])
-                {
-                    Caption = 'FS Code';
-                    TableRelation = "Financial Statement Code";
-                    ApplicationArea = all;
-                    ToolTip = 'Specifies the value of the FS Code field.';
+                // field("gcodFSCode[1]"; gcodFSCode[1])
+                // {
+                //     Caption = 'FS Code';
+                //     TableRelation = "Financial Statement Code";
+                //     ApplicationArea = all;
+                //     ToolTip = 'Specifies the value of the FS Code field.';
 
-                }
+                // }
                 field("gtxtFSDescription[1]"; gtxtFSDescription[1])
                 {
                     Caption = 'FS Description';
@@ -586,15 +586,15 @@ page 60027 "Global View"
                     ToolTip = 'Specifies the value of the FS Description field.';
 
                 }
-                field("gcodFSCode[2]"; gcodFSCode[2])
-                {
-                    Caption = 'FS Code (PY)';
-                    ApplicationArea = all;
+                // field("gcodFSCode[2]"; gcodFSCode[2])
+                // {
+                //     Caption = 'FS Code (PY)';
+                //     ApplicationArea = all;
 
-                    TableRelation = "Financial Statement Code";
-                    Visible = gblnIncludePreviousYear OR gblnGAAPAdjmtReasonView;
-                    ToolTip = 'Specifies the value of the FS Code (PY) field.';
-                }
+                //     TableRelation = "Financial Statement Code";
+                //     Visible = gblnIncludePreviousYear OR gblnGAAPAdjmtReasonView;
+                //     ToolTip = 'Specifies the value of the FS Code (PY) field.';
+                // }
                 field("gtxtFSDescription[2]"; gtxtFSDescription[2])
                 {
                     Caption = 'FS Description (PY)';
@@ -760,15 +760,15 @@ page 60027 "Global View"
         }
     }
 
-    trigger OnAfterGetRecord()
-    var
-        lrecFinancialStatementCode: Record "Financial Statement Code";
-    begin
-        gmdlGAAPMgt.gfcnCalc(Rec,
-          gdecCorpAmt, gdecStatPrepostAmt, gdecStatAdjmtAmt, gdecAuditorAdjmtAmt, gdecStatTBAmt,
-          gdecTaxPrepostAmt, gdecTaxAdjmtAmt, gdecTaxTBAmt,
-          gdecPriorYearAdjmtAmt, gdecCurrYearAdjmtAmt, gdecCurrYearReclassAmt, gcodFSCode, gtxtFSDescription); // MP 25-11-15 New parameters
-    end;
+    // trigger OnAfterGetRecord()
+    // var
+    //     lrecFinancialStatementCode: Record "Financial Statement Code";
+    // begin
+    //     gmdlGAAPMgt.gfcnCalc(Rec,
+    //       gdecCorpAmt, gdecStatPrepostAmt, gdecStatAdjmtAmt, gdecAuditorAdjmtAmt, gdecStatTBAmt,
+    //       gdecTaxPrepostAmt, gdecTaxAdjmtAmt, gdecTaxTBAmt,
+    //       gdecPriorYearAdjmtAmt, gdecCurrYearAdjmtAmt, gdecCurrYearReclassAmt, gcodFSCode, gtxtFSDescription); // MP 25-11-15 New parameters
+    // end;
 
     trigger OnOpenPage()
     var

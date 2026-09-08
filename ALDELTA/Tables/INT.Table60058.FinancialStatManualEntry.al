@@ -1,3 +1,4 @@
+//Ticket ID:-74794,financial statement code + direct posting blocked as yes
 table 60058 "Financial Stat. Manual Entry"
 {
     // MP 02-12-13
@@ -5,9 +6,10 @@ table 60058 "Financial Stat. Manual Entry"
 
     Caption = 'Financial Statement Manual Entry';
     DataCaptionFields = "Financial Stat. Structure Code";
-    DrillDownPageID = "Financial Stat. Manual Entries";
-    LookupPageID = "Financial Stat. Manual Entries";
+    //DrillDownPageID = "Financial Stat. Manual Entries";
+    //LookupPageID = "Financial Stat. Manual Entries";
     DataClassification = CustomerContent;
+    ObsoleteState = Removed;
 
 
     fields
@@ -15,7 +17,7 @@ table 60058 "Financial Stat. Manual Entry"
         field(1; "Financial Stat. Structure Code"; Code[20])
         {
             Caption = 'Financial Stat. Structure Code';
-            TableRelation = "Financial Statement Structure";
+            //TableRelation = "Financial Statement Structure";
         }
         field(2; "Financial Stat. Line No."; Integer)
         {

@@ -5,7 +5,7 @@ page 60051 "G/L Entry Document Links"
     PageType = Card;
     SourceTable = "G/L Entry Document Link";
     ApplicationArea = All;
-UsageCategory=lists;
+    UsageCategory = lists;
     layout
     {
         area(content)

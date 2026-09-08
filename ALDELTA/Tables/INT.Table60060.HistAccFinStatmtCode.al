@@ -1,9 +1,11 @@
+//Ticket ID:-74794,# financial statement code + direct posting blocked as yes
 table 60060 "Hist. Acc. Fin. Statmt. Code"
 {
     Caption = 'Historic G/L Account Financial Statement Code';
-    DrillDownPageID = "Hist. Acc. Fin. Statmt. Codes";
-    LookupPageID = "Hist. Acc. Fin. Statmt. Codes";
+    //DrillDownPageID = "Hist. Acc. Fin. Statmt. Codes";
+    //LookupPageID = "Hist. Acc. Fin. Statmt. Codes";
     DataClassification = CustomerContent;
+    ObsoleteState = Removed;
 
 
     fields

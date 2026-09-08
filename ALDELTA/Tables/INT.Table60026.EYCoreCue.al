@@ -58,12 +58,14 @@ table 60026 "EY Core Cue"
             Caption = 'Date Filter';
             FieldClass = FlowFilter;
         }
+        //  Ticket ID:-74794,# financial statement code + direct posting blocked as yes
         field(60; "Financial Statement"; Integer)
         {
             CalcFormula = Count("Financial Statement Structure" WHERE(Default = CONST(true)));
             Description = 'MP 06-10-16';
             Editable = false;
             FieldClass = FlowField;
+            ObsoleteState = Removed;
         }
     }
 

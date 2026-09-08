@@ -1,3 +1,4 @@
+//Ticket ID:-74794,# financial statement code + direct posting blocked as yes
 table 60033 "Financial Statement Line"
 {
     // MP 02-12-13
@@ -5,13 +6,14 @@ table 60033 "Financial Statement Line"
 
     Caption = 'Financial Statement Line';
     DataClassification = CustomerContent;
+    ObsoleteState = Removed;
 
     fields
     {
         field(1; "Financial Stat. Structure Code"; Code[20])
         {
             Caption = 'Financial Stat. Structure Code';
-            TableRelation = "Financial Statement Structure";
+            //TableRelation = "Financial Statement Structure";
         }
         field(2; "Line No."; Integer)
         {

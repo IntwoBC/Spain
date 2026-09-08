@@ -11,7 +11,7 @@ page 70003 "MyTaxi CRM Interface Customers"
     // Action added:
     //   - Get MyTaxi Customers by ID
 
-    Caption = 'MyTaxi CRM Interface Customers';
+    Caption = 'MyTaxi CRM Interface Customers/Vendors';
     DeleteAllowed = true;
     InsertAllowed = false;
     PageType = List;
@@ -190,6 +190,10 @@ page 70003 "MyTaxi CRM Interface Customers"
                     ApplicationArea = all;
                     ToolTip = 'Specifies the value of the sortCode field.';
                 }
+                // field("I2I Vendor Created"; Rec."I2I Vendor Created")
+                // {
+                //     ToolTip = 'Specifies the value of the Vendor Created field.', Comment = '%';
+                // }
             }
         }
         area(factboxes)
@@ -247,6 +251,8 @@ page 70003 "MyTaxi CRM Interface Customers"
                     MyTaxiCRMInterfaceSetup.Get;
                     // Request user input for From Date and To Date
                     FromDate := MyTaxiCRMInterfaceSetup."Master Data Last Max Date";
+                    if ToDate = 0D then
+                        ToDate := Today;
 
                     if OpenDateDialog(FromDate, ToDate) then begin
                         // Call the interface with user-provided dates
@@ -321,6 +327,55 @@ page 70003 "MyTaxi CRM Interface Customers"
                         until MyTaxiCRMInterfaceRecords.Next() = 0;
                 end;
             }
+            // action("Create Vendors")
+            // {
+            //     ApplicationArea = Basic;
+            //     Caption = 'Create/Update Vendors';
+            //     Image = Vendor;
+            //     Promoted = true;
+            //     PromotedCategory = Process;
+            //     PromotedIsBig = true;
+            //     Visible = true;
+
+            //     trigger OnAction()
+            //     var
+            //         MyTaxiCRMInterfaceRecords: Record "MyTaxi CRM Interface Records";
+            //         VendorUtility: Codeunit "Vendor Utility";
+            //         TotalCount: Integer;
+            //         SuccessCount: Integer;
+            //         FailedCount: Integer;
+            //     begin
+            //         CurrPage.SetSelectionFilter(MyTaxiCRMInterfaceRecords);
+            //         MyTaxiCRMInterfaceRecords.SetRange(customerGroup, '1');
+            //         MyTaxiCRMInterfaceRecords.SetRange("I2I Vendor Created", false);
+            //         MyTaxiCRMInterfaceRecords.SetRange("Process Status", MyTaxiCRMInterfaceRecords."Process Status"::" ");
+            //         MyTaxiCRMInterfaceRecords.SetRange("Process Status Description", '');
+            //         if MyTaxiCRMInterfaceRecords.FindFirst then begin
+            //             TotalCount := MyTaxiCRMInterfaceRecords.Count;
+            //             repeat
+            //                 ClearLastError;
+            //                 Clear(VendorUtility);
+            //                 if not VendorUtility.Run(MyTaxiCRMInterfaceRecords) then begin
+            //                     FailedCount += 1;
+            //                     MyTaxiCRMInterfaceRecords."Process Status" := MyTaxiCRMInterfaceRecords."process status"::Error;
+            //                     MyTaxiCRMInterfaceRecords."Process Status Description" := CopyStr(GetLastErrorText, 1, 250);
+            //                     MyTaxiCRMInterfaceRecords.Modify;
+            //                 end
+            //                 else begin
+            //                     SuccessCount += 1;
+            //                     MyTaxiCRMInterfaceRecords."Process Status" := MyTaxiCRMInterfaceRecords."process status"::" ";
+            //                     MyTaxiCRMInterfaceRecords."Process Status Description" := '';
+            //                     MyTaxiCRMInterfaceRecords.Modify;
+            //                 end;
+            //                 Commit;
+            //             until MyTaxiCRMInterfaceRecords.Next = 0;
+            //             Message('Processing Completed.\Total Eligible Records: %1\Processed Successfully: %2\Failed: %3', TotalCount, SuccessCount, FailedCount);
+            //         end
+            //         else
+            //             Message('No records found to process. Please check the filters or data.');
+            //     end;
+            // }
+            // //CR PL_Self Billing posting logic change BTY1-441 *****End
         }
     }
     local procedure OpenDateDialog(var FromDate: Date; var ToDate: Date): Boolean

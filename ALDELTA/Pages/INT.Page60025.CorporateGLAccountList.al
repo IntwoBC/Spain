@@ -16,7 +16,7 @@ page 60025 "Corporate G/L Account List"
     PageType = List;
     SourceTable = "Corporate G/L Account";
     ApplicationArea = All;
-    UsageCategory=lists;
+    UsageCategory = lists;
 
     layout
     {
@@ -71,12 +71,13 @@ page 60025 "Corporate G/L Account List"
                     ToolTip = 'Specifies the value of the Account Type field.';
 
                 }
-                field("Financial Statement Code"; Rec."Financial Statement Code")
-                {
-                    ApplicationArea = all;
-                    ToolTip = 'Specifies the value of the Financial Statement Code field.';
+                //  Ticket ID:-74794,# financial statement code + direct posting blocked as yes
+                // field("Financial Statement Code"; Rec."Financial Statement Code")
+                // {
+                //     ApplicationArea = all;
+                //     ToolTip = 'Specifies the value of the Financial Statement Code field.';
 
-                }
+                // }
             }
         }
         area(factboxes)

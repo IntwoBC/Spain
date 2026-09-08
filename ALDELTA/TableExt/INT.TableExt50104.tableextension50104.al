@@ -9,11 +9,13 @@ tableextension 50104 tableextension50104 extends "G/L Account"
             OptionMembers = " ","Balance Sheet",Equity,"P&L";
             DataClassification = CustomerContent;
         }
+        //  Ticket ID:-74794,# financial statement code + direct posting blocked as yes
         field(60010; "Financial Statement Code"; Code[10])
         {
             Caption = 'Financial Statement Code';
             TableRelation = "Financial Statement Code";
             DataClassification = CustomerContent;
+            ObsoleteState = Removed;
         }
         field(60040; "Name (English)"; Text[50])
         {
@@ -81,16 +83,18 @@ tableextension 50104 tableextension50104 extends "G/L Account"
     }
     keys
     {
-        key(Key1; "Financial Statement Code")
-        {
-        }
-        key(Key2; "Corporate G/L Account No.")
-        {
-        }
-        key(Key3; "Financial Statement Code", "Corporate G/L Account No.")
+        //  Ticket ID:-74794,# financial statement code + direct posting blocked as yes
+        // key(Key1; "Financial Statement Code")
+        // {
+        // }
+        key(Key1; "Corporate G/L Account No.")
         {
             MaintainSQLIndex = false;
+
         }
+        // key(Key3; "Corporate G/L Account No.")
+        // {
+        // }
     }
 }
 

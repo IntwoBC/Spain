@@ -124,52 +124,53 @@ page 60024 "Corporate G/L Account Card"
             group(Reporting)
             {
                 Caption = 'Reporting';
-                field("Financial Statement Code"; Rec."Financial Statement Code")
-                {
-                    Importance = Promoted;
-                    NotBlank = true;
-                    ApplicationArea = all;
-                    ToolTip = 'Specifies the value of the Financial Statement Code field.';
+                //  Ticket ID:-74794,# financial statement code + direct posting blocked as yes
+                // field("Financial Statement Code"; Rec."Financial Statement Code")
+                // {
+                //     Importance = Promoted;
+                //     NotBlank = true;
+                //     ApplicationArea = all;
+                //     ToolTip = 'Specifies the value of the Financial Statement Code field.';
 
 
-                    trigger OnAssistEdit()
-                    var
-                        lrecHistAccFinStatmtCode: Record "Hist. Acc. Fin. Statmt. Code";
-                    begin
-                        // MP 22-03-16 >>
-                        CurrPage.SaveRecord();
-                        Commit();
-                        // MP 22-03-16 <<
+                //     trigger OnAssistEdit()
+                //     var
+                //         lrecHistAccFinStatmtCode: Record "Hist. Acc. Fin. Statmt. Code";
+                //     begin
+                //         // MP 22-03-16 >>
+                //         CurrPage.SaveRecord();
+                //         Commit();
+                //         // MP 22-03-16 <<
 
-                        // MP 23-11-15 >>
-                        lrecHistAccFinStatmtCode.SetRange("G/L Account Type", lrecHistAccFinStatmtCode."G/L Account Type"::"Corporate G/L Account");
-                        lrecHistAccFinStatmtCode.SetRange("G/L Account No.", Rec."No.");
-                        PAGE.RunModal(0, lrecHistAccFinStatmtCode);
-                        // MP 23-11-15 <<
-                    end;
-                }
-                field("Fin. Statement Code (Local)"; Rec."Fin. Statement Code (Local)")
-                {
-                    Editable = true;
-                    ValuesAllowed = 'NOT EDITABLE';
-                    ApplicationArea = all;
-                    ToolTip = 'Specifies the value of the Fin. Statement Code (Local) field.';
+                //         // MP 23-11-15 >>
+                //         lrecHistAccFinStatmtCode.SetRange("G/L Account Type", lrecHistAccFinStatmtCode."G/L Account Type"::"Corporate G/L Account");
+                //         lrecHistAccFinStatmtCode.SetRange("G/L Account No.", Rec."No.");
+                //         PAGE.RunModal(0, lrecHistAccFinStatmtCode);
+                //         // MP 23-11-15 <<
+                //     end;
+                // }
+                // field("Fin. Statement Code (Local)"; Rec."Fin. Statement Code (Local)")
+                // {
+                //     Editable = true;
+                //     ValuesAllowed = 'NOT EDITABLE';
+                //     ApplicationArea = all;
+                //     ToolTip = 'Specifies the value of the Fin. Statement Code (Local) field.';
 
 
-                    trigger OnAssistEdit()
-                    var
-                        lrecHistAccFinStatmtCode: Record "Hist. Acc. Fin. Statmt. Code";
-                        lpagHistAccFinStatmtCodes: Page "Hist. Acc. Fin. Statmt. Codes";
-                    begin
-                        // MP 31-03-16 >>
-                        lrecHistAccFinStatmtCode.SetRange("G/L Account Type", lrecHistAccFinStatmtCode."G/L Account Type"::"G/L Account");
-                        lrecHistAccFinStatmtCode.SetRange("G/L Account No.", Rec."Local G/L Account No.");
-                        lpagHistAccFinStatmtCodes.Editable(false);
-                        lpagHistAccFinStatmtCodes.SetTableView(lrecHistAccFinStatmtCode);
-                        lpagHistAccFinStatmtCodes.RunModal();
-                        // MP 31-03-16 <<
-                    end;
-                }
+                //     trigger OnAssistEdit()
+                //     var
+                //         lrecHistAccFinStatmtCode: Record "Hist. Acc. Fin. Statmt. Code";
+                //         lpagHistAccFinStatmtCodes: Page "Hist. Acc. Fin. Statmt. Codes";
+                //     begin
+                //         // MP 31-03-16 >>
+                //         lrecHistAccFinStatmtCode.SetRange("G/L Account Type", lrecHistAccFinStatmtCode."G/L Account Type"::"G/L Account");
+                //         lrecHistAccFinStatmtCode.SetRange("G/L Account No.", Rec."Local G/L Account No.");
+                //         lpagHistAccFinStatmtCodes.Editable(false);
+                //         lpagHistAccFinStatmtCodes.SetTableView(lrecHistAccFinStatmtCode);
+                //         lpagHistAccFinStatmtCodes.RunModal();
+                //         // MP 31-03-16 <<
+                //     end;
+                // }
                 field("Local G/L Account No."; Rec."Local G/L Account No.")
                 {
                     Importance = Promoted;
@@ -378,14 +379,15 @@ page 60024 "Corporate G/L Account Card"
 
     trigger OnInsertRecord(BelowxRec: Boolean): Boolean
     begin
+        //  Ticket ID:-74794,# financial statement code + direct posting blocked as yes
         // MP 30-04-14 Moved check up from OnQueryClosePage >>
-        if (Rec."Financial Statement Code" = '') and (Rec."No." <> '') and (not gblnOnDelete) then
-            Error(txt60000, Rec.FieldCaption("Financial Statement Code"), Rec.TableCaption, Rec.FieldCaption("No."), Rec."No.")
-        else
-            if (not gblnBottomUp) and (Rec."Local G/L Account No." = '') and (Rec."No." <> '') and (not gblnOnDelete) then begin
-                Error(txt60000, Rec.FieldCaption("Local G/L Account No."), Rec.TableCaption, Rec.FieldCaption("No."), Rec."No.")
-            end else
-                exit(true);
+        // if (Rec."Financial Statement Code" = '') and (Rec."No." <> '') and (not gblnOnDelete) then
+        //     Error(txt60000, Rec.FieldCaption("Financial Statement Code"), Rec.TableCaption, Rec.FieldCaption("No."), Rec."No.")
+        // else
+        if (not gblnBottomUp) and (Rec."Local G/L Account No." = '') and (Rec."No." <> '') and (not gblnOnDelete) then begin
+            Error(txt60000, Rec.FieldCaption("Local G/L Account No."), Rec.TableCaption, Rec.FieldCaption("No."), Rec."No.")
+        end else
+            exit(true);
         // MP 30-04-14 <<
     end;
 

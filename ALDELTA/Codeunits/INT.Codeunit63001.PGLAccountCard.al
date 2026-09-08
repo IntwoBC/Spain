@@ -18,16 +18,17 @@ codeunit 63001 "P:G/L Account Card"
     [EventSubscriber(ObjectType::Page, 17, 'OnModifyRecordEvent', '', false, false)]
     local procedure levtOnOnModifyRecord(var Rec: Record "G/L Account"; var xRec: Record "G/L Account"; var AllowModify: Boolean)
     begin
-        if (Rec."Financial Statement Code" = '') and (Rec."No." <> '') then
-            Error(txt60000, Rec.FieldCaption("Financial Statement Code"), Rec.TableCaption, Rec.FieldCaption("No."), Rec."No.")
-        else begin
-            Rec.CalcFields(BottomUp, CorpAccInUse);
-            if Rec.BottomUp and Rec.CorpAccInUse and (Rec."Corporate G/L Account No." = '') and (Rec."No." <> '') then
-                Error(txt60000, Rec.FieldCaption("Corporate G/L Account No."), Rec.TableCaption, Rec.FieldCaption("No."), Rec."No.")
-            else
-                AllowModify := true;
-        end;
+        //  Ticket ID:-74794,# financial statement code + direct posting blocked as yes
+        // if (Rec."Financial Statement Code" = '') and (Rec."No." <> '') then
+        //     Error(txt60000, Rec.FieldCaption("Financial Statement Code"), Rec.TableCaption, Rec.FieldCaption("No."), Rec."No.")
+        // else begin
+        Rec.CalcFields(BottomUp, CorpAccInUse);
+        if Rec.BottomUp and Rec.CorpAccInUse and (Rec."Corporate G/L Account No." = '') and (Rec."No." <> '') then
+            Error(txt60000, Rec.FieldCaption("Corporate G/L Account No."), Rec.TableCaption, Rec.FieldCaption("No."), Rec."No.")
+        else
+            AllowModify := true;
     end;
+    // end;
 
     // [EventSubscriber(ObjectType::Page, 17, 'OnAfterValidateEvent', 'Corporate G/L Account No.', false, false)]
     // local procedure levtOnAfterValidateCorpGLAccNo(var Rec: Record "G/L Account"; var xRec: Record "G/L Account")
