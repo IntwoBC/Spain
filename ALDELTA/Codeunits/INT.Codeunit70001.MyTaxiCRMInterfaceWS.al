@@ -142,7 +142,7 @@ codeunit 70001 "MyTaxi CRM Interface WS"
 
             // Use the JToken.AsValue().AsText() approach for parsing
             if CustomerContent.Get('company', JToken) then
-                TmpMyTaxiCRMInterfaceRecords.company := JToken.AsValue().AsText();
+                TmpMyTaxiCRMInterfaceRecords.company := CopyStr(JToken.AsValue().AsText(), 1, MaxStrLen(TmpMyTaxiCRMInterfaceRecords.company));
 
             if CustomerContent.Get('id', JToken) then
                 TmpMyTaxiCRMInterfaceRecords.id := JToken.AsValue().AsInteger();
@@ -154,7 +154,7 @@ codeunit 70001 "MyTaxi CRM Interface WS"
                 TmpMyTaxiCRMInterfaceRecords.name := CopyStr(JToken.AsValue().AsText(), 1, MaxStrLen(TmpMyTaxiCRMInterfaceRecords.name));
 
             if CustomerContent.Get('orgNo', JToken) then
-                TmpMyTaxiCRMInterfaceRecords.orgNo := JToken.AsValue().AsText();
+                TmpMyTaxiCRMInterfaceRecords.orgNo := CopyStr(JToken.AsValue().AsText(), 1, MaxStrLen(TmpMyTaxiCRMInterfaceRecords.orgNo));
 
             if CustomerContent.Get('address1', JToken) then
                 TmpMyTaxiCRMInterfaceRecords.address1 := CopyStr(JToken.AsValue().AsText(), 1, MaxStrLen(TmpMyTaxiCRMInterfaceRecords.address1));
@@ -163,10 +163,10 @@ codeunit 70001 "MyTaxi CRM Interface WS"
                 TmpMyTaxiCRMInterfaceRecords.city := CopyStr(JToken.AsValue().AsText(), 1, MaxStrLen(TmpMyTaxiCRMInterfaceRecords.city));
 
             if CustomerContent.Get('zip', JToken) then
-                TmpMyTaxiCRMInterfaceRecords.zip := JToken.AsValue().AsText();
+                TmpMyTaxiCRMInterfaceRecords.zip := CopyStr(JToken.AsValue().AsText(), 1, MaxStrLen(TmpMyTaxiCRMInterfaceRecords.zip));
 
             if CustomerContent.Get('country', JToken) then
-                TmpMyTaxiCRMInterfaceRecords.country := JToken.AsValue().AsText();
+                TmpMyTaxiCRMInterfaceRecords.country := CopyStr(JToken.AsValue().AsText(), 1, MaxStrLen(TmpMyTaxiCRMInterfaceRecords.country));
 
             if CustomerContent.Get('tele1', JToken) then
                 TmpMyTaxiCRMInterfaceRecords.tele1 := CopyStr(JToken.AsValue().AsText(), 1, MaxStrLen(TmpMyTaxiCRMInterfaceRecords.tele1));
@@ -178,7 +178,7 @@ codeunit 70001 "MyTaxi CRM Interface WS"
                 TmpMyTaxiCRMInterfaceRecords.contact := CopyStr(JToken.AsValue().AsText(), 1, MaxStrLen(TmpMyTaxiCRMInterfaceRecords.contact));
 
             if CustomerContent.Get('vatNo', JToken) then
-                TmpMyTaxiCRMInterfaceRecords.vatNo := JToken.AsValue().AsText();
+                TmpMyTaxiCRMInterfaceRecords.vatNo := CopyStr(JToken.AsValue().AsText(), 1, MaxStrLen(TmpMyTaxiCRMInterfaceRecords.vatNo));
             // MyTaxi.W1.CRE.INT01.001 <<
 
             //TmpMyTaxiCRMInterfaceRecords.customerGroup := CustomerContent.GetValue('CustomerGroup').ToString;
@@ -204,22 +204,22 @@ codeunit 70001 "MyTaxi CRM Interface WS"
                 BankAccountContent := JToken.AsObject();
 
                 if BankAccountContent.Get('accountHolder', JToken) then
-                    TmpMyTaxiCRMInterfaceRecords.accountHolder := JToken.AsValue().AsText();
+                    TmpMyTaxiCRMInterfaceRecords.accountHolder := CopyStr(JToken.AsValue().AsText(), 1, MaxStrLen(TmpMyTaxiCRMInterfaceRecords.accountHolder));
 
                 if BankAccountContent.Get('iban', JToken) then
-                    TmpMyTaxiCRMInterfaceRecords.iban := JToken.AsValue().AsText();
+                    TmpMyTaxiCRMInterfaceRecords.iban := CopyStr(JToken.AsValue().AsText(), 1, MaxStrLen(TmpMyTaxiCRMInterfaceRecords.iban));
 
                 if BankAccountContent.Get('bic', JToken) then
-                    TmpMyTaxiCRMInterfaceRecords.bic := JToken.AsValue().AsText();
+                    TmpMyTaxiCRMInterfaceRecords.bic := CopyStr(JToken.AsValue().AsText(), 1, MaxStrLen(TmpMyTaxiCRMInterfaceRecords.bic));
 
                 if BankAccountContent.Get('directDebitAllowed', JToken) then
-                    TmpMyTaxiCRMInterfaceRecords.directDebitAllowed := JToken.AsValue().AsText();
+                    TmpMyTaxiCRMInterfaceRecords.directDebitAllowed := CopyStr(JToken.AsValue().AsText(), 1, MaxStrLen(TmpMyTaxiCRMInterfaceRecords.directDebitAllowed));
 
                 if BankAccountContent.Get('bankAccountNumber', JToken) then
-                    TmpMyTaxiCRMInterfaceRecords.bankAccountNumber := JToken.AsValue().AsText();
+                    TmpMyTaxiCRMInterfaceRecords.bankAccountNumber := CopyStr(JToken.AsValue().AsText(), 1, MaxStrLen(TmpMyTaxiCRMInterfaceRecords.bankAccountNumber));
 
                 if BankAccountContent.Get('sortCode', JToken) then
-                    TmpMyTaxiCRMInterfaceRecords.sortCode := JToken.AsValue().AsText();
+                    TmpMyTaxiCRMInterfaceRecords.sortCode := CopyStr(JToken.AsValue().AsText(), 1, MaxStrLen(TmpMyTaxiCRMInterfaceRecords.sortCode));
 
                 MyTaxiCRMInterfaceSetup.TestField("Bank Account No Start Position");
                 MyTaxiCRMInterfaceSetup.TestField("Bank Account No Length");
@@ -397,13 +397,13 @@ codeunit 70001 "MyTaxi CRM Interface WS"
         // if Invoice.Get('id', JToken) then
         //     TmpMyTaxiCRMInterfaceRecords.id := JToken.AsValue().AsInteger();//added above
         if Invoice.Get('countyCode', JToken) then
-            TmpMyTaxiCRMInterfaceRecords.countryCode := JToken.AsValue().AsText();
+            TmpMyTaxiCRMInterfaceRecords.countryCode := CopyStr(JToken.AsValue().AsText(), 1, MaxStrLen(TmpMyTaxiCRMInterfaceRecords.countryCode));
         if Invoice.Get('statusCode', JToken) then
-            TmpMyTaxiCRMInterfaceRecords.statusCode := JToken.AsValue().AsText();
+            TmpMyTaxiCRMInterfaceRecords.statusCode := CopyStr(JToken.AsValue().AsText(), 1, MaxStrLen(TmpMyTaxiCRMInterfaceRecords.statusCode));
         if Invoice.Get('dateStatusChanged', JToken) then
             Evaluate(TmpMyTaxiCRMInterfaceRecords.dateStatusChanged, JToken.AsValue().AsText());
         if Invoice.Get('additionalInformation', JToken) then
-            TmpMyTaxiCRMInterfaceRecords.additionalInformation := JToken.AsValue().AsText();
+            TmpMyTaxiCRMInterfaceRecords.additionalInformation := CopyStr(JToken.AsValue().AsText(), 1, MaxStrLen(TmpMyTaxiCRMInterfaceRecords.additionalInformation));
 
         // Extract the 'data' object
         if not Invoice.Get('data', JToken) then
@@ -414,9 +414,9 @@ codeunit 70001 "MyTaxi CRM Interface WS"
         if Invoice.Get('invoiceid', JToken) then
             Evaluate(TmpMyTaxiCRMInterfaceRecords.invoiceid, JToken.AsValue().AsText());
         if Invoice.Get('externalReference', JToken) then
-            TmpMyTaxiCRMInterfaceRecords.externalReference := JToken.AsValue().AsText();
+            TmpMyTaxiCRMInterfaceRecords.externalReference := CopyStr(JToken.AsValue().AsText(), 1, MaxStrLen(TmpMyTaxiCRMInterfaceRecords.externalReference));
         if Invoice.Get('invoiceType', JToken) then
-            TmpMyTaxiCRMInterfaceRecords.invoiceType := JToken.AsValue().AsText();
+            TmpMyTaxiCRMInterfaceRecords.invoiceType := copyStr(JToken.AsValue().AsText(), 1, MaxStrLen(TmpMyTaxiCRMInterfaceRecords.invoiceType));
         if Invoice.Get('idCustomer', JToken) then
             Evaluate(TmpMyTaxiCRMInterfaceRecords.idCustomer, JToken.AsValue().AsText());
         if Invoice.Get('dateInvoice', JToken) then begin
@@ -431,12 +431,12 @@ codeunit 70001 "MyTaxi CRM Interface WS"
         end;
         // MyTaxi.W1.CRE.INT01.013 <<
         if Invoice.Get('businessAccountPaymentMethod', JToken) then
-            TmpMyTaxiCRMInterfaceRecords.businessAccountPaymentMethod := JToken.AsValue().AsText();
+            TmpMyTaxiCRMInterfaceRecords.businessAccountPaymentMethod := CopyStr(JToken.AsValue().AsText(), 1, MaxStrLen(TmpMyTaxiCRMInterfaceRecords.businessAccountPaymentMethod));
         // MyTaxi.W1.CRE.INT01.013 >>
         if Invoice.Get('countryCode', JToken) then
-            TmpMyTaxiCRMInterfaceRecords.countryCode := JToken.AsValue().AsText();
+            TmpMyTaxiCRMInterfaceRecords.countryCode := CopyStr(JToken.AsValue().AsText(), 1, MaxStrLen(TmpMyTaxiCRMInterfaceRecords.countryCode));
         if Invoice.Get('currency', JToken) then
-            TmpMyTaxiCRMInterfaceRecords.currency := JToken.AsValue().AsText();
+            TmpMyTaxiCRMInterfaceRecords.currency := CopyStr(JToken.AsValue().AsText(), 1, MaxStrLen(TmpMyTaxiCRMInterfaceRecords.currency));
         if Invoice.Get('sumNetValue', JToken) then begin
             Evaluate(TmpMyTaxiCRMInterfaceRecords.sumNetValue, JToken.AsValue().AsText());
             if Invoice.Get('sumTaxValue', JToken) then
@@ -488,6 +488,9 @@ codeunit 70001 "MyTaxi CRM Interface WS"
             if Invoice.Get('grossPaymentFeeBA', JToken) then
                 Evaluate(TmpMyTaxiCRMInterfaceRecords.grossPaymentFeeBA, JToken.AsValue().AsText());
         end;
+        // if Invoice.Get('lyftMobilePayment', JToken) then begin
+        //     Evaluate(TmpMyTaxiCRMInterfaceRecords."I2I Net Payment Lyft", JToken.AsValue().AsText());
+        // end;
         // MyTaxi.W1.CRE.INT01.015 <<
         TmpMyTaxiCRMInterfaceRecords."NAV Invoice Status" := TmpMyTaxiCRMInterfaceRecords."NAV Invoice Status"::Imported;
         if TmpMyTaxiCRMInterfaceRecords.netPayment <> 0 then
@@ -1015,9 +1018,9 @@ codeunit 70001 "MyTaxi CRM Interface WS"
         if Invoice.Get('invoiceid', JToken) then
             Evaluate(TmpMyTaxiCRMInterfaceRecords.invoiceid, JToken.AsValue().AsText());
         if Invoice.Get('externalReference', JToken) then
-            TmpMyTaxiCRMInterfaceRecords.externalReference := JToken.AsValue().AsText();
+            TmpMyTaxiCRMInterfaceRecords.externalReference := CopyStr(JToken.AsValue().AsText(), 1, MaxStrLen(TmpMyTaxiCRMInterfaceRecords.externalReference));
         if Invoice.Get('invoiceType', JToken) then
-            TmpMyTaxiCRMInterfaceRecords.invoiceType := JToken.AsValue().AsText();
+            TmpMyTaxiCRMInterfaceRecords.invoiceType := CopyStr(JToken.AsValue().AsText(), 1, MaxStrLen(TmpMyTaxiCRMInterfaceRecords.invoiceType));
         if Invoice.Get('idCustomer', JToken) then
             Evaluate(TmpMyTaxiCRMInterfaceRecords.idCustomer, JToken.AsValue().AsText());
         if Invoice.Get('dateInvoice', JToken) then begin
@@ -1027,9 +1030,9 @@ codeunit 70001 "MyTaxi CRM Interface WS"
             TmpMyTaxiCRMInterfaceRecords.dueDate := JToken.AsValue().AsDate();
         end;
         if Invoice.Get('countryCode', JToken) then
-            TmpMyTaxiCRMInterfaceRecords.countryCode := JToken.AsValue().AsText();
+            TmpMyTaxiCRMInterfaceRecords.countryCode := CopyStr(JToken.AsValue().AsText(), 1, MaxStrLen(TmpMyTaxiCRMInterfaceRecords.countryCode));
         if Invoice.Get('currency', JToken) then
-            TmpMyTaxiCRMInterfaceRecords.currency := JToken.AsValue().AsText();
+            TmpMyTaxiCRMInterfaceRecords.currency := CopyStr(JToken.AsValue().AsText(), 1, MaxStrLen(TmpMyTaxiCRMInterfaceRecords.currency));
         if Invoice.Get('sumNetValue', JToken) then begin
             Evaluate(TmpMyTaxiCRMInterfaceRecords.sumNetValue, JToken.AsValue().AsText());
             if Invoice.Get('sumTaxValue', JToken) then
@@ -1096,9 +1099,9 @@ codeunit 70001 "MyTaxi CRM Interface WS"
                     SubLastEntryNo += 1;
                     TmpMyTaxiCRMInterfSubRecords.invoiceid := TmpMyTaxiCRMInterfaceRecords.invoiceid;
                     if Credit.Get('typeOfAdditionalNote', JToken) then
-                        TmpMyTaxiCRMInterfSubRecords.typeOfAdditionalNote := JToken.AsValue().AsText();
+                        TmpMyTaxiCRMInterfSubRecords.typeOfAdditionalNote := CopyStr(JToken.AsValue().AsText(), 1, MaxStrLen(TmpMyTaxiCRMInterfSubRecords.typeOfAdditionalNote));
                     if Credit.Get('accountNumber', JToken) then
-                        TmpMyTaxiCRMInterfSubRecords.accountNumber := JToken.AsValue().AsText();
+                        TmpMyTaxiCRMInterfSubRecords.accountNumber := CopyStr(JToken.AsValue().AsText(), 1, MaxStrLen(TmpMyTaxiCRMInterfSubRecords.accountNumber));
                     if Credit.Get('netCredit', JToken) then begin
                         Evaluate(TmpMyTaxiCRMInterfSubRecords.netCredit, JToken.AsValue().AsText());
                         if Credit.Get('taxCredit', JToken) then
@@ -1137,4 +1140,3 @@ codeunit 70001 "MyTaxi CRM Interface WS"
             until TmpMyTaxiCRMInterfSubRecords.Next = 0;
     end;
 }
-

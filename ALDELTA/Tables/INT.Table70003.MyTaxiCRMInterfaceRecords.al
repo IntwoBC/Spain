@@ -84,7 +84,7 @@ table 70003 "MyTaxi CRM Interface Records"
             Description = 'MyTaxi.W1.CRE.INT01.009';
             NotBlank = true;
         }
-        field(26; iban; Text[30])
+        field(26; iban; Text[50])
         {
             Description = 'MyTaxi.W1.CRE.INT01.009';
         }

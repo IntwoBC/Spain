@@ -158,11 +158,11 @@ codeunit 70002 "MyTaxi CRM Interface Process"
             if CopyStr(pMyTaxiCRMInterfaceRecords.accountHolder, 1, MaxStrLen(CustomerBankAccount.Contact)) <> CustomerBankAccount.Contact then
                 CustomerBankAccount.Validate(Contact, CopyStr(pMyTaxiCRMInterfaceRecords.accountHolder, 1, MaxStrLen(CustomerBankAccount.Contact)));
             if pMyTaxiCRMInterfaceRecords.iban <> CustomerBankAccount.IBAN then
-                CustomerBankAccount.Validate(IBAN, pMyTaxiCRMInterfaceRecords.iban);
+                CustomerBankAccount.IBAN := pMyTaxiCRMInterfaceRecords.iban;
             if pMyTaxiCRMInterfaceRecords.bic <> CustomerBankAccount."SWIFT Code" then
                 CustomerBankAccount.Validate("SWIFT Code", pMyTaxiCRMInterfaceRecords.bic);
             if pMyTaxiCRMInterfaceRecords.bankAccountNumber <> CustomerBankAccount."Bank Account No." then
-                CustomerBankAccount.Validate("Bank Account No.", pMyTaxiCRMInterfaceRecords.bankAccountNumber);
+                CustomerBankAccount.Validate("Bank Account No.", CopyStr(pMyTaxiCRMInterfaceRecords.bankAccountNumber, 1, MaxStrLen(CustomerBankAccount."Bank Account No.")));
             if pMyTaxiCRMInterfaceRecords.sortCode <> CustomerBankAccount."Bank Branch No." then
                 CustomerBankAccount.Validate("Bank Branch No.", pMyTaxiCRMInterfaceRecords.sortCode);
             CustomerBankAccount.Modify(true);
@@ -242,7 +242,7 @@ codeunit 70002 "MyTaxi CRM Interface Process"
         if not SalesInvoiceHeader.Get(pMyTaxiCRMInterfaceRecords.externalReference) then begin
             SalesHeader.Init();
             SalesHeader."Document Type" := SalesHeader."Document Type"::Invoice;
-            SalesHeader."No." := pMyTaxiCRMInterfaceRecords.externalReference;
+            SalesHeader."No." := CopyStr(pMyTaxiCRMInterfaceRecords.externalReference, 1, MaxStrLen(SalesHeader."No."));
             SalesHeader.Insert(true);
             // MyTaxi.W1.CRE.INT01.003 <<
             //SalesHeader."Posting No." :=  pMyTaxiCRMInterfaceRecords.externalReference;
@@ -258,7 +258,7 @@ codeunit 70002 "MyTaxi CRM Interface Process"
                 SalesHeader.Validate("Payment Method Code", pMyTaxiCRMInterfaceRecords.businessAccountPaymentMethod);
             // MyTaxi.W1.CRE.INT01.013 >>
             // MyTaxi.W1.CRE.INT01.003 <<
-            SalesHeader."Posting No." := pMyTaxiCRMInterfaceRecords.externalReference;
+            SalesHeader."Posting No." := CopyStr(pMyTaxiCRMInterfaceRecords.externalReference, 1, MaxStrLen(SalesHeader."Posting No."));
             // MyTaxi.W1.CRE.INT01.003 >>
             // MyTaxi.W1.CRE.INT01.005 <<
             SalesHeader."Due Date" := pMyTaxiCRMInterfaceRecords.dueDate;
@@ -506,6 +506,11 @@ codeunit 70002 "MyTaxi CRM Interface Process"
                 pMyTaxiCRMInterfaceRecords.Modify();
                 // MyTaxi.W1.CRE.INT01.015 >>
             end;
+
+            // if pMyTaxiCRMInterfaceRecords."I2I Net Payment Lyft" <> 0 then begin
+            //     PostNetPaymentLyft(TmpSalesHeader, -pMyTaxiCRMInterfaceRecords."I2I Net Payment Lyft", InvoiceAmount - CreditMemoAmount - pMyTaxiCRMInterfaceRecords.netPayment > 0, pMyTaxiCRMInterfaceRecords.dateInvoice);
+            // end;
+
             GenJnlLine.Reset();
             GenJnlLine.SetRange("Journal Template Name", MyTaxiCRMIntPostingSetup."Cash Rec. Jnl. Template Name");
             GenJnlLine.SetRange("Journal Batch Name", MyTaxiCRMIntPostingSetup."Cash Rec. Jnl. Batch Name");
@@ -612,7 +617,7 @@ codeunit 70002 "MyTaxi CRM Interface Process"
         if bInvoiceExist then begin
             // MyTaxi.W1.CRE.INT01.008 >>
             SalesHeader."Applies-to Doc. Type" := SalesHeader."Applies-to Doc. Type"::Invoice;
-            SalesHeader."Applies-to Doc. No." := pMyTaxiCRMInterfaceRecords.externalReference;
+            SalesHeader."Applies-to Doc. No." := CopyStr(pMyTaxiCRMInterfaceRecords.externalReference, 1, MaxStrLen(SalesHeader."Applies-to Doc. No."));
             // MyTaxi.W1.CRE.INT01.008 <<
             // MyTaxi.IB.CRE.INT01.001 >>
             SalesHeader.Validate("Corrected Invoice No.", pMyTaxiCRMInterfaceRecords.externalReference);
@@ -812,6 +817,7 @@ codeunit 70002 "MyTaxi CRM Interface Process"
         GenJnlLine."Salespers./Purch. Code" := pSalesHeader."Salesperson Code";
         GenJnlLine."Allow Zero-Amount Posting" := true;
         GenJnlLine.Insert(true);
+        LastLine += 10000;
     end;
 
     local procedure "--- Fun.MyTaxi.W1.CRE.INT01.011 ---"()
@@ -932,5 +938,65 @@ codeunit 70002 "MyTaxi CRM Interface Process"
             end;
         end;
     end;
-}
 
+    // local procedure PostNetPaymentLyft(pSalesHeader: Record "Sales Header"; pAmount: Decimal; pApplyToInvoice: Boolean; pPostingDate: Date)
+    // var
+    //     GenJnlBatch: Record "Gen. Journal Batch";
+    //     SourceCodeSetup: Record "Source Code Setup";
+    //     SalesInvoiceHeader: Record "Sales Invoice Header";
+    // begin
+    //     GenJnlLine.Init();
+    //     GenJnlLine."Journal Template Name" := MyTaxiCRMIntPostingSetup."Cash Rec. Jnl. Template Name";
+    //     GenJnlLine."Journal Batch Name" := MyTaxiCRMIntPostingSetup."Cash Rec. Jnl. Batch Name";
+    //     GenJnlLine."Line No." := LastLine + 10000;
+    //     GenJnlLine."Posting Date" := pPostingDate;
+    //     GenJnlLine."Document Date" := pSalesHeader."Document Date";
+    //     GenJnlLine.Description := pSalesHeader."Posting Description";
+    //     GenJnlLine."Reason Code" := pSalesHeader."Reason Code";
+    //     GenJnlLine."Account Type" := GenJnlLine."Account Type"::Customer;
+    //     GenJnlLine.Validate("Account No.", pSalesHeader."Bill-to Customer No.");
+    //     if pAmount > 0 then
+    //         GenJnlLine."Document Type" := GenJnlLine."Document Type"::Refund
+    //     else
+    //         GenJnlLine."Document Type" := GenJnlLine."Document Type"::Payment;
+
+    //     GenJnlBatch.Get(MyTaxiCRMIntPostingSetup."Cash Rec. Jnl. Template Name", MyTaxiCRMIntPostingSetup."Cash Rec. Jnl. Batch Name");
+    //     if GenJnlBatch."No. Series" <> '' then
+    //         GenJnlLine."Document No." := NoSeriesMgt.GetNextNo(
+    //             GenJnlBatch."No. Series", pSalesHeader."Posting Date", false)
+    //     else
+    //         GenJnlLine."Document No." := pSalesHeader."No.";
+
+    //     GenJnlLine."External Document No." := pSalesHeader."No.";
+    //     GenJnlLine."Bal. Account Type" := GenJnlBatch."Bal. Account Type"::"G/L Account";
+    //     GenJnlLine.Validate("Bal. Account No.", MyTaxiCRMIntPostingSetup."I2I Bal. Acc. Net Payment Lyft");
+
+    //     if GenJnlLine."Document Type" = GenJnlLine."Document Type"::Payment then
+    //         if pApplyToInvoice and SalesInvoiceHeader.Get(pSalesHeader."No.") then begin
+    //             GenJnlLine."Applies-to Doc. Type" := GenJnlLine."Applies-to Doc. Type"::Invoice;
+    //             GenJnlLine."Applies-to Doc. No." := pSalesHeader."No.";
+    //         end;
+
+    //     GenJnlLine."Currency Code" := pSalesHeader."Currency Code";
+    //     if pSalesHeader."Currency Code" = '' then
+    //         GenJnlLine."Currency Factor" := 1
+    //     else
+    //         GenJnlLine."Currency Factor" := pSalesHeader."Currency Factor";
+    //     GenJnlLine.Validate(Amount, pAmount);
+    //     GenJnlLine."Source Currency Code" := pSalesHeader."Currency Code";
+    //     GenJnlLine."Source Currency Amount" := GenJnlLine.Amount;
+    //     GenJnlLine.Correction := pSalesHeader.Correction;
+    //     GenJnlLine."Source Type" := GenJnlLine."Source Type"::Customer;
+    //     GenJnlLine."Source No." := pSalesHeader."Bill-to Customer No.";
+    //     SourceCodeSetup.Get();
+    //     GenJnlLine."Source Code" := SourceCodeSetup."Cash Receipt Journal";
+    //     GenJnlLine."Posting No. Series" := GenJnlBatch."Posting No. Series";
+    //     GenJnlLine."Salespers./Purch. Code" := pSalesHeader."Salesperson Code";
+    //     GenJnlLine."Allow Zero-Amount Posting" := true;
+    //     GenJnlLine."Shortcut Dimension 1 Code" := pSalesHeader."Shortcut Dimension 1 Code";
+    //     GenJnlLine."Shortcut Dimension 2 Code" := pSalesHeader."Shortcut Dimension 2 Code";
+    //     GenJnlLine."Dimension Set ID" := pSalesHeader."Dimension Set ID";
+    //     GenJnlLine.Insert(true);
+    //     LastLine += 10000;
+    // end;
+}
