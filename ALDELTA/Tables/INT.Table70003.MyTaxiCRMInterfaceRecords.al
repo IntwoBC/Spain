@@ -263,6 +263,15 @@ table 70003 "MyTaxi CRM Interface Records"
         field(100102; "Send Update"; Boolean)
         {
         }
+        //CR PL_Self Billing posting logic change BTY1-441*****Start
+        // field(100103; "I2I Vendor Created"; Boolean)
+        // {
+        //     Caption = 'Vendor Created';
+        // }
+        field(2; "I2I Net Payment Lyft"; Decimal)
+        {
+            Caption = 'netPaymentLyft';
+        }
     }
 
     keys

@@ -19,6 +19,7 @@ page 70003 "MyTaxi CRM Interface Customers"
     SourceTableView = WHERE("Interface Type" = CONST(Customer));
     ApplicationArea = All;
     UsageCategory = lists;
+    PromotedActionCategories = 'Manage,Print,Report,View,Get Customer,Create';
 
     layout
     {
@@ -206,127 +207,331 @@ page 70003 "MyTaxi CRM Interface Customers"
 
     actions
     {
+        area(Processing)
+        {
+            group(View)
+            {
+                Caption = 'View';
+                Image = View;
+                action("Customer Card")
+                {
+                    Caption = 'Customer Card';
+                    Image = Customer;
+                    Promoted = true;
+                    PromotedCategory = Category4;
+                    PromotedIsBig = true;
+                    //RunObject = Page "Customer Card";
+                    //RunPageLink = "No." = FIELD(id);
+                    ApplicationArea = all;
+                    ToolTip = 'Executes the Customer Card action.';
+                    trigger OnAction()
+                    var
+                        Customer: Record Customer;
+                        CustomerCard: Page "Customer Card";
+                    begin
+                        if Customer.Get(Rec.id) then begin
+                            CustomerCard.SetRecord(Customer);
+                            CustomerCard.Run();
+                        end;
+                    end;
+
+                }
+                action("Vendor Card")
+                {
+                    Caption = 'Vendor Card';
+                    Image = Vendor;
+                    Promoted = true;
+                    PromotedCategory = Category4;
+                    PromotedIsBig = true;
+                    ApplicationArea = all;
+                    trigger OnAction()
+                    var
+                        Vendor: Record Vendor;
+                        VendorCard: Page "Vendor Card";
+                    begin
+                        if Vendor.Get(Rec.id) then begin
+                            VendorCard.SetRecord(Vendor);
+                            VendorCard.Run();
+                        end;
+                    end;
+                }
+            }
+            group("Get Customer")
+            {
+                Caption = 'Get Customer';
+                Image = GetLines;
+                action("Get MyTaxi Customers")
+                {
+                    Caption = 'Get MyTaxi Customers';
+                    Image = GetLines;
+                    Promoted = true;
+                    PromotedCategory = Category5;
+                    PromotedIsBig = true;
+                    ApplicationArea = all;
+                    ToolTip = 'Executes the Get MyTaxi Customers action.';
+
+                    trigger OnAction()
+                    var
+                        MyTaxiCRMInterfaceWS: Codeunit "MyTaxi CRM Interface WS";
+                        FromDate: Date;
+                        ToDate: Date;
+                        MyTaxiCRMInterfaceSetup: Record "MyTaxi CRM Interface Setup";
+                    begin
+                        MyTaxiCRMInterfaceSetup.Get;
+                        // Request user input for From Date and To Date
+                        FromDate := MyTaxiCRMInterfaceSetup."Master Data Last Max Date";
+                        if ToDate = 0D then
+                            ToDate := Today;
+
+                        if OpenDateDialog(FromDate, ToDate) then begin
+                            // Call the interface with user-provided dates
+                            MyTaxiCRMInterfaceWS.GetMasterData(FromDate, ToDate);
+                        end;
+                    end;
+                }
+                action("Get MyTaxi Customers by ID")
+                {
+                    Caption = 'Get MyTaxi Customers by ID';
+                    Image = GetLines;
+                    Promoted = true;
+                    PromotedCategory = Category5;
+                    PromotedIsBig = true;
+                    ApplicationArea = all;
+                    ToolTip = 'Executes the Get MyTaxi Customers by ID action.';
+
+                    trigger OnAction()
+                    var
+                        MyTaxiCRMInterfaceWS: Codeunit "MyTaxi CRM Interface WS";
+                    begin
+                        // EY-MYES0003 >>
+                        MyTaxiCRMInterfaceWS.GetMasterDataByID;
+                        // EY-MYES0003 <<
+                    end;
+                }
+                action("Import MyTaxi Customers File")
+                {
+                    Caption = 'Import MyTaxi Customers File';
+                    Image = FileContract;
+                    Promoted = true;
+                    PromotedCategory = Category5;
+                    PromotedIsBig = true;
+                    ApplicationArea = all;
+                    ToolTip = 'Executes the Import MyTaxi Customers File action.';
+
+                    trigger OnAction()
+                    var
+                        MyTaxiCRMInterfaceWS: Codeunit "MyTaxi CRM Interface WS";
+                    begin
+                        MyTaxiCRMInterfaceWS.ImportMasterData;
+                    end;
+                }
+            }
+            group("Create")
+            {
+                Caption = 'Create';
+                Image = Create;
+                action("Create Customers")
+                {
+                    Caption = 'Create Customers';
+                    Image = EditCustomer;
+                    Promoted = true;
+                    PromotedCategory = Category6;
+                    PromotedIsBig = true;
+                    ApplicationArea = all;
+                    ToolTip = 'Executes the Create Customers action.';
+
+                    trigger OnAction()
+                    var
+                        MyTaxiCRMInterfaceRecords: Record "MyTaxi CRM Interface Records";
+                        MyTaxiCRMInterfaceProcess: Codeunit "MyTaxi CRM Interface Process";
+                    begin
+                        CurrPage.SetSelectionFilter(MyTaxiCRMInterfaceRecords);
+                        MyTaxiCRMInterfaceRecords.SetRange("Transfer Date", 0D);
+                        if MyTaxiCRMInterfaceRecords.FindFirst() then
+                            repeat
+                                ClearLastError();
+                                Clear(MyTaxiCRMInterfaceProcess);
+                                MyTaxiCRMInterfaceProcess.SetParams(1, MyTaxiCRMInterfaceRecords);
+                                if not MyTaxiCRMInterfaceProcess.Run() then begin
+                                    MyTaxiCRMInterfaceRecords."Process Status" := MyTaxiCRMInterfaceRecords."Process Status"::Error;
+                                    MyTaxiCRMInterfaceRecords."Process Status Description" := CopyStr(GetLastErrorText, 1, 250);
+                                    MyTaxiCRMInterfaceRecords.Modify();
+                                end;
+                                Commit();
+                            until MyTaxiCRMInterfaceRecords.Next() = 0;
+                    end;
+                }
+                // action("Create Vendors")
+                // {
+                //     ApplicationArea = Basic;
+                //     Caption = 'Create/Update Vendors';
+                //     Image = Vendor;
+                //     Promoted = true;
+                //     PromotedCategory = Category6;
+                //     PromotedIsBig = true;
+                //     Visible = true;
+
+                //     trigger OnAction()
+                //     var
+                //         MyTaxiCRMInterfaceRecords: Record "MyTaxi CRM Interface Records";
+                //         VendorUtility: Codeunit "Vendor Utility";
+                //         TotalCount: Integer;
+                //         SuccessCount: Integer;
+                //         FailedCount: Integer;
+                //     begin
+                //         CurrPage.SetSelectionFilter(MyTaxiCRMInterfaceRecords);
+                //         MyTaxiCRMInterfaceRecords.SetRange(customerGroup, '1');
+                //         MyTaxiCRMInterfaceRecords.SetRange("I2I Vendor Created", false);
+                //         MyTaxiCRMInterfaceRecords.SetRange("Process Status", MyTaxiCRMInterfaceRecords."Process Status"::" ");
+                //         MyTaxiCRMInterfaceRecords.SetRange("Process Status Description", '');
+                //         if MyTaxiCRMInterfaceRecords.FindFirst then begin
+                //             TotalCount := MyTaxiCRMInterfaceRecords.Count;
+                //             repeat
+                //                 ClearLastError;
+                //                 Clear(VendorUtility);
+                //                 if not VendorUtility.Run(MyTaxiCRMInterfaceRecords) then begin
+                //                     FailedCount += 1;
+                //                     MyTaxiCRMInterfaceRecords."Process Status" := MyTaxiCRMInterfaceRecords."process status"::Error;
+                //                     MyTaxiCRMInterfaceRecords."Process Status Description" := CopyStr(GetLastErrorText, 1, 250);
+                //                     MyTaxiCRMInterfaceRecords.Modify;
+                //                 end
+                //                 else begin
+                //                     SuccessCount += 1;
+                //                     MyTaxiCRMInterfaceRecords."Process Status" := MyTaxiCRMInterfaceRecords."process status"::" ";
+                //                     MyTaxiCRMInterfaceRecords."Process Status Description" := '';
+                //                     MyTaxiCRMInterfaceRecords.Modify;
+                //                 end;
+                //                 Commit;
+                //             until MyTaxiCRMInterfaceRecords.Next = 0;
+                //             Message('Processing Completed.\Total Eligible Records: %1\Processed Successfully: %2\Failed: %3', TotalCount, SuccessCount, FailedCount);
+                //         end
+                //         else
+                //             Message('No records found to process. Please check the filters or data.');
+                //     end;
+                // }
+            }
+        }
         area(creation)
         {
-            action("Customer Card")
-            {
-                Caption = 'Customer Card';
-                Image = Customer;
-                Promoted = true;
-                PromotedCategory = New;
-                PromotedIsBig = true;
-                //RunObject = Page "Customer Card";
-                //RunPageLink = "No." = FIELD(id);
-                ApplicationArea = all;
-                ToolTip = 'Executes the Customer Card action.';
-                trigger OnAction()
-                var
-                    Customer: Record Customer;
-                    CustomerCard: Page "Customer Card";
-                begin
-                    if Customer.Get(Rec.id) then begin
-                        CustomerCard.SetRecord(Customer);
-                        CustomerCard.Run();
-                    end;
-                end;
+            // action("Customer Card")
+            // {
+            //     Caption = 'Customer Card';
+            //     Image = Customer;
+            //     Promoted = true;
+            //     PromotedCategory = New;
+            //     PromotedIsBig = true;
+            //     //RunObject = Page "Customer Card";
+            //     //RunPageLink = "No." = FIELD(id);
+            //     ApplicationArea = all;
+            //     ToolTip = 'Executes the Customer Card action.';
+            //     trigger OnAction()
+            //     var
+            //         Customer: Record Customer;
+            //         CustomerCard: Page "Customer Card";
+            //     begin
+            //         if Customer.Get(Rec.id) then begin
+            //             CustomerCard.SetRecord(Customer);
+            //             CustomerCard.Run();
+            //         end;
+            //     end;
 
-            }
-            action("Get MyTaxi Customers")
-            {
-                Caption = 'Get MyTaxi Customers';
-                Image = GetLines;
-                Promoted = true;
-                PromotedCategory = Process;
-                PromotedIsBig = true;
-                ApplicationArea = all;
-                ToolTip = 'Executes the Get MyTaxi Customers action.';
+            // }
+            // action("Get MyTaxi Customers")
+            // {
+            //     Caption = 'Get MyTaxi Customers';
+            //     Image = GetLines;
+            //     Promoted = true;
+            //     PromotedCategory = Process;
+            //     PromotedIsBig = true;
+            //     ApplicationArea = all;
+            //     ToolTip = 'Executes the Get MyTaxi Customers action.';
 
-                trigger OnAction()
-                var
-                    MyTaxiCRMInterfaceWS: Codeunit "MyTaxi CRM Interface WS";
-                    FromDate: Date;
-                    ToDate: Date;
-                    MyTaxiCRMInterfaceSetup: Record "MyTaxi CRM Interface Setup";
-                begin
-                    MyTaxiCRMInterfaceSetup.Get;
-                    // Request user input for From Date and To Date
-                    FromDate := MyTaxiCRMInterfaceSetup."Master Data Last Max Date";
-                    if ToDate = 0D then
-                        ToDate := Today;
+            //     trigger OnAction()
+            //     var
+            //         MyTaxiCRMInterfaceWS: Codeunit "MyTaxi CRM Interface WS";
+            //         FromDate: Date;
+            //         ToDate: Date;
+            //         MyTaxiCRMInterfaceSetup: Record "MyTaxi CRM Interface Setup";
+            //     begin
+            //         MyTaxiCRMInterfaceSetup.Get;
+            //         // Request user input for From Date and To Date
+            //         FromDate := MyTaxiCRMInterfaceSetup."Master Data Last Max Date";
+            //         if ToDate = 0D then
+            //             ToDate := Today;
 
-                    if OpenDateDialog(FromDate, ToDate) then begin
-                        // Call the interface with user-provided dates
-                        MyTaxiCRMInterfaceWS.GetMasterData(FromDate, ToDate);
-                    end;
-                end;
-            }
-            action("Get MyTaxi Customers by ID")
-            {
-                Caption = 'Get MyTaxi Customers by ID';
-                Image = GetLines;
-                Promoted = true;
-                PromotedCategory = Process;
-                PromotedIsBig = true;
-                ApplicationArea = all;
-                ToolTip = 'Executes the Get MyTaxi Customers by ID action.';
+            //         if OpenDateDialog(FromDate, ToDate) then begin
+            //             // Call the interface with user-provided dates
+            //             MyTaxiCRMInterfaceWS.GetMasterData(FromDate, ToDate);
+            //         end;
+            //     end;
+            // }
+            // action("Get MyTaxi Customers by ID")
+            // {
+            //     Caption = 'Get MyTaxi Customers by ID';
+            //     Image = GetLines;
+            //     Promoted = true;
+            //     PromotedCategory = Process;
+            //     PromotedIsBig = true;
+            //     ApplicationArea = all;
+            //     ToolTip = 'Executes the Get MyTaxi Customers by ID action.';
 
-                trigger OnAction()
-                var
-                    MyTaxiCRMInterfaceWS: Codeunit "MyTaxi CRM Interface WS";
-                begin
-                    // EY-MYES0003 >>
-                    MyTaxiCRMInterfaceWS.GetMasterDataByID;
-                    // EY-MYES0003 <<
-                end;
-            }
-            action("Import MyTaxi Customers File")
-            {
-                Caption = 'Import MyTaxi Customers File';
-                Image = FileContract;
-                Promoted = true;
-                PromotedCategory = Process;
-                PromotedIsBig = true;
-                ApplicationArea = all;
-                ToolTip = 'Executes the Import MyTaxi Customers File action.';
+            //     trigger OnAction()
+            //     var
+            //         MyTaxiCRMInterfaceWS: Codeunit "MyTaxi CRM Interface WS";
+            //     begin
+            //         // EY-MYES0003 >>
+            //         MyTaxiCRMInterfaceWS.GetMasterDataByID;
+            //         // EY-MYES0003 <<
+            //     end;
+            // }
+            // action("Import MyTaxi Customers File")
+            // {
+            //     Caption = 'Import MyTaxi Customers File';
+            //     Image = FileContract;
+            //     Promoted = true;
+            //     PromotedCategory = Process;
+            //     PromotedIsBig = true;
+            //     ApplicationArea = all;
+            //     ToolTip = 'Executes the Import MyTaxi Customers File action.';
 
-                trigger OnAction()
-                var
-                    MyTaxiCRMInterfaceWS: Codeunit "MyTaxi CRM Interface WS";
-                begin
-                    MyTaxiCRMInterfaceWS.ImportMasterData;
-                end;
-            }
-            action("Create Customers")
-            {
-                Caption = 'Create Customers';
-                Image = EditCustomer;
-                Promoted = true;
-                PromotedCategory = Process;
-                PromotedIsBig = true;
-                ApplicationArea = all;
-                ToolTip = 'Executes the Create Customers action.';
+            //     trigger OnAction()
+            //     var
+            //         MyTaxiCRMInterfaceWS: Codeunit "MyTaxi CRM Interface WS";
+            //     begin
+            //         MyTaxiCRMInterfaceWS.ImportMasterData;
+            //     end;
+            // }
+            // action("Create Customers")
+            // {
+            //     Caption = 'Create Customers';
+            //     Image = EditCustomer;
+            //     Promoted = true;
+            //     PromotedCategory = Process;
+            //     PromotedIsBig = true;
+            //     ApplicationArea = all;
+            //     ToolTip = 'Executes the Create Customers action.';
 
-                trigger OnAction()
-                var
-                    MyTaxiCRMInterfaceRecords: Record "MyTaxi CRM Interface Records";
-                    MyTaxiCRMInterfaceProcess: Codeunit "MyTaxi CRM Interface Process";
-                begin
-                    CurrPage.SetSelectionFilter(MyTaxiCRMInterfaceRecords);
-                    MyTaxiCRMInterfaceRecords.SetRange("Transfer Date", 0D);
-                    if MyTaxiCRMInterfaceRecords.FindFirst() then
-                        repeat
-                            ClearLastError();
-                            Clear(MyTaxiCRMInterfaceProcess);
-                            MyTaxiCRMInterfaceProcess.SetParams(1, MyTaxiCRMInterfaceRecords);
-                            if not MyTaxiCRMInterfaceProcess.Run() then begin
-                                MyTaxiCRMInterfaceRecords."Process Status" := MyTaxiCRMInterfaceRecords."Process Status"::Error;
-                                MyTaxiCRMInterfaceRecords."Process Status Description" := CopyStr(GetLastErrorText, 1, 250);
-                                MyTaxiCRMInterfaceRecords.Modify();
-                            end;
-                            Commit();
-                        until MyTaxiCRMInterfaceRecords.Next() = 0;
-                end;
-            }
+            //     trigger OnAction()
+            //     var
+            //         MyTaxiCRMInterfaceRecords: Record "MyTaxi CRM Interface Records";
+            //         MyTaxiCRMInterfaceProcess: Codeunit "MyTaxi CRM Interface Process";
+            //     begin
+            //         CurrPage.SetSelectionFilter(MyTaxiCRMInterfaceRecords);
+            //         MyTaxiCRMInterfaceRecords.SetRange("Transfer Date", 0D);
+            //         if MyTaxiCRMInterfaceRecords.FindFirst() then
+            //             repeat
+            //                 ClearLastError();
+            //                 Clear(MyTaxiCRMInterfaceProcess);
+            //                 MyTaxiCRMInterfaceProcess.SetParams(1, MyTaxiCRMInterfaceRecords);
+            //                 if not MyTaxiCRMInterfaceProcess.Run() then begin
+            //                     MyTaxiCRMInterfaceRecords."Process Status" := MyTaxiCRMInterfaceRecords."Process Status"::Error;
+            //                     MyTaxiCRMInterfaceRecords."Process Status Description" := CopyStr(GetLastErrorText, 1, 250);
+            //                     MyTaxiCRMInterfaceRecords.Modify();
+            //                 end;
+            //                 Commit();
+            //             until MyTaxiCRMInterfaceRecords.Next() = 0;
+            //     end;
+            // }
             // action("Create Vendors")
             // {
             //     ApplicationArea = Basic;

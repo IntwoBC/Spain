@@ -9,7 +9,7 @@ page 70001 "MyTaxi CRM Int. Posting Setup"
     PageType = List;
     SourceTable = "MyTaxi CRM Int. Posting Setup";
     ApplicationArea = All;
-UsageCategory=lists;
+    UsageCategory = lists;
     layout
     {
         area(content)
@@ -115,6 +115,10 @@ UsageCategory=lists;
                 {
                     ApplicationArea = all;
                     ToolTip = 'Specifies the value of the Customer Posting Group field.';
+                }
+                field("Bal. Acc. NetPaymentLyft"; Rec."I2I Bal. Acc. Net Payment Lyft")
+                {
+                    ToolTip = 'Specifies the value of the Bal. Acc. Net Payment Lyft field.', Comment = '%';
                 }
                 field("Default Cust. Rem. Terms Code"; Rec."Default Cust. Rem. Terms Code")
                 {

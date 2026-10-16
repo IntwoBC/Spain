@@ -488,9 +488,9 @@ codeunit 70001 "MyTaxi CRM Interface WS"
             if Invoice.Get('grossPaymentFeeBA', JToken) then
                 Evaluate(TmpMyTaxiCRMInterfaceRecords.grossPaymentFeeBA, JToken.AsValue().AsText());
         end;
-        // if Invoice.Get('lyftMobilePayment', JToken) then begin
-        //     Evaluate(TmpMyTaxiCRMInterfaceRecords."I2I Net Payment Lyft", JToken.AsValue().AsText());
-        // end;
+        if Invoice.Get('lyftMobilePayment', JToken) then begin
+            Evaluate(TmpMyTaxiCRMInterfaceRecords."I2I Net Payment Lyft", JToken.AsValue().AsText());
+        end;
         // MyTaxi.W1.CRE.INT01.015 <<
         TmpMyTaxiCRMInterfaceRecords."NAV Invoice Status" := TmpMyTaxiCRMInterfaceRecords."NAV Invoice Status"::Imported;
         if TmpMyTaxiCRMInterfaceRecords.netPayment <> 0 then

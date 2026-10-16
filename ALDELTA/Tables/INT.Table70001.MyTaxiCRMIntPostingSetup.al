@@ -266,6 +266,11 @@ table 70001 "MyTaxi CRM Int. Posting Setup"
         {
             Caption = 'Auto-Post Payment Journal';
         }
+        field(37; "I2I Bal. Acc. Net Payment Lyft"; Code[20])
+        {
+            Caption = 'Bal. Acc. Net Payment Lyft';
+            TableRelation = "G/L Account"."No.";
+        }
     }
 
     keys

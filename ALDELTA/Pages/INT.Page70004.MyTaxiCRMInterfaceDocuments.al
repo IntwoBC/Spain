@@ -17,7 +17,8 @@ page 70004 "MyTaxi CRM Interface Documents"
     SourceTable = "MyTaxi CRM Interface Records";
     SourceTableView = WHERE("Interface Type" = CONST(Invoice));
     ApplicationArea = All;
-UsageCategory=lists;
+    UsageCategory = lists;
+    PromotedActionCategories = 'Manage,Print,Report,View Created Doc. and Journal,View Posted Doc. & Ledger,Get Document,Create Document';
     layout
     {
         area(content)
@@ -238,6 +239,11 @@ UsageCategory=lists;
                     ApplicationArea = all;
                     ToolTip = 'Specifies the value of the grossPaymentFeeBA field.';
                 }
+                field(netPaymentLyft; Rec."I2I Net Payment Lyft")
+                {
+                    ApplicationArea = all;
+                    ToolTip = 'Specifies the value of the netPaymentLyft field.', Comment = '%';
+                }
                 field(additionalInformation; Rec.additionalInformation)
                 {
                     ApplicationArea = all;
@@ -290,7 +296,7 @@ UsageCategory=lists;
                     Caption = 'Sales Invoice';
                     Image = Document;
                     Promoted = true;
-                    PromotedCategory = Process;
+                    PromotedCategory = Category4;
                     PromotedIsBig = true;
                     ApplicationArea = all;
                     ToolTip = 'Executes the Sales Invoice action.';
@@ -308,7 +314,7 @@ UsageCategory=lists;
                     Caption = 'Sales Credit Memo';
                     Image = Document;
                     Promoted = true;
-                    PromotedCategory = Process;
+                    PromotedCategory = Category4;
                     PromotedIsBig = true;
                     ApplicationArea = all;
                     ToolTip = 'Executes the Sales Credit Memo action.';
@@ -326,7 +332,7 @@ UsageCategory=lists;
                     Caption = 'Cash Receipt Journal';
                     Image = CashReceiptJournal;
                     Promoted = true;
-                    PromotedCategory = Process;
+                    PromotedCategory = Category4;
                     PromotedIsBig = true;
                     RunObject = Page "Cash Receipt Journal";
                     ApplicationArea = all;
@@ -354,7 +360,7 @@ UsageCategory=lists;
                         Caption = 'Posted Sales Invoice';
                         Image = PostDocument;
                         Promoted = true;
-                        PromotedCategory = Process;
+                        PromotedCategory = Category5;
                         PromotedIsBig = true;
                         RunObject = Page "Posted Sales Invoices";
                         RunPageLink = "No." = FIELD(externalReference);
@@ -367,7 +373,7 @@ UsageCategory=lists;
                         Description = 'MyTaxi.W1.CRE.INT01.008';
                         Image = PostDocument;
                         Promoted = true;
-                        PromotedCategory = Process;
+                        PromotedCategory = Category5;
                         PromotedIsBig = true;
                         RunObject = Page "Posted Sales Credit Memos";
                         RunPageLink = "No." = FIELD(externalReference);
@@ -379,7 +385,7 @@ UsageCategory=lists;
                         Caption = 'Payment Ledger Entry';
                         Image = CustomerLedger;
                         Promoted = true;
-                        PromotedCategory = Process;
+                        PromotedCategory = Category5;
                         PromotedIsBig = true;
                         ApplicationArea = all;
                         ToolTip = 'Executes the Payment Ledger Entry action.';
@@ -405,7 +411,7 @@ UsageCategory=lists;
                     Caption = 'Get MyTaxi Sales Documents';
                     Image = GetLines;
                     Promoted = true;
-                    PromotedCategory = Process;
+                    PromotedCategory = Category6;
                     PromotedIsBig = true;
                     ApplicationArea = all;
                     ToolTip = 'Executes the Get MyTaxi Sales Documents action.';
@@ -422,7 +428,7 @@ UsageCategory=lists;
                     Caption = 'Import MyTaxi Sales Documents File';
                     Image = FileContract;
                     Promoted = true;
-                    PromotedCategory = Process;
+                    PromotedCategory = Category6;
                     PromotedIsBig = true;
                     ApplicationArea = all;
                     ToolTip = 'Executes the Import MyTaxi Sales Documents File action.';
@@ -439,7 +445,7 @@ UsageCategory=lists;
                     Caption = 'Create Sales Document';
                     Image = Post;
                     Promoted = true;
-                    PromotedCategory = Process;
+                    PromotedCategory = Category7;
                     PromotedIsBig = true;
                     ApplicationArea = all;
                     ToolTip = 'Executes the Create Sales Document action.';
@@ -474,7 +480,7 @@ UsageCategory=lists;
                     Caption = 'Update MyTaxi Sales Documents';
                     Image = RefreshLines;
                     Promoted = true;
-                    PromotedCategory = Process;
+                    PromotedCategory = Category7;
                     PromotedIsBig = true;
                     ApplicationArea = all;
                     ToolTip = 'Executes the Update MyTaxi Sales Documents action.';
@@ -487,7 +493,7 @@ UsageCategory=lists;
                         CurrPage.SetSelectionFilter(MyTaxiCRMInterfaceRecords);
                         if MyTaxiCRMInterfaceRecords.FindSet() then
                             repeat
-                            MyTaxiCRMInterfaceWS.UpdateInvoice(MyTaxiCRMInterfaceRecords);
+                                MyTaxiCRMInterfaceWS.UpdateInvoice(MyTaxiCRMInterfaceRecords);
                             until MyTaxiCRMInterfaceRecords.Next() = 0;
                     end;
                 }
@@ -496,7 +502,7 @@ UsageCategory=lists;
                     Caption = 'Get MyTaxi Sales Document';
                     Image = GetLines;
                     Promoted = true;
-                    PromotedCategory = Process;
+                    PromotedCategory = Category6;
                     PromotedIsBig = true;
                     ApplicationArea = all;
                     ToolTip = 'Executes the Get MyTaxi Sales Document action.';
