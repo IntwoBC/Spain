@@ -361,54 +361,54 @@ page 70003 "MyTaxi CRM Interface Customers"
                             until MyTaxiCRMInterfaceRecords.Next() = 0;
                     end;
                 }
-                // action("Create Vendors")
-                // {
-                //     ApplicationArea = Basic;
-                //     Caption = 'Create/Update Vendors';
-                //     Image = Vendor;
-                //     Promoted = true;
-                //     PromotedCategory = Category6;
-                //     PromotedIsBig = true;
-                //     Visible = true;
+                action("Create Vendors")
+                {
+                    ApplicationArea = Basic;
+                    Caption = 'Create/Update Vendors';
+                    Image = Vendor;
+                    Promoted = true;
+                    PromotedCategory = Category6;
+                    PromotedIsBig = true;
+                    Visible = true;
 
-                //     trigger OnAction()
-                //     var
-                //         MyTaxiCRMInterfaceRecords: Record "MyTaxi CRM Interface Records";
-                //         VendorUtility: Codeunit "Vendor Utility";
-                //         TotalCount: Integer;
-                //         SuccessCount: Integer;
-                //         FailedCount: Integer;
-                //     begin
-                //         CurrPage.SetSelectionFilter(MyTaxiCRMInterfaceRecords);
-                //         MyTaxiCRMInterfaceRecords.SetRange(customerGroup, '1');
-                //         MyTaxiCRMInterfaceRecords.SetRange("I2I Vendor Created", false);
-                //         MyTaxiCRMInterfaceRecords.SetRange("Process Status", MyTaxiCRMInterfaceRecords."Process Status"::" ");
-                //         MyTaxiCRMInterfaceRecords.SetRange("Process Status Description", '');
-                //         if MyTaxiCRMInterfaceRecords.FindFirst then begin
-                //             TotalCount := MyTaxiCRMInterfaceRecords.Count;
-                //             repeat
-                //                 ClearLastError;
-                //                 Clear(VendorUtility);
-                //                 if not VendorUtility.Run(MyTaxiCRMInterfaceRecords) then begin
-                //                     FailedCount += 1;
-                //                     MyTaxiCRMInterfaceRecords."Process Status" := MyTaxiCRMInterfaceRecords."process status"::Error;
-                //                     MyTaxiCRMInterfaceRecords."Process Status Description" := CopyStr(GetLastErrorText, 1, 250);
-                //                     MyTaxiCRMInterfaceRecords.Modify;
-                //                 end
-                //                 else begin
-                //                     SuccessCount += 1;
-                //                     MyTaxiCRMInterfaceRecords."Process Status" := MyTaxiCRMInterfaceRecords."process status"::" ";
-                //                     MyTaxiCRMInterfaceRecords."Process Status Description" := '';
-                //                     MyTaxiCRMInterfaceRecords.Modify;
-                //                 end;
-                //                 Commit;
-                //             until MyTaxiCRMInterfaceRecords.Next = 0;
-                //             Message('Processing Completed.\Total Eligible Records: %1\Processed Successfully: %2\Failed: %3', TotalCount, SuccessCount, FailedCount);
-                //         end
-                //         else
-                //             Message('No records found to process. Please check the filters or data.');
-                //     end;
-                // }
+                    trigger OnAction()
+                    var
+                        MyTaxiCRMInterfaceRecords: Record "MyTaxi CRM Interface Records";
+                        VendorUtility: Codeunit "Vendor Utility";
+                        TotalCount: Integer;
+                        SuccessCount: Integer;
+                        FailedCount: Integer;
+                    begin
+                        CurrPage.SetSelectionFilter(MyTaxiCRMInterfaceRecords);
+                        MyTaxiCRMInterfaceRecords.SetRange(customerGroup, '1');
+                        MyTaxiCRMInterfaceRecords.SetRange("I2I Vendor Created", false);
+                        MyTaxiCRMInterfaceRecords.SetRange("Process Status", MyTaxiCRMInterfaceRecords."Process Status"::" ");
+                        MyTaxiCRMInterfaceRecords.SetRange("Process Status Description", '');
+                        if MyTaxiCRMInterfaceRecords.FindFirst then begin
+                            TotalCount := MyTaxiCRMInterfaceRecords.Count;
+                            repeat
+                                ClearLastError;
+                                Clear(VendorUtility);
+                                if not VendorUtility.Run(MyTaxiCRMInterfaceRecords) then begin
+                                    FailedCount += 1;
+                                    MyTaxiCRMInterfaceRecords."Process Status" := MyTaxiCRMInterfaceRecords."process status"::Error;
+                                    MyTaxiCRMInterfaceRecords."Process Status Description" := CopyStr(GetLastErrorText, 1, 250);
+                                    MyTaxiCRMInterfaceRecords.Modify;
+                                end
+                                else begin
+                                    SuccessCount += 1;
+                                    MyTaxiCRMInterfaceRecords."Process Status" := MyTaxiCRMInterfaceRecords."process status"::" ";
+                                    MyTaxiCRMInterfaceRecords."Process Status Description" := '';
+                                    MyTaxiCRMInterfaceRecords.Modify;
+                                end;
+                                Commit;
+                            until MyTaxiCRMInterfaceRecords.Next = 0;
+                            Message('Processing Completed.\Total Eligible Records: %1\Processed Successfully: %2\Failed: %3', TotalCount, SuccessCount, FailedCount);
+                        end
+                        else
+                            Message('No records found to process. Please check the filters or data.');
+                    end;
+                }
             }
         }
         area(creation)
