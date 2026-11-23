@@ -457,6 +457,7 @@ page 70004 "MyTaxi CRM Interface Documents"
                         MyTaxiCRMInterfaceRecords2: Record "MyTaxi CRM Interface Records";
                     begin
                         CurrPage.SetSelectionFilter(MyTaxiCRMInterfaceRecords);
+                        MyTaxiCRMInterfaceRecords.SetFilter(StatusCode, '<>%1', 'DONE');
                         if MyTaxiCRMInterfaceRecords.FindSet() then
                             repeat
                                 ClearLastError();
